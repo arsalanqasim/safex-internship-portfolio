@@ -1,64 +1,46 @@
 # ==============================================================================
-# SafeX AI FAQ Chatbot - Orchestrator
+# SafeX AI FAQ Chatbot - Orchestrator (Skeleton)
 # ==============================================================================
-import time
 from pathlib import Path
-from typing import Dict, Any, Optional
-from src.knowledge_base import load_faq_data
-from src.similarity import FAQSimilarityModel
-from src.config import SIMILARITY_THRESHOLD, FALLBACK_MESSAGE
+from typing import Dict, Any
 
 class FAQChatbot:
     """
-    Orchestration class that coordinates loading the FAQ knowledge base,
-    fitting the similarity engine, and running user query evaluation.
+    Coordinates the chatbot workflow by loading the knowledge base,
+    fitting the similarity engine, and routing queries.
     """
     def __init__(self, faq_path: Path):
+        """
+        Parameters:
+            faq_path (Path): Path to faq.json.
+
+        TODO (Owner: Abdul Haseeb):
+        - Call knowledge_base loading functions.
+        - Instantiate and fit similarity model from similarity.py.
+        """
         self.faq_path = faq_path
         
-        # Load FAQ dataset
-        self.faqs = load_faq_data(faq_path)
-        
-        # Extract questions for the vectorizer
-        self.questions = [faq["question"] for faq in self.faqs]
-        
-        # Initialize and fit similarity model
-        self.similarity_model = FAQSimilarityModel()
-        self.similarity_model.fit(self.questions)
-        
-    def query(self, user_query: str, threshold: Optional[float] = None) -> Dict[str, Any]:
+    def query(self, user_query: str) -> Dict[str, Any]:
         """
-        Executes query matching workflow:
-        1. Finds best matching FAQ question.
-        2. Compares score against configured threshold.
-        3. Returns either the FAQ answer or the fallback message.
+        Routes user query, matches similarity, and checks fallback threshold.
+
+        Parameters:
+            user_query (str): The raw text question from the user.
+
+        Returns:
+            Dict[str, Any]: Results containing matched question, score, and answer.
+
+        TODO (Owner: Abdul Haseeb):
+        - Call similarity model matching logic.
+        - Fetch matched answer from data structure.
+        - Enforce similarity threshold logic (score < threshold triggers fallback).
+        - Track performance latency for diagnostic benchmarking.
         """
-        start_time = time.time()
-        
-        # Use provided override or configuration default threshold
-        active_threshold = threshold if threshold is not None else SIMILARITY_THRESHOLD
-        
-        # Get matching score and index
-        best_idx, score = self.similarity_model.find_best_match(user_query)
-        matched_faq = self.faqs[best_idx]
-        
-        # Threshold logic
-        if score >= active_threshold:
-            answer = matched_faq["answer"]
-            is_fallback = False
-        else:
-            answer = FALLBACK_MESSAGE
-            is_fallback = True
-            
-        latency = time.time() - start_time
-        
+        # TODO: Implement orchestration flow here
         return {
             "query": user_query,
-            "answer": answer,
-            "matched_question": matched_faq["question"],
-            "similarity_score": score,
-            "is_fallback": is_fallback,
-            "latency_seconds": latency,
-            "faq_id": matched_faq["id"],
-            "category": matched_faq["category"]
+            "answer": "Placeholder chatbot response.",
+            "matched_question": "Placeholder matched FAQ question?",
+            "similarity_score": 0.0,
+            "is_fallback": True
         }

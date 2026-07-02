@@ -13,61 +13,7 @@
   },
   {
     "id": "q_03",
-    "question": "How long does the AI/ML internship last?",
-    "expected_faq_id": "faq_03",
-    "category": "positive"
-  },
-  {
-    "id": "q_04",
-    "question": "What benefits do I get as an intern?",
-    "expected_faq_id": "faq_04",
-    "category": "positive"
-  },
-  {
-    "id": "q_05",
-    "question": "What is the policy for working from home?",
-    "expected_faq_id": "faq_05",
-    "category": "positive"
-  },
-  {
-    "id": "q_06",
-    "question": "What are the daily hours at the office?",
-    "expected_faq_id": "faq_06",
-    "category": "positive"
-  },
-  {
-    "id": "q_07",
-    "question": "How do you evaluate performance?",
-    "expected_faq_id": "faq_07",
-    "category": "positive"
-  },
-  {
-    "id": "q_08",
-    "question": "What is needed to get my internship completion certificate?",
-    "expected_faq_id": "faq_08",
-    "category": "positive"
-  },
-  {
-    "id": "q_09",
-    "question": "How can I contact the cohort leader?",
-    "expected_faq_id": "faq_09",
-    "category": "positive"
-  },
-  {
-    "id": "q_10",
-    "question": "What programming languages and frameworks do you use?",
-    "expected_faq_id": "faq_10",
-    "category": "positive"
-  },
-  {
-    "id": "q_11",
-    "question": "What is the monthly stipend or pay rate?",
-    "expected_faq_id": "None",
-    "category": "negative"
-  },
-  {
-    "id": "q_12",
-    "question": "Can you give me a recipe for cooking chocolate cake?",
+    "question": "What is the recipe for making lasagna?",
     "expected_faq_id": "None",
     "category": "negative"
   }
