@@ -1,188 +1,30 @@
 # ==============================================================================
-# SafeX AI Knowledge Assistant
-# Premium ChatGPT / Claude / Copilot-style Frontend
+# SafeX AI & Automation Suite
+# Premium ChatGPT / Claude / Copilot-style Hub
 # ------------------------------------------------------------------------------
-# Tech Stack : Python + Streamlit (frontend only)
-# Backend    : Placeholder — to be replaced with chatbot.py -> FAQChatbot
-# Author     : Frontend Engineering Team
+# Tech Stack : Python + Streamlit
+# Author     : Group 54 Lead
 # ==============================================================================
 
 import os
 import sys
+import importlib
 
 # Ensure the project root directory is in the python path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-import time
-import uuid
-from datetime import datetime
-
 import streamlit as st
 
-from src.chatbot import FAQChatbot
-from src.config import FAQ_PATH
-
-
-# ==============================================================================
-# 1. PAGE CONFIGURATION
-# ==============================================================================
-
+# Page configuration
 st.set_page_config(
-    page_title="SafeX AI Knowledge Assistant",
+    page_title="SafeX AI & Automation Suite",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-
-# ==============================================================================
-# 2. BACKEND PLACEHOLDER
-# ------------------------------------------------------------------------------
-# This is the ONLY function that talks to the "backend". Replace its body with
-# the real implementation later:
-#
-#   from chatbot import FAQChatbot
-#   bot = FAQChatbot()
-#
-#   def get_chatbot_response(query, threshold):
-#       return bot.ask(query, threshold)
-#
-# Nothing else in this file needs to change.
-# ==============================================================================
-
-@st.cache_resource
-def get_chatbot_instance() -> FAQChatbot:
-    """Load and train the chatbot orchestrator exactly once using Streamlit caching."""
-    return FAQChatbot(FAQ_PATH)
-
-def get_chatbot_response(query: str, threshold: float) -> str:
-    """
-    Queries the actual backend similarity-based FAQ chatbot orchestrator.
-
-    Args:
-        query (str): The user's question.
-        threshold (float): Similarity threshold from the sidebar slider.
-
-    Returns:
-        str: The chatbot's answer based on local knowledge retrieval.
-    """
-    bot = get_chatbot_instance()
-    response = bot.query(query, threshold)
-    return response["answer"]
-
-
-# ==============================================================================
-# 3. SESSION STATE INITIALIZATION
-# ==============================================================================
-
-def init_session_state() -> None:
-    """Initialize all required keys in st.session_state exactly once."""
-
-    if "chats" not in st.session_state:
-        first_id = str(uuid.uuid4())
-        st.session_state.chats = {
-            first_id: {
-                "title": "New Conversation",
-                "messages": [],
-                "created_at": datetime.now(),
-            }
-        }
-        st.session_state.current_chat_id = first_id
-
-    if "current_chat_id" not in st.session_state:
-        st.session_state.current_chat_id = next(iter(st.session_state.chats))
-
-    if "theme" not in st.session_state:
-        st.session_state.theme = "Dark"
-
-    if "threshold" not in st.session_state:
-        st.session_state.threshold = 0.30
-
-    if "search_term" not in st.session_state:
-        st.session_state.search_term = ""
-
-    if "renaming_chat_id" not in st.session_state:
-        st.session_state.renaming_chat_id = None
-
-    if "pending_prompt" not in st.session_state:
-        st.session_state.pending_prompt = None
-
-
-# ==============================================================================
-# 4. CHAT MANAGEMENT HELPERS
-# ==============================================================================
-
-def get_current_chat() -> dict:
-    """Return the dict for the currently active chat."""
-    return st.session_state.chats[st.session_state.current_chat_id]
-
-
-def create_new_chat() -> None:
-    """Create a fresh, empty chat and make it the active one."""
-    new_id = str(uuid.uuid4())
-    st.session_state.chats[new_id] = {
-        "title": "New Conversation",
-        "messages": [],
-        "created_at": datetime.now(),
-    }
-    st.session_state.current_chat_id = new_id
-    st.session_state.renaming_chat_id = None
-
-
-def switch_chat(chat_id: str) -> None:
-    """Switch the active chat pointer."""
-    st.session_state.current_chat_id = chat_id
-    st.session_state.renaming_chat_id = None
-
-
-def delete_chat(chat_id: str) -> None:
-    """Delete a chat. Ensures at least one chat always exists."""
-    if chat_id in st.session_state.chats:
-        del st.session_state.chats[chat_id]
-
-    if not st.session_state.chats:
-        create_new_chat()
-        return
-
-    if st.session_state.current_chat_id == chat_id:
-        st.session_state.current_chat_id = next(iter(st.session_state.chats))
-
-
-def start_rename(chat_id: str) -> None:
-    """Put a given chat into rename mode."""
-    st.session_state.renaming_chat_id = chat_id
-
-
-def confirm_rename(chat_id: str, new_title: str) -> None:
-    """Persist a new title for a chat and exit rename mode."""
-    clean_title = new_title.strip()
-    if clean_title:
-        st.session_state.chats[chat_id]["title"] = clean_title[:40]
-    st.session_state.renaming_chat_id = None
-
-
-def auto_title_from_first_message(chat_id: str, text: str) -> None:
-    """Auto-generate a chat title from the first user message."""
-    chat = st.session_state.chats[chat_id]
-    if chat["title"] == "New Conversation":
-        title = text.strip()
-        chat["title"] = (title[:32] + "…") if len(title) > 32 else title
-
-
-def filter_chats(search_term: str) -> list:
-    """
-    Return chat ids sorted by most-recent first, optionally filtered by a
-    case-insensitive substring match on the chat title.
-    """
-    items = list(st.session_state.chats.items())
-    items.sort(key=lambda kv: kv[1]["created_at"], reverse=True)
-
-    if search_term.strip():
-        term = search_term.strip().lower()
-        items = [(cid, c) for cid, c in items if term in c["title"].lower()]
-
-    return items
-
+from src.modules.registry import MODULE_REGISTRY
+import src.modules.week1.faq_chatbot as faq_chatbot
 
 # ==============================================================================
 # 5. CSS — PREMIUM SAAS THEME (DARK / LIGHT)
@@ -907,369 +749,234 @@ def inject_css(theme: str) -> None:
 # ==============================================================================
 
 def render_sidebar() -> None:
-    """Render the full ChatGPT-style sidebar: brand, new chat, search,
-    conversation history (with a three-dot rename/delete menu), settings,
-    and about/footer."""
-
+    """Render the main navigation and active workspace sub-menus in the sidebar."""
     with st.sidebar:
-
-        # ---- Brand header -------------------------------------------------
+        # ---- Brand header ----
         st.markdown(
             """
             <div class="brand-wrap">
                 <div class="brand-icon">🛡️</div>
                 <div>
-                    <div class="brand-text-title">SafeX AI</div>
-                    <div class="brand-text-sub">Knowledge Assistant</div>
+                    <div class="brand-text-title">SafeX Platform</div>
+                    <div class="brand-text-sub">AI & Automation Hub</div>
                 </div>
             </div>
             """,
             unsafe_allow_html=True,
         )
 
-        # ---- New Chat -------------------------------------------------------
-        st.markdown('<div class="new-chat-btn">', unsafe_allow_html=True)
-        if st.button("➕  New Chat", use_container_width=True, key="btn_new_chat"):
-            create_new_chat()
-            st.rerun()
-        st.markdown("</div>", unsafe_allow_html=True)
+        # ---- Workspace Navigation ----
+        st.markdown('<div class="sidebar-section-label">Active Workspace</div>', unsafe_allow_html=True)
+        workspaces = [
+            "📚 Week 1: FAQ Assistant",
+            "⚙️ Week 2: Automation Suite",
+            "👥 Team Dashboard"
+        ]
+        
+        # Initialize default workspace if not present
+        if "active_workspace_sel" not in st.session_state:
+            st.session_state.active_workspace_sel = workspaces[0]
 
-        # ---- Search chats -----------------------------------------------
-        st.markdown('<div class="sidebar-section-label">Search</div>', unsafe_allow_html=True)
-        st.session_state.search_term = st.text_input(
-            "Search chats",
-            value=st.session_state.search_term,
-            placeholder="🔍  Search conversations...",
-            label_visibility="collapsed",
-            key="search_input",
+        active_ws = st.selectbox(
+            "Active Workspace",
+            workspaces,
+            index=workspaces.index(st.session_state.active_workspace_sel),
+            key="workspace_select_widget",
+            label_visibility="collapsed"
         )
+        
+        if active_ws != st.session_state.active_workspace_sel:
+            st.session_state.active_workspace_sel = active_ws
+            st.rerun()
 
-        # ---- Conversation history -----------------------------------------
-        st.markdown('<div class="sidebar-section-label">Conversations</div>', unsafe_allow_html=True)
+        # ---- Workspace Specific Controls ----
+        if st.session_state.active_workspace_sel == "📚 Week 1: FAQ Assistant":
+            faq_chatbot.render_sidebar_controls()
+            
+        elif st.session_state.active_workspace_sel == "⚙️ Week 2: Automation Suite":
+            st.markdown('<div class="sidebar-section-label">Automation Prototypes</div>', unsafe_allow_html=True)
+            module_keys = list(MODULE_REGISTRY["week2"].keys())
+            module_titles = [
+                f"{MODULE_REGISTRY['week2'][k]['icon']} {MODULE_REGISTRY['week2'][k]['title']}"
+                for k in module_keys
+            ]
 
-        visible_chats = filter_chats(st.session_state.search_term)
+            if "active_module_key" not in st.session_state:
+                st.session_state.active_module_key = module_keys[0]
 
-        if not visible_chats:
-            st.caption("No conversations found.")
+            curr_idx = module_keys.index(st.session_state.active_module_key) if st.session_state.active_module_key in module_keys else 0
+            
+            selected_title = st.radio(
+                "Select Module",
+                module_titles,
+                index=curr_idx,
+                label_visibility="collapsed",
+                key="week2_module_radio"
+            )
+            
+            selected_key = module_keys[module_titles.index(selected_title)]
+            if selected_key != st.session_state.active_module_key:
+                st.session_state.active_module_key = selected_key
+                st.rerun()
+                
+            st.markdown('<div class="sidebar-section-label">General Info</div>', unsafe_allow_html=True)
+            st.caption("Each prototype serves as a modular task assigned to Group 54 members for Week 2 Business Automation Research.")
 
-        for chat_id, chat in visible_chats:
-            is_active = chat_id == st.session_state.current_chat_id
-            row_class = "chat-row active" if is_active else "chat-row"
-
-            if st.session_state.renaming_chat_id == chat_id:
-                # ---- Inline rename mode ----
-                st.markdown(f'<div class="{row_class} rename-mode">', unsafe_allow_html=True)
-                new_title = st.text_input(
-                    "Rename",
-                    value=chat["title"],
-                    key=f"rename_input_{chat_id}",
-                    label_visibility="collapsed",
-                )
-                c1, c2 = st.columns([1, 1])
-                with c1:
-                    st.markdown('<div class="rename-action save">', unsafe_allow_html=True)
-                    if st.button("✓ Save", key=f"save_{chat_id}", use_container_width=True):
-                        confirm_rename(chat_id, new_title)
-                        st.rerun()
-                    st.markdown("</div>", unsafe_allow_html=True)
-                with c2:
-                    st.markdown('<div class="rename-action cancel">', unsafe_allow_html=True)
-                    if st.button("✕ Cancel", key=f"cancel_{chat_id}", use_container_width=True):
-                        st.session_state.renaming_chat_id = None
-                        st.rerun()
-                    st.markdown("</div>", unsafe_allow_html=True)
-                st.markdown("</div>", unsafe_allow_html=True)
-            else:
-                st.markdown(f'<div class="{row_class}">', unsafe_allow_html=True)
-                col_title, col_menu = st.columns([7, 1])
-
-                with col_title:
-                    icon = "💬" if not is_active else "🟢"
-                    if st.button(
-                        f"{icon}  {chat['title']}",
-                        key=f"select_{chat_id}",
-                        use_container_width=True,
-                    ):
-                        switch_chat(chat_id)
-                        st.rerun()
-
-                with col_menu:
-                    # ---- Three-dot context menu (native popover) ----
-                    # st.popover renders a floating panel anchored to the
-                    # trigger button and handled by Streamlit itself, so
-                    # positioning, clipping, and z-index are all correct
-                    # out of the box - no custom dropdown hacks needed.
-                    st.markdown('<div class="menu-trigger">', unsafe_allow_html=True)
-                    with st.popover("⋮", use_container_width=False):
-                        if st.button(
-                            "✏️  Rename Chat",
-                            key=f"rename_{chat_id}",
-                            use_container_width=True,
-                        ):
-                            start_rename(chat_id)
-                            st.rerun()
-
-                        st.markdown('<div class="popover-danger">', unsafe_allow_html=True)
-                        if st.button(
-                            "🗑️  Delete Chat",
-                            key=f"delete_{chat_id}",
-                            use_container_width=True,
-                        ):
-                            delete_chat(chat_id)
-                            st.rerun()
-                        st.markdown("</div>", unsafe_allow_html=True)
-                    st.markdown("</div>", unsafe_allow_html=True)
-
-                st.markdown("</div>", unsafe_allow_html=True)
-
-        # ---- Settings -------------------------------------------------------
-        st.markdown('<div class="sidebar-section-label">Settings</div>', unsafe_allow_html=True)
-
-        with st.expander("⚙️  Preferences", expanded=False):
-
-            st.markdown("**Appearance**")
+        elif st.session_state.active_workspace_sel == "👥 Team Dashboard":
+            st.markdown('<div class="sidebar-section-label">Team Summary</div>', unsafe_allow_html=True)
+            st.caption("Group 54 consists of 1 Leader and 7 Members collaborating on modular business automation stubs for SafeX Solutions.")
+            
+        # ---- Preferences & Settings ----
+        st.markdown('<div class="sidebar-section-label">Global Settings</div>', unsafe_allow_html=True)
+        with st.expander("🎨  Theme", expanded=False):
             theme_choice = st.radio(
-                "Theme",
+                "Appearance Theme",
                 ["Dark", "Light"],
                 index=0 if st.session_state.theme == "Dark" else 1,
                 label_visibility="collapsed",
                 horizontal=True,
-                key="theme_radio",
+                key="theme_radio_widget",
             )
             if theme_choice != st.session_state.theme:
                 st.session_state.theme = theme_choice
                 st.rerun()
 
-            st.markdown("**Similarity Threshold**")
-            st.session_state.threshold = st.slider(
-                "Similarity Threshold",
-                min_value=0.0,
-                max_value=1.0,
-                value=st.session_state.threshold,
-                step=0.05,
-                label_visibility="collapsed",
-                key="threshold_slider",
-            )
-            st.caption(
-                "Controls how closely a question must match the knowledge "
-                "base before an answer is returned."
-            )
-
-        with st.expander("ℹ️  About", expanded=False):
-            st.markdown(
-                """
-                **SafeX AI Knowledge Assistant**
-
-                An internal FAQ assistant for SafeX Solutions, built with
-                TF-IDF + Cosine Similarity over a local knowledge base.
-                """
-            )
-
-        # ---- Footer -----------------------------------------------------
+        # ---- Footer ----
         st.markdown(
             f"""
             <div class="sidebar-footer">
-                SafeX AI · © {datetime.now().year}<br>
-                Built with Streamlit
+                SafeX Suite · © 2026<br>
+                Group 54 Collaboration
             </div>
             """,
             unsafe_allow_html=True,
         )
 
-
-# ==============================================================================
-# 7. HERO SECTION
-# ==============================================================================
-
-def render_hero() -> None:
-    """Render the gradient hero header shown at the top of the main area."""
+def render_team_dashboard() -> None:
+    """Renders the Team Dashboard display showing developers, tasks, and progress."""
     st.markdown(
         """
         <div class="hero-wrap">
-            <div class="hero-badge">🛡️ SafeX Solutions · Internal AI</div>
-            <div class="hero-title">SafeX AI Knowledge Assistant</div>
+            <div class="hero-badge">👥 Team Registry & Contributor Hub</div>
+            <div class="hero-title">Group 54 Task Allocation</div>
             <div class="hero-subtitle">
-                Ask anything about internships, HR policies, onboarding,
-                IT support, or company FAQs — answered instantly.
+                Comprehensive tracking registry for Week 1 & Week 2 module assignments, roles, and status details.
             </div>
         </div>
         """,
         unsafe_allow_html=True,
     )
+    
+    # Progress Metrics
+    m1, m2, m3 = st.columns(3)
+    with m1:
+        st.metric("Total Group Members", "8 Members")
+    with m2:
+        st.metric("Week 1 Progress", "100% Completed", help="Semantic FAQ Chatbot collaboration")
+    with m3:
+        st.metric("Week 2 Status", "Scaffolding Active", help="Individual Business Automation Research stubs")
 
+    st.markdown("<br><h3>👥 Contributor Matrix</h3>", unsafe_allow_html=True)
 
-# ==============================================================================
-# 8. SUGGESTED PROMPT CARDS
-# ==============================================================================
-
-SUGGESTED_PROMPTS = [
-    ("🏢", "What is SafeX?", "Learn about the company"),
-    ("🕐", "Office timings", "Check working hours"),
-    ("📝", "Leave policy", "How to apply for leave"),
-    ("🔑", "Reset password", "IT support steps"),
-    ("👥", "Contact HR", "Get in touch with HR"),
-    ("🎓", "Internship rules", "Guidelines & expectations"),
-]
-
-
-def render_suggested_prompts() -> None:
-    """Render a responsive 3-column grid of clickable suggested-question cards."""
-    st.markdown('<div class="suggested-label">Try asking one of these</div>', unsafe_allow_html=True)
-
-    cols = st.columns(3)
-    for i, (icon, title, subtitle) in enumerate(SUGGESTED_PROMPTS):
-        with cols[i % 3]:
-            if st.button(
-                f"{icon}  **{title}**\n\n{subtitle}",
-                key=f"suggested_{i}",
-                use_container_width=True,
-            ):
-                st.session_state.pending_prompt = title
-                st.rerun()
-
-
-# ==============================================================================
-# 9. EMPTY STATE
-# ==============================================================================
-
-def render_empty_state() -> None:
-    """Render the friendly empty-state placeholder shown before any messages."""
-    st.markdown(
-        """
-        <div class="empty-state">
-            <div class="icon-circle">💬</div>
-            <p>Ask a question above, or type below to start chatting.</p>
+    # Week 1 Row Card
+    w1_meta = MODULE_REGISTRY["week1"]["faq_chatbot"]
+    st.markdown(f"""
+    <div class="team-card" style="
+        background: rgba(56, 139, 253, 0.05);
+        border: 1px solid rgba(56, 139, 253, 0.25);
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 20px;
+    ">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 1.2em; font-weight: bold; color: #58A6FF;">{w1_meta['title']} (Week 1)</span>
+            <span style="font-size: 0.85em; background: rgba(88, 166, 255, 0.2); color: #58A6FF; padding: 4px 10px; border-radius: 12px; font-weight: bold;">{w1_meta['role']}</span>
         </div>
-        """,
-        unsafe_allow_html=True,
-    )
+        <div style="margin-top: 8px; font-size: 0.9em; color: #8B949E;">
+            <strong>Assigned Developer:</strong> {w1_meta['developer']} &nbsp;|&nbsp;
+            <strong>Status:</strong> <span style="color: #56D364; font-weight: bold;">{w1_meta['status']}</span> &nbsp;|&nbsp;
+            <strong>Required Stack:</strong> {', '.join(w1_meta['tech'])}
+        </div>
+        <div style="margin-top: 8px; font-size: 0.9em; color: #C9D1D9;">
+            {w1_meta['description']}
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
+    st.markdown("<h4>Week 2 Task Allocation & Module Stubs</h4>", unsafe_allow_html=True)
 
-# ==============================================================================
-# 10. CHAT MESSAGE RENDERING
-# ==============================================================================
-
-def render_chat_messages(messages: list) -> None:
-    """Render the full conversation using native st.chat_message bubbles."""
-    for message in messages:
-        avatar = "🧑‍💻" if message["role"] == "user" else "🛡️"
-        with st.chat_message(message["role"], avatar=avatar):
-            st.markdown(message["content"])
-
-
-def render_typing_animation(placeholder, final_text: str) -> None:
-    """
-    Show a brief animated 'typing' indicator, then progressively reveal the
-    final answer word-by-word inside the given placeholder container.
-    """
-    with placeholder.container():
-        with st.chat_message("assistant", avatar="🛡️"):
-            dots_area = st.empty()
-            for _ in range(2):
-                dots_area.markdown(
-                    '<div class="typing-dots"><span></span><span></span><span></span></div>',
-                    unsafe_allow_html=True,
-                )
-                time.sleep(0.35)
-
-            # Word-by-word reveal for a natural "streaming" feel
-            words = final_text.split(" ")
-            revealed = ""
-            text_area = dots_area
-            for word in words:
-                revealed += word + " "
-                text_area.markdown(revealed + "▌")
-                time.sleep(0.03)
-            text_area.markdown(revealed.strip())
-
-
-def scroll_to_bottom() -> None:
-    """Inject a tiny invisible HTML component that auto-scrolls the page to
-    the bottom, keeping the latest message in view.
-    """
-    st.components.v1.html(
-        """
-        <script>
-            var mainEl = window.parent.document.querySelector('section.main');
-            if (mainEl) { mainEl.scrollTo({top: mainEl.scrollHeight, behavior: 'smooth'}); }
-        </script>
-        """,
-        height=0,
-    )
-
-
-# ==============================================================================
-# 11. FOOTER
-# ==============================================================================
+    # Week 2 grid cards
+    for key, member in MODULE_REGISTRY["week2"].items():
+        st.markdown(f"""
+        <div class="team-card" style="
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        ">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 1.1em; font-weight: bold; color: #E3B341;">{member['title']}</span>
+                <span style="font-size: 0.85em; background: rgba(227, 179, 65, 0.1); color: #E3B341; padding: 2px 8px; border-radius: 12px;">{member['role']}</span>
+            </div>
+            <div style="margin-top: 8px; font-size: 0.9em; color: #8B949E;">
+                <strong>Assigned Developer:</strong> {member['developer']} &nbsp;|&nbsp;
+                <strong>Contact:</strong> <a href="mailto:{member['email']}" style="color: #58A6FF; text-decoration: none;">{member['email']}</a> &nbsp;|&nbsp;
+                <strong>Status:</strong> <span style="color: #AEB1B5; font-style: italic;">{member['status']}</span>
+            </div>
+            <div style="margin-top: 6px; font-size: 0.85em; color: #8B949E;">
+                <strong>Required Stack:</strong> {', '.join(member['tech'])} &nbsp;|&nbsp;
+                <strong>Difficulty:</strong> {member['difficulty']}
+            </div>
+            <div style="margin-top: 8px; font-size: 0.9em; color: #C9D1D9;">
+                {member['description']}
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
 def render_footer() -> None:
-    """Render a slim, professional credit bar pinned directly beneath the
-    chat input box, in the exact style of a production SaaS product."""
+    """Render a slim, professional credit bar pinned at the bottom."""
     st.markdown(
         """
         <div class="pinned-footer">
-            SafeX AI Knowledge Assistant&nbsp;&nbsp;·&nbsp;&nbsp;Powered by TF-IDF & Cosine Similarity&nbsp;&nbsp;·&nbsp;&nbsp;© 2026 SafeX Solutions
+            SafeX AI & Automation Suite&nbsp;&nbsp;·&nbsp;&nbsp;Modular Refactoring Hub&nbsp;&nbsp;·&nbsp;&nbsp;© 2026 SafeX Solutions
         </div>
         """,
         unsafe_allow_html=True,
     )
 
-
-# ==============================================================================
-# 12. MAIN APPLICATION FLOW
-# ==============================================================================
-
 def main() -> None:
-    """Application entry point — wires together state, sidebar, and chat UI."""
+    """Application entry point — routes between Week 1, Week 2 and Dashboard workspaces."""
+    # Ensure theme is initialized in session state
+    if "theme" not in st.session_state:
+        st.session_state.theme = "Dark"
 
-    init_session_state()
     inject_css(st.session_state.theme)
     render_sidebar()
 
-    current_chat = get_current_chat()
-    messages = current_chat["messages"]
-
-    # ---- Hero + suggestions only shown on an empty conversation ----------
-    if len(messages) == 0:
-        render_hero()
-        render_suggested_prompts()
-        st.markdown("<br>", unsafe_allow_html=True)
-        render_empty_state()
-    else:
-        render_chat_messages(messages)
-
-    response_placeholder = st.empty()
-
-    # ---- Chat input ---------------------------------------------------------
-    prompt = st.chat_input("Message SafeX AI...")
-
-    if st.session_state.pending_prompt:
-        prompt = st.session_state.pending_prompt
-        st.session_state.pending_prompt = None
-
-    # ---- Handle a new user message ------------------------------------------
-    if prompt:
-        messages.append({"role": "user", "content": prompt})
-        auto_title_from_first_message(st.session_state.current_chat_id, prompt)
-
-        # Re-render the user's message immediately for instant feedback
-        with st.chat_message("user", avatar="🧑‍💻"):
-            st.markdown(prompt)
-
-        # Generate (placeholder) response with a typing animation
-        answer = get_chatbot_response(prompt, st.session_state.threshold)
-        render_typing_animation(response_placeholder, answer)
-
-        messages.append({"role": "assistant", "content": answer})
-        scroll_to_bottom()
-        st.rerun()
+    # Routing main container
+    active_ws = st.session_state.get("active_workspace_sel", "📚 Week 1: FAQ Assistant")
+    
+    if active_ws == "📚 Week 1: FAQ Assistant":
+        faq_chatbot.render_ui()
+        
+    elif active_ws == "⚙️ Week 2: Automation Suite":
+        # Load and run the selected Week 2 stub module UI dynamically
+        active_key = st.session_state.get("active_module_key")
+        if active_key in MODULE_REGISTRY["week2"]:
+            module_meta = MODULE_REGISTRY["week2"][active_key]
+            try:
+                module_ui = importlib.import_module(module_meta["import_path"])
+                module_ui.render_ui()
+            except Exception as e:
+                st.error(f"Failed to load UI module for '{active_key}'. Detail: {str(e)}")
+        else:
+            st.error("No active automation module selected.")
+            
+    elif active_ws == "👥 Team Dashboard":
+        render_team_dashboard()
 
     render_footer()
-
-
-# ==============================================================================
-# ENTRY POINT
-# ==============================================================================
 
 if __name__ == "__main__":
     main()

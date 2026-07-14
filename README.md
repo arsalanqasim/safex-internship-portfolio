@@ -1,219 +1,114 @@
-<div align="center">
+# SafeX AI & Automation Suite
 
-<img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/Streamlit-1.35%2B-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
-<img src="https://img.shields.io/badge/scikit--learn-1.3%2B-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn"/>
-<img src="https://img.shields.io/badge/Pytest-7.4%2B-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest"/>
-<img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge" alt="License"/>
-
-<br/><br/>
-
-<h1>🛡️ SafeX AI Knowledge Assistant</h1>
-<h3>Semantic FAQ Chatbot — Week 1 Internship Cohort · SafeX Solutions</h3>
-
-<p>A fully local, privacy-preserving AI chatbot that matches user queries against a verified knowledge base using <strong>TF-IDF vectorization</strong> and <strong>Cosine Similarity</strong> — zero external API calls, zero cost.</p>
-
-</div>
+Welcome to the **SafeX AI & Automation Suite** repository. This platform serves as a unified workspace for SafeX Solutions' business intelligence, client onboarding, and operations automation systems. It integrates diverse modular toolkits, predictive analytics, and automated workflows into a single interface.
 
 ---
 
-## 📖 Project Overview
+## 📖 Platform Overview
 
-The **SafeX AI Knowledge Assistant** eliminates onboarding friction for interns and staff at SafeX Solutions. Users type a question in plain English and instantly receive a verified answer from a curated knowledge base of **95 FAQ entries** covering company services, IT policies, HR procedures, and internship guidelines — all processed **100% on-device**.
+The platform is designed to house multiple modular tools. It facilitates:
+* **Information Assistants:** Locally running knowledge bases and semantic search tools.
+* **Business Automation Modules:** Extensible scripts and interfaces for document extraction, workflows, scheduling, and analytics.
+* **Operations Dashboards:** Visual management systems and team contribution summaries.
 
----
-
-## ✅ Implemented Features
-
-| Feature | Status | Description |
-| :--- | :---: | :--- |
-| JSON Knowledge Base Loader | ✅ | Loads and schema-validates the 95-entry FAQ database |
-| TF-IDF Vector Space Model | ✅ | Transforms the question corpus into term-frequency vectors |
-| Cosine Similarity Engine | ✅ | Finds the best-matching FAQ index for any user query |
-| Threshold Decision Boundary | ✅ | Rejects low-confidence matches; returns a safe fallback |
-| Chatbot Orchestrator | ✅ | Coordinates loading → indexing → matching → routing |
-| Streamlit Chat UI | ✅ | Premium dark-themed chat interface with sidebar & animations |
-| Pytest Test Suite | ✅ | 3 suites validating loader, similarity, and fallback logic |
-| Performance Benchmark | ✅ | Accuracy, latency, and fallback rate evaluation script |
-
----
-
-## 📐 System Architecture
-
-```mermaid
-flowchart TD
-    A([👤 User Query]) --> B["Streamlit UI\nsrc/app.py"]
-    B --> C["Chatbot Orchestrator\nsrc/chatbot.py"]
-    C --> D["Knowledge Base Loader\nsrc/knowledge_base.py"]
-    D --> E[("data/faq.json\n95 FAQ Entries")]
-    C --> F["TF-IDF Similarity Engine\nsrc/similarity.py"]
-    F --> G{"Score ≥ Threshold?"}
-    G -- Yes --> H["✅ Return Matched Answer"]
-    G -- No  --> I["⚠️ Return Fallback Message"]
-    H --> B
-    I --> B
-```
+The codebase is built on **Python** and served locally through an interactive web-based interface using **Streamlit**.
 
 ---
 
 ## 📁 Repository Structure
 
+The project uses a modular folder structure to ensure code segregation, allowing multiple developers to work independently without overlapping changes:
+
 ```text
-safex-ai-faq-chatbot/
-├── .env.example                    # Environment variable template
-├── .gitignore
-├── README.md
-├── requirements.txt
+safex-platform/
+├── requirements.txt            # System dependencies
+├── README.md                   # Platform documentation
+├── AGENTS.md                   # Instructions and rules for AI coding assistants
 │
-├── assets/
-│   └── chatbot_demo.png            # UI screenshot
+├── data/                       # Shared datasets, logs, and files
+│   └── faq.json                # Verified information database
 │
-├── data/
-│   └── faq.json                    # 95-entry verified FAQ knowledge base
+├── docs/                       # Written reports, summaries, and guides
+│   └── Meeting_Notes.md        # Templates for alignments
 │
-├── docs/
-│   ├── Case_Study.md               # Portfolio case study with benchmark results
-│   ├── Evaluation.md               # Benchmark guidelines
-│   └── Weekly/
-│       └── weekly_summary_template.md
+├── src/                        # Platform source code
+│   ├── app.py                  # Main dashboard dashboard, styling, and navigation
+│   ├── config.py               # Shared constants and settings
+│   │
+│   ├── core/                   # Shared backend algorithms, search, and loading scripts
+│   │   ├── chatbot.py          
+│   │   ├── similarity.py       
+│   │   └── knowledge_base.py   
+│   │
+│   └── modules/                # Workspace extension modules organized by category
+│       ├── registry.py         # Metadata directory mapping files to features
+│       ├── week1/              # Week 1 project extensions
+│       └── week2/              # Week 2 project extensions
 │
-├── evaluation/
-│   ├── benchmark.py                # End-to-end performance evaluation script
-│   └── test_questions.json         # 185 positive/negative evaluation test cases
-│
-├── src/
-│   ├── app.py                      # Streamlit premium chat UI
-│   ├── chatbot.py                  # Chatbot orchestrator
-│   ├── config.py                   # System paths, thresholds, constants
-│   ├── knowledge_base.py           # JSON data loader with validation
-│   └── similarity.py               # TF-IDF vectorizer + Cosine Similarity
-│
-└── tests/
-    └── test_chatbot.py             # Pytest unit test suites
+└── tests/                      # Pytest unit testing suite
 ```
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### Prerequisites
-- Python 3.9+
-- pip
-- Git
+Follow these steps to run the platform locally:
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/arsalanqasim/safex-ai-faq-chatbot.git
-cd safex-ai-faq-chatbot
-```
+### 1. Prerequisites
+* Python 3.9 or higher installed.
+* Git installed.
 
-### 2. Create & Activate Virtual Environment
+### 2. Set Up Virtual Environment
+Initialize and activate a virtual environment to manage dependencies cleanly:
+
 ```bash
+# Initialize venv
 python -m venv venv
 
-# Windows
+# Activate on Windows
 venv\Scripts\activate
 
-# macOS / Linux
+# Activate on macOS / Linux
 source venv/bin/activate
 ```
 
 ### 3. Install Dependencies
+Install all required platform libraries:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure Environment Variables
+### 4. Configure Environment
+Set up your local configuration settings:
 ```bash
+# Copy template env
 cp .env.example .env
 ```
 
-| Variable | Default | Description |
-| :--- | :--- | :--- |
-| `SIMILARITY_THRESHOLD` | `0.35` | Minimum score to return a confident answer |
-| `FALLBACK_MESSAGE` | `"I couldn't find..."` | Response when no match is found |
-
-### 5. Run the Application
+### 5. Run the Platform
+Start the local Streamlit development server:
 ```bash
 streamlit run src/app.py
 ```
 Open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ### 6. Run Unit Tests
+To execute automated tests validating core utilities:
 ```bash
 python -m pytest
 ```
 
-### 7. Run Performance Benchmark
-```bash
-python evaluation/benchmark.py
-```
-
 ---
 
-## 📊 Benchmark Results
+## 🤝 Contribution Guidelines
 
-Evaluated on **185 test cases** (`evaluation/test_questions.json`) at threshold `0.35`:
+To maintain code quality and prevent version control conflicts, all contributors must follow these rules:
 
-| Metric | Target | Achieved | Met? |
-| :--- | :---: | :---: | :---: |
-| Retrieval Accuracy (positive cases) | ≥ 90% | 61.29% | ❌ |
-| Fallback Success Rate (negative cases) | ≥ 95% | 86.67% | ❌ |
-| Average Response Latency | < 50 ms | **0.90 ms** | ✅ |
-
-> **Note:** The accuracy gap is a data-labelling issue, not a model failure. The similarity engine often retrieves an alternate FAQ with near-identical meaning. Full analysis in [`docs/Case_Study.md`](docs/Case_Study.md).
-
----
-
-## 🔬 Tech Stack
-
-| Layer | Technology | Purpose |
-| :--- | :--- | :--- |
-| Language | Python 3.9+ | Core implementation |
-| UI Framework | Streamlit ≥ 1.35 | Chat interface and dashboard |
-| ML Engine | scikit-learn ≥ 1.3 | TF-IDF vectorization + Cosine Similarity |
-| Numerics | NumPy ≥ 1.24 | Matrix operations |
-| Config | python-dotenv ≥ 1.0 | Environment variable management |
-| Testing | pytest ≥ 7.4 | Unit tests and assertions |
-| Version Control | Git + GitHub | Branching, PRs, code review |
-
----
-
-## 👥 Team & Task Distribution
-
-| Team Member | Role | Owned Files |
-| :--- | :--- | :--- |
-| **Arsalan Qasim** 🏆 | Leader · Backend & QA Engineer | `src/chatbot.py`, `tests/test_chatbot.py`, `evaluation/benchmark.py`, integration |
-| **Muhammad Wasim** | Data Loader Developer | `src/knowledge_base.py` |
-| **Muhammad Faozan Mujtaba** | Algorithm Developer | `src/similarity.py` |
-| **Shahidullah** | Frontend Developer | `src/app.py` |
-| **Ali Ammar Haider** | Data Architect | `data/faq.json`, `evaluation/test_questions.json` |
-| **Ali Zaib** | Technical Writer | `docs/Case_Study.md`, assets |
-
----
-
-## 🤝 Collaborative Git Workflow
-
-1. **Sync Main:** `git checkout main` → `git pull origin main`
-2. **Create Branch:** `git checkout -b feature/your-feature-name`
-3. **Commit:** `git commit -m "feat(module): description"`
-4. **Push:** `git push origin feature/your-feature-name`
-5. **Open PR:** Request review from **Arsalan Qasim** on GitHub.
-
----
-
-## 🔮 Future Improvements
-
-| Improvement | Benefit |
-| :--- | :--- |
-| **TF-IDF N-grams** | Better matching on multi-word phrases and partial typos |
-| **Synonym Preprocessing** | Resolves vocabulary mismatches (e.g. "students" → "interns") |
-| **Sentence Transformers** | True semantic similarity using BERT/MiniLM embeddings |
-| **Automated Logging** | Persist query logs and match scores for analytics |
-
----
-
-<div align="center">
-  <sub>Built with ❤️ by <strong>SafeX Solutions Internship Cohort · Group 54</strong></sub><br/>
-  <sub>🛡️ SafeX Solutions · <em>Creating the Future, Not Just Predicting It</em></sub>
-</div>
+1. **Keep Code Modulated:** Avoid writing code in shared files like `src/app.py` or `src/config.py` unless coordinating layout changes.
+2. **Develop in Modules:** Place all code, assets, and tests inside your assigned subdirectory under `src/modules/`.
+3. **Use Namespace Imports:** Ensure all local imports are referenced from the project root directory (e.g. `from src.core.chatbot import ...`).
+4. **Git Branching Policy:**
+   * Never push changes directly to the `main` branch.
+   * Create a feature branch for your work: `feature/<module_name>-<developer_name>` (e.g., `feature/ocr-hammad`).
+   * Once code is tested locally, open a Pull Request (PR) to `main` and request a review from the Group Leader.
+5. **No Placeholders in Production:** Do not push non-functional placeholders or stubs once your feature is complete. Fully document your classes and functions.
