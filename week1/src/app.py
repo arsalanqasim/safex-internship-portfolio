@@ -42,7 +42,7 @@ def inject_css() -> None:
         .stApp, [data-testid="stAppViewContainer"] { background: var(--soft); color: var(--ink); }
         section[data-testid="stSidebar"] { background: #ffffff; border-right: 1px solid var(--line); }
         section[data-testid="stSidebar"] > div { padding-top: 1.25rem; }
-        .block-container { max-width: 1020px; padding-top: 2.1rem; padding-bottom: 5.5rem; }
+        .block-container { max-width: 1020px; padding-top: 4.5rem; padding-bottom: 5.5rem; }
         html, body, [class*="css"] { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
         h1, h2, h3, p { color: var(--ink); }
         .app-mark { display: flex; gap: 10px; align-items: center; margin-bottom: 1.75rem; }

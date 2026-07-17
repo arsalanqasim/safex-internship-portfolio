@@ -27,7 +27,7 @@ def inject_css() -> None:
         .stApp, [data-testid="stAppViewContainer"] { background: var(--soft); color: var(--ink); }
         section[data-testid="stSidebar"] { background: #ffffff; border-right: 1px solid var(--line); }
         section[data-testid="stSidebar"] > div { padding-top: 1.25rem; }
-        .block-container { max-width: 1180px; padding-top: 2rem; padding-bottom: 4rem; }
+        .block-container { max-width: 1180px; padding-top: 4.5rem; padding-bottom: 4rem; }
         html, body, [class*="css"] { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
         h1, h2, h3, p { color: var(--ink); }
         .app-mark { display: flex; gap: 10px; align-items: center; margin-bottom: 1.6rem; }
@@ -68,7 +68,7 @@ def render_sidebar() -> str:
             unsafe_allow_html=True,
         )
         for key, module in modules.items():
-            label = ("Current: " if key == active_key else "") + module["title"]
+            label = module["title"]
             if st.button(label, key=f"module_{key}", use_container_width=True):
                 active_key = key
                 st.session_state.active_module_key = key
@@ -79,8 +79,28 @@ def render_sidebar() -> str:
     return active_key
 
 
+def apply_active_module_style(active_key: str) -> None:
+    """Highlight the module currently displayed in the workspace."""
+    st.markdown(
+        f"""
+        <style>
+        div.st-key-module_{active_key} button {{
+            background: #e6f5f2;
+            border-color: var(--accent);
+            color: var(--accent-dark);
+            box-shadow: inset 3px 0 0 var(--accent);
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 def render_module(active_key: str) -> None:
     metadata = MODULE_REGISTRY["week2"][active_key]
+    if metadata["status"] not in {"Completed", "Submission Ready"}:
+        render_pending_module(metadata)
+        return
     try:
         importlib.import_module(metadata["import_path"]).render_ui()
     except Exception as exc:
@@ -88,9 +108,39 @@ def render_module(active_key: str) -> None:
         st.exception(exc)
 
 
+def render_pending_module(metadata: dict[str, object]) -> None:
+    """Show a clear review screen for a member assignment that is not yet complete."""
+    st.markdown('<div class="eyebrow">Week 2 · Assigned module</div>', unsafe_allow_html=True)
+    st.title(str(metadata["title"]))
+    st.caption("This assignment is awaiting a completed module submission.")
+
+    member, status = st.columns(2)
+    with member:
+        st.markdown("**Assigned member**")
+        st.write(str(metadata["developer"]))
+    with status:
+        st.markdown("**Current status**")
+        st.write("Not submitted")
+
+    st.subheader("Assignment details")
+    st.write(str(metadata["description"]))
+
+    detail_left, detail_right = st.columns(2)
+    with detail_left:
+        st.markdown("**Member contact**")
+        st.write(str(metadata["email"]))
+    with detail_right:
+        st.markdown("**Expected stack**")
+        st.write(" · ".join(str(item) for item in metadata["tech"]))
+
+    st.info("The shared application shell is ready. This screen will be replaced automatically when the member module is marked complete and integrated.")
+
+
 def main() -> None:
     inject_css()
-    render_module(render_sidebar())
+    active_key = render_sidebar()
+    apply_active_module_style(active_key)
+    render_module(active_key)
 
 
 if __name__ == "__main__":

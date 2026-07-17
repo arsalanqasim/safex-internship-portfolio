@@ -19,7 +19,6 @@ def render_ui():
     # Info Details Box
     st.info(
         f"**Developer E-mail:** {metadata['email']}  \n"
-        f"**Difficulty Level:** {metadata['difficulty']}  \n"
         f"**Required Stack:** {', '.join(metadata['tech'])}"
     )
     

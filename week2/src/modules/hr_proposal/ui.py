@@ -251,7 +251,6 @@ def render_ui():
         with st.expander("Module details"):
             st.markdown(
                 f"**Developer:** {metadata['email']}  \n"
-                f"**Difficulty:** {metadata['difficulty']}  \n"
                 f"**Stack:** {', '.join(metadata['tech'])}  \n\n"
                 f"{metadata['description']}"
             )
