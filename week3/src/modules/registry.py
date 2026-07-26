@@ -52,7 +52,7 @@ MODULE_REGISTRY = {
             "developer": "Ali Ammar Haider",
             "role": "Group Member",
             "email": "ahwheh688@gmail.com",
-            "status": "Placeholder (Scaffolding Ready)",
+            "status": "Submission Ready",
             "tech": ["Python", "LLM API", "Pandas", "API Integration Proposal", "Streamlit"],
             "description": "Content planning agent generating 7-day social media posts, captions, and hashtags with API connection proposals.",
             "import_path": "src.modules.social_media_scheduler.ui",

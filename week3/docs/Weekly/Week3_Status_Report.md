@@ -15,7 +15,7 @@
 | MUHAMMAD WASIM | Member | AI Email Auto-Reply | `email_auto_reply` | Scaffolding Ready | Scaffolding stub & assigned UI |
 | Muhammad Faozan Mujtaba | Member | AI Meeting Summarizer | `meeting_summarizer` | Scaffolding Ready | Scaffolding stub & assigned UI |
 | Shahidullah | Member | Automatic Report Generator Agent | `report_generation_agent` | Scaffolding Ready | Scaffolding stub & assigned UI |
-| Ali Ammar Haider | Member | AI Social Media Scheduler | `social_media_scheduler` | Scaffolding Ready | Scaffolding stub & assigned UI |
+| Ali Ammar Haider | Member | AI Social Media Scheduler | `social_media_scheduler` | Submission Ready | Code, UI, API Proposal, Case Study |
 | Abdul Haseeb | Member | AI Lead Qualification | `lead_qualification` | Scaffolding Ready | Scaffolding stub & assigned UI |
 | Hammad Abbas | Member | Resume & Interview Assistant | `resume_interview_assistant` | Scaffolding Ready | Scaffolding stub & assigned UI |
 | Ali Zaib | Member | Document Knowledge Assistant (RAG) | `doc_knowledge_assistant` | Scaffolding Ready | Scaffolding stub & assigned UI |
