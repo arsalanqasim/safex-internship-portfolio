@@ -98,7 +98,7 @@ MODULE_REGISTRY = {
             "developer": "Ali Zaib",
             "role": "Group Member",
             "email": "aliofficialzaib@gmail.com",
-            "status": "Placeholder (Scaffolding Ready)",
+            "status": "Completed",
             "tech": ["Python", "Pandas / NumPy", "scikit-learn (Regression/Classification)"],
             "description": "Forecasting module using historical sample/public datasets to predict key business KPIs like churn rates or demand trends.",
             "import_path": "src.modules.predictive_analytics.ui",
