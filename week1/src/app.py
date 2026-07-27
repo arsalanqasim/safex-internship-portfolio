@@ -9,7 +9,16 @@ from datetime import datetime
 
 import streamlit as st
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# Clean up sys.modules and sys.path to prevent cross-talk/collisions between weeks
+for key in list(sys.modules.keys()):
+    if key.startswith("src.") and key != __name__:
+        del sys.modules[key]
+
+current_week_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path = [p for p in sys.path if not any(w in p for w in ["week1", "week2", "week3"]) or p == current_week_dir]
+
+if current_week_dir not in sys.path:
+    sys.path.insert(0, current_week_dir)
 
 from src.chatbot import FAQChatbot
 from src.config import FAQ_PATH
