@@ -51,6 +51,10 @@ def inject_css() -> None:
         .sidebar-note { color: var(--muted); font-size: 0.8rem; line-height: 1.45; margin-top: 1rem; }
         .dashboard-link { display: block; padding: 0.7rem 0.85rem; margin-bottom: 1.25rem; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink) !important; font-weight: 650; text-align: center; text-decoration: none !important; }
         .dashboard-link:hover { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-dark) !important; }
+        [data-testid="stPageLink"] a { display: flex; justify-content: center; width: 100%; box-sizing: border-box; padding: 0.7rem 0.85rem; margin-bottom: 1.25rem; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink) !important; font-weight: 650; text-decoration: none !important; }
+        [data-testid="stPageLink"] a:hover { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-dark) !important; }
+        [data-testid="stRadio"] label, [data-testid="stRadio"] label p, [data-testid="stRadio"] [data-testid="stMarkdownContainer"] p { color: var(--ink) !important; }
+        [data-testid="stRadio"] input { accent-color: var(--accent); }
         .stButton > button { border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-weight: 650; min-height: 2.6rem; box-shadow: none; }
         .stButton > button p { color: inherit !important; }
         .stButton > button:hover { border-color: var(--accent); color: var(--accent-dark); background: var(--accent-soft); }
@@ -83,7 +87,11 @@ def inject_css() -> None:
 def render_sidebar() -> str:
     """Render the sidebar and return the selected module key."""
     with st.sidebar:
-        st.markdown('<a class="dashboard-link" href="/home">← Back to Dashboard</a>', unsafe_allow_html=True)
+        dashboard_page = st.session_state.get("_safex_home_page")
+        if dashboard_page is not None:
+            st.page_link(dashboard_page, label="← Back to Dashboard", icon=":material/home:", width="stretch")
+        else:
+            st.markdown('<a class="dashboard-link" href="/">← Back to Dashboard</a>', unsafe_allow_html=True)
     modules = MODULE_REGISTRY["week2"]
     active_key = st.session_state.get("active_module_key", "invoice_automation")
     if active_key not in modules:

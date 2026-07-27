@@ -166,6 +166,12 @@ def inject_global_styles() -> None:
             border-color: var(--accent-dark);
             color: #062e2b;
         }
+        [data-testid="stRadio"] label,
+        [data-testid="stRadio"] label p,
+        [data-testid="stRadio"] [data-testid="stMarkdownContainer"] p {
+            color: var(--ink) !important;
+        }
+        [data-testid="stRadio"] input { accent-color: var(--accent); }
         
         /* Hero Section */
         .hero-banner {
@@ -602,6 +608,18 @@ def render_sidebar_branding() -> None:
     )
 
 
+def render_dashboard_link() -> None:
+    """Render an in-app link back to the registered dashboard page."""
+    dashboard_page = st.session_state.get("_safex_home_page")
+    if dashboard_page is not None:
+        st.page_link(
+            dashboard_page,
+            label="← Back to Dashboard",
+            icon=":material/home:",
+            width="stretch",
+        )
+
+
 # Define global pages so they can be referenced inside show_dashboard
 home_page = st.Page(show_dashboard, title="Home Dashboard", icon="🏠", default=True, url_path="home")
 week1_page = st.Page("week1/src/app.py", title="Week 1: FAQ Chatbot", icon="💬", url_path="week1")
@@ -611,6 +629,7 @@ week3_page = st.Page("week3/src/app.py", title="Week 3: AI Agent Proposals", ico
 def main() -> None:
     # Set an environment variable so the child apps know they are running under the root dashboard
     os.environ["SAFEX_ROOT_DASHBOARD"] = "1"
+    st.session_state["_safex_home_page"] = home_page
 
     # Group pages logically and hide the default navigation menu
     pg = st.navigation(
