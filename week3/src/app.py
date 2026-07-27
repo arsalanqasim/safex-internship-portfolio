@@ -10,7 +10,7 @@ import streamlit as st
 
 # Clean up sys.modules and sys.path to prevent cross-talk/collisions between weeks
 for key in list(sys.modules.keys()):
-    if key.startswith("src.") and key != __name__:
+    if (key == "src" or key.startswith("src.")) and key != __name__:
         del sys.modules[key]
 
 current_week_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -32,6 +32,7 @@ def inject_css() -> None:
         <style>
         :root { --ink: #172033; --muted: #64748b; --line: #dce3ec; --soft: #f6f8fb; --accent: #0f766e; --accent-dark: #0b5e58; }
         #MainMenu, footer, [data-testid="stToolbar"] { visibility: hidden; }
+        [data-testid="stSidebarNav"] { display: none !important; }
         header[data-testid="stHeader"] { background: var(--soft); }
         .stApp, [data-testid="stAppViewContainer"] { background: var(--soft); color: var(--ink); }
         section[data-testid="stSidebar"] { background: #ffffff; border-right: 1px solid var(--line); }
@@ -65,6 +66,11 @@ def inject_css() -> None:
 
 def render_sidebar() -> str:
     """Render shared module navigation and return the selected module key."""
+    with st.sidebar:
+        if os.environ.get("SAFEX_ROOT_DASHBOARD") == "1":
+            if st.button("← Back to Dashboard", use_container_width=True):
+                st.switch_page("app.py")
+            st.markdown("<br>", unsafe_allow_html=True)
     modules = MODULE_REGISTRY["week3"]
     active_key = st.session_state.get("active_module_key", "customer_support_chatbot")
     if active_key not in modules:

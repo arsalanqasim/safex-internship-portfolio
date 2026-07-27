@@ -80,6 +80,10 @@ def inject_global_styles() -> None:
             border-right: 1px solid var(--line);
         }
         
+        [data-testid="stSidebarNav"] {
+            display: none !important;
+        }
+        
         section[data-testid="stSidebar"] > div {
             padding-top: 1.5rem;
         }
@@ -380,6 +384,8 @@ def show_dashboard() -> None:
             """,
             unsafe_allow_html=True
         )
+        if st.button("Launch Week 1", key="btn_w1", use_container_width=True):
+            st.switch_page(week1_page)
 
     with col_w2:
         st.markdown(
@@ -402,6 +408,8 @@ def show_dashboard() -> None:
             """,
             unsafe_allow_html=True
         )
+        if st.button("Launch Week 2", key="btn_w2", use_container_width=True):
+            st.switch_page(week2_page)
 
     with col_w3:
         st.markdown(
@@ -424,8 +432,8 @@ def show_dashboard() -> None:
             """,
             unsafe_allow_html=True
         )
-
-    st.info("💡 **Navigation Tip:** Use the sidebar menu on the left to launch any of the weekly applications directly.")
+        if st.button("Launch Week 3", key="btn_w3", use_container_width=True):
+            st.switch_page(week3_page)
 
     st.markdown("---")
 
@@ -467,37 +475,41 @@ def show_dashboard() -> None:
         w2_reg = load_weekly_registry("week2", "week2") or {}
         w3_reg = load_weekly_registry("week3", "week3") or {}
         
-        tab_w3, tab_w2 = st.tabs(["Week 3 Assignments", "Week 2 Assignments"])
-        
-        with tab_w3:
-            if w3_reg:
-                w3_table_data = []
-                for key, mod in w3_reg.items():
-                    w3_table_data.append({
-                        "Member": mod.get("developer", ""),
-                        "Role": mod.get("role", "Member"),
-                        "AI Agent Assignment": mod.get("title", ""),
-                        "Status": mod.get("status", ""),
-                        "Tech Stack": ", ".join(mod.get("tech", []))
-                    })
-                st.dataframe(w3_table_data, use_container_width=True)
-            else:
-                st.warning("Week 3 Registry file not found or could not be parsed.")
-                
-        with tab_w2:
-            if w2_reg:
-                w2_table_data = []
-                for key, mod in w2_reg.items():
-                    w2_table_data.append({
-                        "Member": mod.get("developer", ""),
-                        "Role": mod.get("role", "Member"),
-                        "Automation Prototype": mod.get("title", ""),
-                        "Status": mod.get("status", ""),
-                        "Tech Stack": ", ".join(mod.get("tech", []))
-                    })
-                st.dataframe(w2_table_data, use_container_width=True)
-            else:
-                st.warning("Week 2 Registry file not found or could not be parsed.")
+        team_members = [
+            ("Arsalan Qasim", "Group Leader"),
+            ("MUHAMMAD WASIM", "Member"),
+            ("Muhammad Faozan Mujtaba", "Member"),
+            ("Shahidullah", "Member"),
+            ("Ali Ammar Haider", "Member"),
+            ("Abdul Haseeb", "Member"),
+            ("Hammad Abbas", "Member"),
+            ("Ali Zaib", "Member"),
+            ("Malik Sudais", "Member"),
+        ]
+
+        def get_status(registry, member_name):
+            if not registry:
+                return "⏳ Pending"
+            for mod in registry.values():
+                if mod.get("developer", "").strip() == member_name:
+                    status = mod.get("status", "").lower()
+                    if status in ["submitted", "submission ready", "completed"]:
+                        return "✅ Completed"
+                    elif status in ["in progress", "draft", "active"]:
+                        return "🔄 In Progress"
+            return "⏳ Pending"
+
+        table_data = []
+        for name, role in team_members:
+            table_data.append({
+                "Member": name,
+                "Role": role,
+                "Week 1": "✅ Completed",
+                "Week 2": get_status(w2_reg, name),
+                "Week 3": get_status(w3_reg, name)
+            })
+            
+        st.dataframe(table_data, use_container_width=True, hide_index=True)
 
 
 # ==============================================================================
@@ -519,17 +531,20 @@ def render_sidebar_branding() -> None:
     )
 
 
+# Define global pages so they can be referenced inside show_dashboard
+home_page = st.Page(show_dashboard, title="Home Dashboard", icon="🏠", default=True, url_path="home")
+week1_page = st.Page("week1/src/app.py", title="Week 1: FAQ Chatbot", icon="💬", url_path="week1")
+week2_page = st.Page("week2/src/app.py", title="Week 2: Automation Suite", icon="⚙️", url_path="week2")
+week3_page = st.Page("week3/src/app.py", title="Week 3: AI Agent Proposals", icon="🤖", url_path="week3")
+
 def main() -> None:
     # Sidebar branding header
     render_sidebar_branding()
 
-    # Define Navigation structure using st.Page
-    home_page = st.Page(show_dashboard, title="Home Dashboard", icon="🏠", default=True)
-    week1_page = st.Page("week1/src/app.py", title="Week 1: FAQ Chatbot", icon="💬")
-    week2_page = st.Page("week2/src/app.py", title="Week 2: Automation Suite", icon="⚙️")
-    week3_page = st.Page("week3/src/app.py", title="Week 3: AI Agent Proposals", icon="🤖")
+    # Set an environment variable so the child apps know they are running under the root dashboard
+    os.environ["SAFEX_ROOT_DASHBOARD"] = "1"
 
-    # Group pages logically
+    # Group pages logically and hide the default navigation menu
     pg = st.navigation(
         {
             "Workspace": [home_page],
@@ -539,7 +554,6 @@ def main() -> None:
     
     # Run the navigation routing loop
     pg.run()
-
 
 if __name__ == "__main__":
     main()
