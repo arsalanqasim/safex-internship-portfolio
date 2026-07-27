@@ -85,7 +85,7 @@ MODULE_REGISTRY = {
             "developer": "Ali Zaib",
             "role": "Group Member",
             "email": "aliofficialzaib@gmail.com",
-            "status": "Placeholder (Scaffolding Ready)",
+            "status": "Completed",
             "tech": ["Python", "RAG Pipeline", "Vector Similarity", "LLM API", "Streamlit"],
             "description": "Retrieval-Augmented Generation (RAG) assistant answering queries over official policy documents and standard operating procedures.",
             "import_path": "src.modules.doc_knowledge_assistant.ui",

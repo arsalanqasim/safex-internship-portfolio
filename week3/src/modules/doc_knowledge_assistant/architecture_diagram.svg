@@ -1,0 +1,75 @@
+<svg width="680" height="800" viewBox="0 0 680 800" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>RAG pipeline architecture</title>
+<desc>Five QuickBite policy documents are chunked by section, embedded with heading-boosted TF-IDF vectors, and stored in an in-memory vector index. A user query is matched via top-3 cosine similarity retrieval. If the best similarity score is below a threshold, the assistant abstains with an "I don't know" response; otherwise it synthesizes an answer (extractive by default, or an optional LLM call) and returns it to the user with a cited source.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#5f5e5a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+<rect width="680" height="800" fill="#ffffff"/>
+
+<g>
+<rect x="210" y="40" width="260" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="340" y="58" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="600" fill="#2C2C2A">5 policy documents</text>
+<text x="340" y="76" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#5F5E5A">QuickBite knowledge base</text>
+</g>
+<line x1="340" y1="96" x2="340" y2="136" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="210" y="136" width="260" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="340" y="154" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="600" fill="#26215C">Chunking</text>
+<text x="340" y="172" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#3C3489">split by section heading</text>
+</g>
+<line x1="340" y1="192" x2="340" y2="232" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="210" y="232" width="260" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="340" y="250" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="600" fill="#26215C">TF-IDF embedding</text>
+<text x="340" y="268" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#3C3489">heading-boosted vectors</text>
+</g>
+<line x1="340" y1="288" x2="340" y2="328" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="210" y="328" width="260" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="340" y="346" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="600" fill="#26215C">Vector store</text>
+<text x="340" y="364" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#3C3489">in-memory chunk index</text>
+</g>
+<line x1="340" y1="384" x2="340" y2="424" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="210" y="424" width="260" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="340" y="442" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="600" fill="#04342C">Retrieval</text>
+<text x="340" y="460" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#085041">top-3 cosine similarity</text>
+</g>
+<line x1="340" y1="480" x2="340" y2="520" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="210" y="520" width="260" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="340" y="538" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="600" fill="#412402">Similarity check</text>
+<text x="340" y="556" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#633806">score below threshold?</text>
+</g>
+
+<path d="M340 576 L340 600 L205 600 L205 620" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M340 576 L340 600 L475 600 L475 620" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="110" y="620" width="190" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="205" y="638" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="600" fill="#4A1B0C">Abstain</text>
+<text x="205" y="656" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#712B13">"I don't know" response</text>
+</g>
+
+<g>
+<rect x="380" y="620" width="190" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="475" y="638" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="600" fill="#04342C">Answer synthesis</text>
+<text x="475" y="656" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#085041">extractive or LLM</text>
+</g>
+
+<path d="M205 676 L205 706 L340 706" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M475 676 L475 706 L340 706" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="210" y="706" width="260" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="340" y="724" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="14" font-weight="600" fill="#2C2C2A">Response to user</text>
+<text x="340" y="742" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="12" fill="#444441">answer + cited source</text>
+</g>
+</svg>
