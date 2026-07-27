@@ -40,12 +40,12 @@ To ensure code hygiene, avoid merge conflicts, and keep submissions clean, the r
 * **Deliverable Status:** Completed for active members (5 out of 8 modules fully implemented).
 * **Individual Module Assignments:**
   1. **Arsalan Qasim:** *Invoice Automation Prototype* (Submitted)
-  2. **MUHAMMAD WASIM:** *Attendance Automation Prototype* (Scaffolding ready)
+  2. **MUHAMMAD WASIM:** *Attendance Automation Prototype* (In progress)
   3. **Muhammad Faozan Mujtaba:** *HR Automation Proposal* (Submitted)
   4. **Shahidullah:** *AI Email Assistant Prototype* (Submitted)
   5. **Ali Ammar Haider:** *AI Report Generator Prototype* (Submitted)
-  6. **Abdul Haseeb:** *Resume Screening Prototype* (Scaffolding ready)
-  7. **Hammad Abbas:** *OCR / Document Processing Prototype* (Scaffolding ready)
+  6. **Abdul Haseeb:** *Resume Screening Prototype* (In progress)
+  7. **Hammad Abbas:** *OCR / Document Processing Prototype* (In progress)
   8. **Ali Zaib:** *Predictive Analytics Mini-Study* (Submitted)
 
 ### 🤖 [week3/](file:///c:/Users/arsal/Desktop/safex/week3/) — AI Agent Automation Proposal Suite
