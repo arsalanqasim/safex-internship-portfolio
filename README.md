@@ -7,7 +7,7 @@ This repository serves as the official collaborative workspace and portfolio for
 ## 🏆 Leadership & Group Roster
 
 * **Group Leader:** **Arsalan Qasim** (AI/ML Intern, COMSATS University Islamabad)
-* **Team size:** 8 Members
+* **Team size:** 9 Members
 
 Below is the complete registry of Group 54 contributors and their universities:
 
@@ -21,6 +21,7 @@ Below is the complete registry of Group 54 contributors and their universities:
 | 6 | **Abdul Haseeb** | Team Member | COMSATS University Islamabad | AI/ML, Computer Science | abdlhaseeb17@gmail.com |
 | 7 | **Hammad Abbas** | Team Member | Agriculture University of Peshawar | Data Analyst & Data Science | hammadhadid723@gmail.com |
 | 8 | **Ali Zaib** | Team Member | COMSATS University Islamabad | AI/ML, Computer Science | aliofficialzaib@gmail.com |
+| 9 | **Malik Sudais** | Team Member | Sarhad University of Science and Information Technology | Software Engineering | maliksudais30@gmail.com |
 
 ---
 
@@ -47,6 +48,21 @@ To ensure code hygiene, avoid merge conflicts, and keep submissions clean, the r
   7. **Hammad Abbas:** *OCR / Document Processing Prototype* (Scaffolding ready)
   8. **Ali Zaib:** *Predictive Analytics Mini-Study* (Scaffolding ready)
 
+### 🤖 [week3/](file:///c:/Users/arsal/Desktop/safex/week3/) — AI Agent Automation Proposal Suite
+* **Purpose:** Modular prototyping and proposal hub for AI agents across various domains.
+* **Core Technology:** Python, Streamlit, LLM APIs.
+* **Deliverable Status:** Active Development. Each member module includes stubs and initial logic for their specific agent domain.
+* **Individual Module Assignments:**
+  1. **Arsalan Qasim:** *AI Customer Support Chatbot* (Submitted)
+  2. **MUHAMMAD WASIM:** *AI Email Automation & Auto-Reply* (In progress)
+  3. **Muhammad Faozan Mujtaba:** *AI Meeting Summarizer & Action-Item Extractor* (In progress)
+  4. **Shahidullah:** *Automatic Report Generation Agent* (In progress)
+  5. **Ali Ammar Haider:** *AI Social Media Scheduler & Caption Generator* (In progress)
+  6. **Abdul Haseeb:** *AI Lead Qualification & Sales Assistant* (In progress)
+  7. **Hammad Abbas:** *Resume Screening & Interview Assistant* (In progress)
+  8. **Ali Zaib:** *Document Analysis & Knowledge Assistant (RAG)* (In progress)
+  9. **Malik Sudais:** *Invoice / Proposal Generator Agent* (In progress)
+
 ---
 
 ## ⚙️ How to Navigate and Execute
@@ -69,6 +85,18 @@ streamlit run src/app.py
 ```bash
 # Navigate to Week 2 workspace
 cd week2
+
+# Install requirements
+pip install -r requirements.txt
+
+# Run automation hub routing app
+streamlit run src/app.py
+```
+
+### Running Week 3 AI Agent Automation Proposal Suite
+```bash
+# Navigate to Week 3 workspace
+cd week3
 
 # Install requirements
 pip install -r requirements.txt
