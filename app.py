@@ -47,36 +47,39 @@ def inject_global_styles() -> None:
     st.markdown(
         """
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        
         :root {
             --ink: #172033;
             --muted: #64748b;
             --line: #dce3ec;
             --soft: #f6f8fb;
+            --surface: #ffffff;
+            --surface-raised: #ffffff;
             --accent: #0f766e;
             --accent-dark: #0b5e58;
-            --accent-light: #e6f5f2;
+            --accent-soft: #e6f5f2;
+            --hero-badge-text: #d1fae5;
+            --success-bg: #ecfdf5;
+            --success-text: #065f46;
             --warning-bg: #fffbeb;
             --warning-text: #b45309;
         }
-        
+
         /* Global typography & layout */
-        html, body, [class*="css"] {
-            font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+        html, body, #root, .stApp, [class*="css"] {
+            font-family: Inter, "Segoe UI", ui-sans-serif, system-ui, sans-serif !important;
         }
         
         header[data-testid="stHeader"] {
-            background: var(--soft);
+            background: transparent;
         }
         
-        .stApp, [data-testid="stAppViewContainer"] {
-            background: var(--soft);
+        html, body, .stApp, [data-testid="stAppViewContainer"] {
+            background: var(--soft) !important;
             color: var(--ink);
         }
         
         section[data-testid="stSidebar"] {
-            background: #ffffff;
+            background: var(--surface) !important;
             border-right: 1px solid var(--line);
         }
         
@@ -136,6 +139,33 @@ def inject_global_styles() -> None:
             line-height: 1.5;
             margin: 1rem 0.5rem 0;
         }
+        .stButton > button {
+            min-height: 2.6rem;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--surface);
+            color: var(--ink);
+            font-weight: 650;
+            box-shadow: none;
+            transition: border-color .15s ease, background .15s ease, color .15s ease;
+        }
+        .stButton > button p { color: inherit !important; }
+        .stButton > button:hover {
+            border-color: var(--accent);
+            background: var(--accent-soft);
+            color: var(--accent-dark);
+        }
+        .stButton > button[kind="primary"] {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #062e2b;
+        }
+        .stButton > button[kind="primary"] p { color: inherit !important; }
+        .stButton > button[kind="primary"]:hover {
+            background: var(--accent-dark);
+            border-color: var(--accent-dark);
+            color: #062e2b;
+        }
         
         /* Hero Section */
         .hero-banner {
@@ -165,7 +195,7 @@ def inject_global_styles() -> None:
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            color: var(--accent-light);
+            color: var(--hero-badge-text);
             border: 1px solid rgba(230, 245, 242, 0.3);
             background: rgba(230, 245, 242, 0.1);
             padding: 0.3rem 0.75rem;
@@ -196,11 +226,11 @@ def inject_global_styles() -> None:
             margin-bottom: 2.5rem;
         }
         .portfolio-card {
-            background: #ffffff;
+            background: var(--surface);
             border: 1px solid var(--line);
             border-radius: 12px;
             padding: 1.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             flex-direction: column;
@@ -231,8 +261,8 @@ def inject_global_styles() -> None:
             border-radius: 6px;
         }
         .status-badge--ready {
-            background-color: var(--accent-light);
-            color: var(--accent-dark);
+            background-color: var(--success-bg);
+            color: var(--success-text);
         }
         .status-badge--progress {
             background-color: var(--warning-bg);
@@ -253,7 +283,7 @@ def inject_global_styles() -> None:
         
         /* Interactive Metrics */
         .metric-card {
-            background: #ffffff;
+            background: var(--surface);
             border: 1px solid var(--line);
             border-radius: 10px;
             padding: 1.25rem 1.5rem;
@@ -297,7 +327,7 @@ def inject_global_styles() -> None:
             height: 10px;
             border-radius: 50%;
             background: var(--accent);
-            border: 2px solid #ffffff;
+            border: 2px solid var(--surface);
         }
         .timeline-date {
             font-size: 0.75rem;
@@ -317,10 +347,42 @@ def inject_global_styles() -> None:
             color: var(--muted);
             line-height: 1.45;
         }
+        [data-testid="stDataFrame"], [data-testid="stDataEditor"] {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        [data-testid="stDataFrame"] *, [data-testid="stDataEditor"] * {
+            border-color: var(--line) !important;
+        }
+        hr { border-color: var(--line) !important; }
+        @media (max-width: 900px) {
+            .hero-banner { padding: 2rem 1.5rem; }
+            .hero-title { font-size: 1.8rem; }
+            .card-grid { grid-template-columns: 1fr; }
+        }
         </style>
         """,
         unsafe_allow_html=True
     )
+    theme = st.session_state.get("ui_theme_choice", "Light")
+    if theme == "Dark":
+        tokens = """
+            --ink: #f8fafc; --muted: #a8b3c2; --line: #334155; --soft: #0e1117;
+            --surface: #151b24; --surface-raised: #1e293b; --accent: #2dd4bf;
+            --accent-dark: #5eead4; --accent-soft: #123c3a; --hero-badge-text: #ccfbf1;
+            --success-bg: #123c32; --success-text: #86efac;
+            --warning-bg: #4a3512; --warning-text: #fde68a;
+        """
+    else:
+        tokens = """
+            --ink: #172033; --muted: #64748b; --line: #dce3ec; --soft: #f6f8fb;
+            --surface: #ffffff; --surface-raised: #ffffff; --accent: #0f766e;
+            --accent-dark: #0b5e58; --accent-soft: #e6f5f2; --hero-badge-text: #d1fae5;
+            --success-bg: #ecfdf5; --success-text: #065f46;
+            --warning-bg: #fffbeb; --warning-text: #b45309;
+        """
+    st.markdown(f"<style>:root {{ {tokens} }}</style>", unsafe_allow_html=True)
 
 
 # ==============================================================================
@@ -329,6 +391,7 @@ def inject_global_styles() -> None:
 def show_dashboard() -> None:
     """Render the central Home Dashboard."""
     inject_global_styles()
+    render_sidebar_branding()
 
     # Hero Banner Section
     st.markdown(
@@ -529,6 +592,14 @@ def render_sidebar_branding() -> None:
         """,
         unsafe_allow_html=True
     )
+    st.sidebar.markdown('<div class="side-heading">Appearance</div>', unsafe_allow_html=True)
+    st.sidebar.radio(
+        "Color mode",
+        ["Light", "Dark"],
+        key="ui_theme_choice",
+        horizontal=True,
+        label_visibility="collapsed",
+    )
 
 
 # Define global pages so they can be referenced inside show_dashboard
@@ -538,9 +609,6 @@ week2_page = st.Page("week2/src/app.py", title="Week 2: Automation Suite", icon=
 week3_page = st.Page("week3/src/app.py", title="Week 3: AI Agent Proposals", icon="🤖", url_path="week3")
 
 def main() -> None:
-    # Sidebar branding header
-    render_sidebar_branding()
-
     # Set an environment variable so the child apps know they are running under the root dashboard
     os.environ["SAFEX_ROOT_DASHBOARD"] = "1"
 

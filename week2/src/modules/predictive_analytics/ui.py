@@ -13,10 +13,10 @@ from src.modules.predictive_analytics.engine import (
 
 _CSS = """
 <style>
-.st-key-pa-root [data-testid="stMetric"]{background:var(--card-bg);border:1px solid var(--card-border);
+.st-key-pa-root [data-testid="stMetric"]{background:var(--surface);border:1px solid var(--line);
   border-radius:10px;padding:0.85rem;}
 .st-key-pa-root [data-testid="stTab"] p{font-weight:600;}
-.pa-note{font-size:12.5px;color:var(--text-muted);margin-top:-4px;}
+.pa-note{font-size:12.5px;color:var(--muted);margin-top:-4px;}
 </style>
 """
 

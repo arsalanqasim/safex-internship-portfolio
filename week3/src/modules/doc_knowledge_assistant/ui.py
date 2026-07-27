@@ -12,9 +12,9 @@ from src.modules.doc_knowledge_assistant.test_suite import TEST_SUITE
 
 _CSS = """
 <style>
-.st-key-dka-root [data-testid="stMetric"]{background:var(--card-bg);border:1px solid var(--card-border);
+.st-key-dka-root [data-testid="stMetric"]{background:var(--surface);border:1px solid var(--line);
   border-radius:10px;padding:0.85rem;}
-.dka-source{font-size:12.5px;color:var(--text-muted);}
+.dka-source{font-size:12.5px;color:var(--muted);}
 </style>
 """
 

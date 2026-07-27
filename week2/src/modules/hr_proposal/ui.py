@@ -35,6 +35,21 @@ _I_TICKET = ('<path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 
 # ---------------------------------------------------------------------------
 _CSS = """
 <style>
+.st-key-hrp-root {
+  --card-bg: var(--surface);
+  --card-border: var(--line);
+  --border-soft: var(--line);
+  --border-strong: var(--line);
+  --bg-app-2: var(--soft);
+  --text-primary: var(--ink);
+  --text-secondary: var(--muted);
+  --text-muted: var(--muted);
+  --shadow-card: 0 8px 24px rgba(15,23,42,.08);
+  --accent-hover: var(--accent-dark);
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+}
 @keyframes hrp-in{from{opacity:0;transform:translateY(7px);}to{opacity:1;transform:none;}}
 @keyframes hrp-grow{from{transform:scaleX(0);}to{transform:scaleX(1);}}
 

@@ -3,48 +3,23 @@ import os
 from .engine import generate_report
 
 def render_ui():
-    # Injected Premium Custom CSS for "Wow Factor" (Dark Modern Theme)
+    # Keep the module aligned with the shared SafeX shell and its light/dark tokens.
     st.markdown("""
     <style>
-        .stApp {
-            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
-            color: #f8fafc;
-        }
-        /* Style Metric Cards */
         div[data-testid="stMetric"] {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--surface);
+            border: 1px solid var(--line);
             border-radius: 12px;
             padding: 15px 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(15,23,42,.06);
         }
         div[data-testid="stMetric"]:hover {
             transform: translateY(-3px);
-            border-color: #6366f1;
-            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.25);
+            border-color: var(--accent);
         }
-        /* Buttons styling */
-        .stButton>button {
-            background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
-            color: white !important;
-            border: none !important;
-            border-radius: 8px !important;
-            font-weight: 600 !important;
-            padding: 10px 20px !important;
-            box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
-            transition: all 0.3s;
-        }
-        .stButton>button:hover {
-            opacity: 0.9;
-            transform: scale(1.02);
-            box-shadow: 0 6px 15px rgba(79, 70, 229, 0.5);
-        }
-        /* Styled header divider */
         .header-divider {
-            height: 4px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            height: 2px;
+            background: var(--accent);
             border-radius: 2px;
             margin-bottom: 25px;
         }
@@ -66,7 +41,6 @@ def render_ui():
 
     # Main Page UI
     st.title("📊 SafeX AI Report Generator")
-    st.write(f"Debug File Path: {generate_report.__code__.co_filename}")
     st.markdown("##### *Business Automation Research - Week 2 Component*")
     st.markdown('<div class="header-divider"></div>', unsafe_allow_html=True)
 

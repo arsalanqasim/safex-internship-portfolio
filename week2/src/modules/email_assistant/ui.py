@@ -61,7 +61,7 @@ def _render_header() -> None:
             <div style="font-size:30px; font-weight:700; letter-spacing:-0.02em;">
                 📧 AI Email Assistant
             </div>
-            <div style="font-size:14.5px; color:var(--text-secondary,#8B949E); margin-top:6px;">
+            <div style="font-size:14.5px; color:var(--muted); margin-top:6px;">
                 Generate intelligent, professional customer support email replies using AI.
             </div>
         </div>

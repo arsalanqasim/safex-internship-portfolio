@@ -45,15 +45,18 @@ def inject_css() -> None:
     st.markdown(
         """
         <style>
-        :root { --ink: #172033; --muted: #64748b; --line: #dce3ec; --soft: #f6f8fb; --accent: #0f766e; --accent-dark: #0b5e58; }
-        #MainMenu, footer, [data-testid="stToolbar"] { visibility: hidden; }
+        :root {
+            --ink: #172033; --muted: #64748b; --line: #dce3ec; --soft: #f6f8fb;
+            --surface: #ffffff; --accent: #0f766e; --accent-dark: #0b5e58; --accent-soft: #e6f5f2;
+        }
+        footer { visibility: hidden; }
         [data-testid="stSidebarNav"] { display: none !important; }
-        header[data-testid="stHeader"] { background: var(--soft); }
-        .stApp, [data-testid="stAppViewContainer"] { background: var(--soft); color: var(--ink); }
-        section[data-testid="stSidebar"] { background: #ffffff; border-right: 1px solid var(--line); }
+        header[data-testid="stHeader"] { background: transparent; }
+        html, body, .stApp, [data-testid="stAppViewContainer"] { background: var(--soft) !important; color: var(--ink); }
+        section[data-testid="stSidebar"] { background: var(--surface) !important; border-right: 1px solid var(--line); }
         section[data-testid="stSidebar"] > div { padding-top: 1.25rem; }
         .block-container { max-width: 1020px; padding-top: 4.5rem; padding-bottom: 5.5rem; }
-        html, body, [class*="css"] { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+        html, body, #root, .stApp, [class*="css"] { font-family: Inter, "Segoe UI", ui-sans-serif, system-ui, sans-serif !important; }
         h1, h2, h3, p { color: var(--ink); }
         .app-mark { display: flex; gap: 10px; align-items: center; margin-bottom: 1.75rem; }
         .app-mark__square { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 7px; background: var(--accent); color: white; font-weight: 700; }
@@ -64,18 +67,30 @@ def inject_css() -> None:
         .page-subtitle { color: var(--muted); font-size: 1rem; margin: 0.7rem 0 1.5rem; max-width: 650px; }
         .info-strip { display: flex; gap: 1.4rem; flex-wrap: wrap; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 0.75rem 0; color: var(--muted); font-size: 0.84rem; margin: 1.5rem 0; }
         .suggestion-title { color: var(--muted); font-size: 0.84rem; font-weight: 600; margin: 1rem 0 0.55rem; }
-        .stButton > button { border-radius: 6px; border: 1px solid var(--line); background: #ffffff; color: var(--ink); font-weight: 600; min-height: 2.45rem; box-shadow: none; }
-        .stButton > button:hover { border-color: var(--accent); color: var(--accent); background: #f0fdfa; }
+        .stButton > button { border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-weight: 650; min-height: 2.6rem; box-shadow: none; }
+        .stButton > button p { color: inherit !important; }
+        .stButton > button:hover { border-color: var(--accent); color: var(--accent-dark); background: var(--accent-soft); }
         .stButton > button[kind="primary"] { background: var(--accent); color: #ffffff; border-color: var(--accent); }
         .stButton > button[kind="primary"]:hover { background: var(--accent-dark); color: #ffffff; }
-        [data-testid="stChatMessage"] { background: #ffffff; border: 1px solid var(--line); border-radius: 8px; padding: 0.15rem 0.75rem; margin-bottom: 0.75rem; }
-        [data-testid="stChatInput"] { border: 1px solid var(--line); border-radius: 8px; background: #ffffff; }
-        [data-testid="stChatInput"] textarea { color: var(--ink); }
+        [data-testid="stChatMessage"] { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 0.15rem 0.75rem; margin-bottom: 0.75rem; }
+        [data-testid="stChatInput"] { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+        [data-testid="stChatInput"] textarea, [data-testid="stTextInput"] input { color: var(--ink) !important; }
+        [data-testid="stChatInput"] textarea::placeholder, [data-testid="stTextInput"] input::placeholder { color: var(--muted); }
+        [data-testid="stChatInput"]:focus-within, [data-testid="stTextInput"]:focus-within { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+        hr { border-color: var(--line) !important; }
         .sidebar-note { color: var(--muted); font-size: 0.8rem; line-height: 1.5; margin-top: 1rem; }
+        .dashboard-link { display: block; padding: 0.7rem 0.85rem; margin-bottom: 1.25rem; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink) !important; font-weight: 650; text-align: center; text-decoration: none !important; }
+        .dashboard-link:hover { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-dark) !important; }
         </style>
         """,
         unsafe_allow_html=True,
     )
+    theme = st.session_state.get("ui_theme_choice", "Light")
+    if theme == "Dark":
+        tokens = "--ink:#f8fafc;--muted:#a8b3c2;--line:#334155;--soft:#0e1117;--surface:#151b24;--accent:#2dd4bf;--accent-dark:#5eead4;--accent-soft:#123c3a;"
+    else:
+        tokens = "--ink:#172033;--muted:#64748b;--line:#dce3ec;--soft:#f6f8fb;--surface:#ffffff;--accent:#0f766e;--accent-dark:#0b5e58;--accent-soft:#e6f5f2;"
+    st.markdown(f"<style>:root {{{tokens}}}</style>", unsafe_allow_html=True)
 
 
 @st.cache_resource
@@ -104,10 +119,7 @@ def new_conversation() -> None:
 
 def render_sidebar() -> None:
     with st.sidebar:
-        if os.environ.get("SAFEX_ROOT_DASHBOARD") == "1":
-            if st.button("← Back to Dashboard", use_container_width=True):
-                st.switch_page("app.py")
-            st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown('<a class="dashboard-link" href="/home">← Back to Dashboard</a>', unsafe_allow_html=True)
         st.markdown(
             """
             <div class="app-mark">
@@ -116,6 +128,14 @@ def render_sidebar() -> None:
             </div>
             """,
             unsafe_allow_html=True,
+        )
+        st.markdown('<div class="side-heading">Appearance</div>', unsafe_allow_html=True)
+        st.radio(
+            "Color mode",
+            ["Light", "Dark"],
+            key="ui_theme_choice",
+            horizontal=True,
+            label_visibility="collapsed",
         )
         if st.button("New conversation", type="primary", use_container_width=True):
             new_conversation()
