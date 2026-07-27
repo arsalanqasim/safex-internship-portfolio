@@ -37,30 +37,30 @@ To ensure code hygiene, avoid merge conflicts, and keep submissions clean, the r
 ### ⚙️ [week2/](file:///c:/Users/arsal/Desktop/safex/week2/) — Business Automation Research
 * **Purpose:** Modular prototyping hub for SafeX Solutions' business automation systems.
 * **Core Technology:** Python, Pandas, Streamlit.
-* **Deliverable Status:** Structural Scaffolding & Boilerplate active. Each of the 8 members has a dedicated folder containing UI stubs and engine stubs ready for their individual logic implementation.
+* **Deliverable Status:** Completed for active members (5 out of 8 modules fully implemented).
 * **Individual Module Assignments:**
-  1. **Arsalan Qasim:** *Invoice Automation Prototype* (Scaffolding ready)
+  1. **Arsalan Qasim:** *Invoice Automation Prototype* (Submitted)
   2. **MUHAMMAD WASIM:** *Attendance Automation Prototype* (Scaffolding ready)
-  3. **Muhammad Faozan Mujtaba:** *HR Automation Proposal* (Scaffolding ready)
-  4. **Shahidullah:** *AI Email Assistant Prototype* (Scaffolding ready)
-  5. **Ali Ammar Haider:** *AI Report Generator Prototype* (Scaffolding ready)
+  3. **Muhammad Faozan Mujtaba:** *HR Automation Proposal* (Submitted)
+  4. **Shahidullah:** *AI Email Assistant Prototype* (Submitted)
+  5. **Ali Ammar Haider:** *AI Report Generator Prototype* (Submitted)
   6. **Abdul Haseeb:** *Resume Screening Prototype* (Scaffolding ready)
   7. **Hammad Abbas:** *OCR / Document Processing Prototype* (Scaffolding ready)
-  8. **Ali Zaib:** *Predictive Analytics Mini-Study* (Scaffolding ready)
+  8. **Ali Zaib:** *Predictive Analytics Mini-Study* (Submitted)
 
 ### 🤖 [week3/](file:///c:/Users/arsal/Desktop/safex/week3/) — AI Agent Automation Proposal Suite
 * **Purpose:** Modular prototyping and proposal hub for AI agents across various domains.
 * **Core Technology:** Python, Streamlit, LLM APIs.
-* **Deliverable Status:** Active Development. Each member module includes stubs and initial logic for their specific agent domain.
+* **Deliverable Status:** Active Development. Completed for active members (3 out of 9 modules fully implemented).
 * **Individual Module Assignments:**
   1. **Arsalan Qasim:** *AI Customer Support Chatbot* (Submitted)
   2. **MUHAMMAD WASIM:** *AI Email Automation & Auto-Reply* (In progress)
   3. **Muhammad Faozan Mujtaba:** *AI Meeting Summarizer & Action-Item Extractor* (In progress)
   4. **Shahidullah:** *Automatic Report Generation Agent* (In progress)
-  5. **Ali Ammar Haider:** *AI Social Media Scheduler & Caption Generator* (In progress)
+  5. **Ali Ammar Haider:** *AI Social Media Scheduler & Caption Generator* (Submitted)
   6. **Abdul Haseeb:** *AI Lead Qualification & Sales Assistant* (In progress)
   7. **Hammad Abbas:** *Resume Screening & Interview Assistant* (In progress)
-  8. **Ali Zaib:** *Document Analysis & Knowledge Assistant (RAG)* (In progress)
+  8. **Ali Zaib:** *Document Analysis & Knowledge Assistant (RAG)* (Submitted)
   9. **Malik Sudais:** *Invoice / Proposal Generator Agent* (In progress)
 
 ---
