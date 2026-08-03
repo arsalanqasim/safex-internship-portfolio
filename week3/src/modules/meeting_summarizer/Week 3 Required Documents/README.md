@@ -17,14 +17,18 @@
 | 7 | Daily work log | ✅ Complete | [`daily_work_log.md`](daily_work_log.md) |
 | 8 | Problems encountered writeup | ✅ Complete | [`problems_encountered.md`](problems_encountered.md) |
 | 9 | Presentation slides | ✅ Outline ready | [`presentation_outline.md`](presentation_outline.md) — build deck from this |
-| 10 | Screenshots | ⚠️ **To capture** | Run the app and screenshot the four tabs — see below |
+| 10 | Screenshots | ✅ Complete | [`screenshots/`](screenshots/) — 5 captures of the running app |
 | 11 | Demo video (5–10 min) | ⛔ **Not produced** | Deliberately skipped for this submission |
 
-> **Note on item 10.** Screenshots must be captured manually: Streamlit renders over a
-> websocket, so headless browser capture returns the loading skeleton rather than the page.
-> Start the app, select **AI Meeting Summarizer**, click **Generate Minutes**, and capture the
-> four tabs (Summarize, Accuracy Benchmark, Architecture, Prompt Templates) into a
-> `screenshots/` folder beside this file.
+### Screenshots
+
+| File | Shows |
+|---|---|
+| `01_summarize_input.png` | Transcript source selection and the generated summary |
+| `02_summarize_results.png` | Decisions, the action-item table with owners and deadlines, blockers, open questions |
+| `03_accuracy_benchmark.png` | Benchmark metrics and the per-transcript breakdown |
+| `04_architecture.png` | Pipeline diagram and the five design rules |
+| `05_prompt_templates.png` | Versioned prompt templates with their variables |
 
 > **Note on item 11.** The explanation video was not recorded. Every other code and
 > documentation deliverable is complete. The module demos live from the Week 3 app if a

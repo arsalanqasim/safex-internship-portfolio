@@ -88,6 +88,17 @@ OPEN_QUESTION_CUES = [
 
 URGENCY_CUES = ["urgent", "asap", "as soon as possible", "critical", "immediately", "blocker", "escalate"]
 
+# Conversational filler and contraction fragments. Tokenising "I'll" leaves a bare "ll",
+# and words like "works" or "actually" score well on TF-IDF while naming no topic.
+TOPIC_STOPWORDS = {
+    "ll", "ve", "re", "don", "doesn", "didn", "isn", "aren", "wasn", "won", "couldn",
+    "actually", "really", "basically", "obviously", "good", "great", "fine", "works",
+    "work", "thing", "things", "bit", "lot", "sure", "okay", "yeah", "yes", "right",
+    "just", "going", "got", "know", "think", "say", "said", "let", "make", "makes",
+    "way", "need", "needs", "want", "come", "comes", "look", "looks", "thanks",
+    "everyone", "today", "week", "one", "two", "three", "point", "side", "item",
+}
+
 # Sentences that are pure meeting noise and never belong in a summary.
 NOISE_PATTERNS = [
     r"^(ok|okay|right|cool|great|thanks|thank you|sure|yeah|yep|no worries|sounds good|perfect|agreed)[\.\!]?$",
@@ -1053,7 +1064,16 @@ class MeetingSummarizerEngine:
         weights = matrix.sum(axis=0).A1
         names = vectorizer.get_feature_names_out()
         ranked = sorted(zip(names, weights), key=lambda pair: pair[1], reverse=True)
-        return [name for name, _ in ranked[:limit]]
+
+        topics: list[str] = []
+        for name, _ in ranked:
+            words = name.split()
+            if any(word in TOPIC_STOPWORDS or len(word) < 3 for word in words):
+                continue
+            topics.append(name)
+            if len(topics) == limit:
+                break
+        return topics
 
     def _compose_summary(
         self,
