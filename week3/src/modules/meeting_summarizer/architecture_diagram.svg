@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 640" width="940" height="640" font-family="Inter, Segoe UI, system-ui, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrowDashed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect width="940" height="640" fill="#f6f8fb"/>
+  <text x="30" y="40" font-size="20" font-weight="700" fill="#172033">AI Meeting Summarizer &amp; Action-Item Extractor</text>
+  <text x="30" y="62" font-size="13" fill="#64748b">Meridian Softworks · Muhammad Faozan Mujtaba · Week 3 AI Agent Automation Proposal</text>
+
+  <!-- Input -->
+  <rect x="30" y="90" width="200" height="58" rx="10" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+  <text x="130" y="114" font-size="13" font-weight="650" fill="#172033" text-anchor="middle">Raw Transcript</text>
+  <text x="130" y="132" font-size="11" fill="#64748b" text-anchor="middle">paste · upload · sample</text>
+
+  <!-- Parser -->
+  <rect x="30" y="182" width="200" height="58" rx="10" fill="#ffffff" stroke="#dce3ec"/>
+  <text x="130" y="206" font-size="13" font-weight="650" fill="#172033" text-anchor="middle">Transcript Parser</text>
+  <text x="130" y="224" font-size="11" fill="#64748b" text-anchor="middle">speaker turns + header</text>
+
+  <!-- Segmentation -->
+  <rect x="30" y="274" width="200" height="58" rx="10" fill="#ffffff" stroke="#dce3ec"/>
+  <text x="130" y="298" font-size="13" font-weight="650" fill="#172033" text-anchor="middle">Sentence Segmentation</text>
+  <text x="130" y="316" font-size="11" fill="#64748b" text-anchor="middle">filler &amp; noise removal</text>
+
+  <line x1="130" y1="148" x2="130" y2="180" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="130" y1="240" x2="130" y2="272" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Extractors -->
+  <rect x="310" y="90" width="220" height="58" rx="10" fill="#e6f5f2" stroke="#0f766e"/>
+  <text x="420" y="114" font-size="13" font-weight="650" fill="#0b5e58" text-anchor="middle">Decision Extractor</text>
+  <text x="420" y="132" font-size="11" fill="#0b5e58" text-anchor="middle">settled-choice cues</text>
+
+  <rect x="310" y="172" width="220" height="58" rx="10" fill="#e6f5f2" stroke="#0f766e"/>
+  <text x="420" y="196" font-size="13" font-weight="650" fill="#0b5e58" text-anchor="middle">Action Extractor</text>
+  <text x="420" y="214" font-size="11" fill="#0b5e58" text-anchor="middle">commitment marker + work verb</text>
+
+  <rect x="310" y="254" width="220" height="58" rx="10" fill="#e6f5f2" stroke="#0f766e"/>
+  <text x="420" y="278" font-size="13" font-weight="650" fill="#0b5e58" text-anchor="middle">Risk Extractor</text>
+  <text x="420" y="296" font-size="11" fill="#0b5e58" text-anchor="middle">blockers &amp; deferred questions</text>
+
+  <rect x="310" y="336" width="220" height="58" rx="10" fill="#e6f5f2" stroke="#0f766e"/>
+  <text x="420" y="360" font-size="13" font-weight="650" fill="#0b5e58" text-anchor="middle">TF-IDF Sentence Ranker</text>
+  <text x="420" y="378" font-size="11" fill="#0b5e58" text-anchor="middle">executive summary</text>
+
+  <line x1="230" y1="290" x2="308" y2="126" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="230" y1="295" x2="308" y2="205" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="230" y1="303" x2="308" y2="285" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="230" y1="310" x2="308" y2="362" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Resolvers -->
+  <rect x="590" y="140" width="210" height="58" rx="10" fill="#ffffff" stroke="#dce3ec"/>
+  <text x="695" y="164" font-size="13" font-weight="650" fill="#172033" text-anchor="middle">Owner Resolver</text>
+  <text x="695" y="182" font-size="11" fill="#64748b" text-anchor="middle">named &gt; speaker &gt; Unassigned</text>
+
+  <rect x="590" y="216" width="210" height="58" rx="10" fill="#ffffff" stroke="#dce3ec"/>
+  <text x="695" y="240" font-size="13" font-weight="650" fill="#172033" text-anchor="middle">Deadline Resolver</text>
+  <text x="695" y="258" font-size="11" fill="#64748b" text-anchor="middle">relative phrase → ISO date</text>
+
+  <line x1="530" y1="195" x2="588" y2="172" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="530" y1="205" x2="588" y2="243" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Report -->
+  <rect x="310" y="440" width="490" height="62" rx="10" fill="#0f766e"/>
+  <text x="555" y="466" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Structured MeetingReport</text>
+  <text x="555" y="486" font-size="11.5" fill="#c9ece7" text-anchor="middle">summary · decisions · action items (owner + deadline) · blockers · open questions</text>
+
+  <line x1="420" y1="148" x2="420" y2="170" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="420" y1="394" x2="420" y2="438" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="420" y1="312" x2="420" y2="334" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="695" y1="274" x2="695" y2="438" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Outputs -->
+  <rect x="310" y="544" width="490" height="58" rx="10" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+  <text x="555" y="568" font-size="13" font-weight="650" fill="#172033" text-anchor="middle">Export</text>
+  <text x="555" y="586" font-size="11" fill="#64748b" text-anchor="middle">Markdown minutes · structured JSON · print-ready HTML → PDF</text>
+  <line x1="555" y1="502" x2="555" y2="542" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Optional LLM -->
+  <rect x="30" y="400" width="230" height="72" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-dasharray="5 4"/>
+  <text x="145" y="424" font-size="13" font-weight="650" fill="#475569" text-anchor="middle">Hosted LLM (optional)</text>
+  <text x="145" y="442" font-size="11" fill="#64748b" text-anchor="middle">same prompt templates</text>
+  <text x="145" y="459" font-size="11" fill="#64748b" text-anchor="middle">LLM_PROVIDER=gemini</text>
+
+  <line x1="310" y1="368" x2="262" y2="418" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrowDashed)"/>
+  <line x1="262" y1="450" x2="310" y2="380" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrowDashed)"/>
+  <text x="145" y="492" font-size="10.5" fill="#94a3b8" text-anchor="middle">falls back to deterministic pipeline on failure</text>
+
+  <!-- Legend -->
+  <text x="30" y="560" font-size="11" font-weight="650" fill="#64748b">Default path runs fully offline —</text>
+  <text x="30" y="578" font-size="11" fill="#64748b">no API key, no network, reproducible output.</text>
+</svg>

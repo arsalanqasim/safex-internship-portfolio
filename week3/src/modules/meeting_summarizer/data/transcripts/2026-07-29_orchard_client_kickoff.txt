@@ -1,0 +1,32 @@
+Meeting: Orchard Foods - Phase 2 Kickoff Call
+Date: 2026-07-29
+Attendees: Sana Malik (Account Manager), Ayesha Rauf (Delivery Lead), Faraz Khan (Design Lead), Bilal Ahmed (Backend Engineer), Nadia Sheikh (Orchard Foods, Head of Digital)
+---
+
+Sana: Thanks for making the time, Nadia. The agenda today is scope, timeline and the integration dependencies for Phase 2.
+Nadia: Happy to be here. Our priority is the loyalty programme. Everything else can move if it has to.
+Sana: Understood. So loyalty is priority one and the vendor dashboard is priority two.
+Nadia: Correct. The board wants loyalty live before the winter campaign.
+Ayesha: When does the winter campaign start?
+Nadia: The eighteenth of November, and marketing needs two weeks of testing before that.
+Ayesha: That gives us a hard date of the first of November for a production release. It is tight but it is achievable.
+Sana: We agreed to lock Phase 2 scope to the loyalty programme and the vendor dashboard, with everything else moved to Phase 3.
+Nadia: That works for us.
+Faraz: On design, I need the current brand guidelines. The ones on the shared drive are from 2024.
+Nadia: I'll send the updated brand guidelines by tomorrow.
+Faraz: Perfect. I'll prepare the loyalty programme wireframes by 12 August once those land.
+Bilal: My concern is the points engine. Are we calculating loyalty points in real time or in a nightly batch?
+Nadia: Real time, ideally.
+Bilal: Real time means we depend on the Orchard till system pushing events to us, and we have no documentation for that API.
+Nadia: That is a fair point. I do not know yet whether the till vendor supports webhooks.
+Sana: Nadia will check with the till vendor about webhook support and confirm by next Friday.
+Ayesha: Until we know, we cannot size the integration properly, so that is a risk on the timeline.
+Bilal: I'll draft an integration options document covering both real time and batch, so we are not stuck waiting.
+Ayesha: Good idea. When can you have it?
+Bilal: In five business days.
+Sana: I'll circulate the revised statement of work for signature by 7 August.
+Ayesha: We also decided to run fortnightly demos with Orchard rather than monthly, starting the week of 10 August.
+Nadia: Fortnightly suits us much better, thank you.
+Sana: Last item. Do we need a separate data processing agreement for the loyalty data?
+Nadia: To be decided. Our legal team will have a view on that.
+Sana: Understood, we will keep it on the open list. Thanks everyone.

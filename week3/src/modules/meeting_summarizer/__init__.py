@@ -1,1 +1,1 @@
-"""AI Meeting Summarizer Scaffolding Package (Muhammad Faozan Mujtaba)."""
+"""AI Meeting Summarizer & Action-Item Extractor (Muhammad Faozan Mujtaba)."""

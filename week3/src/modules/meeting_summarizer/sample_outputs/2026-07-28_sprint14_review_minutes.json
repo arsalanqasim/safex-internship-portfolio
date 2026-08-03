@@ -1,0 +1,115 @@
+{
+  "title": "Sprint 14 Review - Orchard Foods Portal",
+  "meeting_date": "2026-07-28",
+  "participants": [
+    "Ayesha Rauf",
+    "Bilal Ahmed",
+    "Hina Shah",
+    "Usman Tariq",
+    "Danish Iqbal"
+  ],
+  "summary": "Sprint 14 Review - Orchard Foods Portal was held on 28 July 2026 with Ayesha Rauf, Bilal Ahmed, Hina Shah, Usman Tariq and Danish Iqbal. Regression testing on the payments flow is blocked because the Orchard sandbox credentials expired on Friday. Bilal will chase Orchard for fresh sandbox credentials by tomorrow so that QA is not sitting idle. The staging cluster ran out of disk twice last week because nobody is rotating the build artefacts. I'll set up an automated artefact cleanup job on the staging cluster by Friday. The meeting produced 2 recorded decisions and 6 action items.",
+  "key_points": [
+    "Regression testing on the payments flow is blocked because the Orchard sandbox credentials expired on Friday.",
+    "Bilal will chase Orchard for fresh sandbox credentials by tomorrow so that QA is not sitting idle.",
+    "The staging cluster ran out of disk twice last week because nobody is rotating the build artefacts.",
+    "I'll set up an automated artefact cleanup job on the staging cluster by Friday."
+  ],
+  "decisions": [
+    {
+      "decision": "We agreed to move the order tracking screen into Sprint 15 rather than shipping it half finished.",
+      "decided_by": "Ayesha Rauf",
+      "line_no": 16
+    },
+    {
+      "decision": "We decided to standardise on pnpm across all three repositories, so the yarn lockfiles are removed this sprint.",
+      "decided_by": "Ayesha Rauf",
+      "line_no": 21
+    }
+  ],
+  "action_items": [
+    {
+      "task": "Chase Orchard for fresh sandbox credentials by tomorrow",
+      "owner": "Bilal Ahmed",
+      "deadline_phrase": "tomorrow",
+      "deadline_date": "2026-07-29",
+      "priority": "High",
+      "raised_by": "Ayesha Rauf",
+      "line_no": 10
+    },
+    {
+      "task": "Also mirror the sandbox configuration into our staging vault",
+      "owner": "Bilal Ahmed",
+      "deadline_phrase": null,
+      "deadline_date": null,
+      "priority": "Medium",
+      "raised_by": "Bilal Ahmed",
+      "line_no": 11
+    },
+    {
+      "task": "If the final icons land this week I can ship the order tracking screen by next Wednesday",
+      "owner": "Usman Tariq",
+      "deadline_phrase": "next wednesday",
+      "deadline_date": "2026-08-05",
+      "priority": "Low",
+      "raised_by": "Usman Tariq",
+      "line_no": 14
+    },
+    {
+      "task": "Set up an automated artefact cleanup job on the staging cluster by Friday",
+      "owner": "Danish Iqbal",
+      "deadline_phrase": "by friday",
+      "deadline_date": "2026-07-31",
+      "priority": "Medium",
+      "raised_by": "Danish Iqbal",
+      "line_no": 18
+    },
+    {
+      "task": "Have the regression report ready by 5 August",
+      "owner": "Hina Shah",
+      "deadline_phrase": "5 august",
+      "deadline_date": "2026-08-05",
+      "priority": "Low",
+      "raised_by": "Hina Shah",
+      "line_no": 20
+    },
+    {
+      "task": "Pick up the pnpm migration in planning, it is not assigned to anyone yet",
+      "owner": "Unassigned",
+      "deadline_phrase": null,
+      "deadline_date": null,
+      "priority": "Medium",
+      "raised_by": "Ayesha Rauf",
+      "line_no": 23
+    }
+  ],
+  "blockers": [
+    "Regression testing on the payments flow is blocked because the Orchard sandbox credentials expired on Friday. (Hina Shah)",
+    "On the frontend, the order tracking screen is behind schedule. (Usman Tariq)"
+  ],
+  "open_questions": [
+    "Do we still need the manual smoke test checklist once the automated suite lands? (Hina Shah)",
+    "That is an open question and it stays open until the client tells us either way. (Ayesha Rauf)"
+  ],
+  "topics": [
+    "works",
+    "sprint",
+    "good",
+    "ll",
+    "actually",
+    "open",
+    "migration",
+    "regression"
+  ],
+  "provider": "mock",
+  "stats": {
+    "turns": 21,
+    "participants": 5,
+    "decisions": 2,
+    "action_items": 6,
+    "action_items_with_owner": 5,
+    "action_items_with_deadline": 4,
+    "blockers": 2,
+    "open_questions": 2
+  }
+}

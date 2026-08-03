@@ -1,0 +1,105 @@
+{
+  "title": "Orchard Foods - Phase 2 Kickoff Call",
+  "meeting_date": "2026-07-29",
+  "participants": [
+    "Sana Malik",
+    "Ayesha Rauf",
+    "Faraz Khan",
+    "Bilal Ahmed",
+    "Nadia Sheikh"
+  ],
+  "summary": "Orchard Foods - Phase 2 Kickoff Call was held on 29 July 2026 with Sana Malik, Ayesha Rauf, Faraz Khan, Bilal Ahmed and Nadia Sheikh. We agreed to lock Phase 2 scope to the loyalty programme and the vendor dashboard, with everything else moved to Phase 3. Real time means we depend on the Orchard till system pushing events to us, and we have no documentation for that API. I'll draft an integration options document covering both real time and batch, so we are not stuck waiting. We also decided to run fortnightly demos with Orchard rather than monthly, starting the week of 10 August. The meeting produced 2 recorded decisions and 5 action items.",
+  "key_points": [
+    "We agreed to lock Phase 2 scope to the loyalty programme and the vendor dashboard, with everything else moved to Phase 3.",
+    "Real time means we depend on the Orchard till system pushing events to us, and we have no documentation for that API.",
+    "I'll draft an integration options document covering both real time and batch, so we are not stuck waiting.",
+    "We also decided to run fortnightly demos with Orchard rather than monthly, starting the week of 10 August."
+  ],
+  "decisions": [
+    {
+      "decision": "We agreed to lock Phase 2 scope to the loyalty programme and the vendor dashboard, with everything else moved to Phase 3.",
+      "decided_by": "Sana Malik",
+      "line_no": 13
+    },
+    {
+      "decision": "We also decided to run fortnightly demos with Orchard rather than monthly, starting the week of 10 August.",
+      "decided_by": "Ayesha Rauf",
+      "line_no": 28
+    }
+  ],
+  "action_items": [
+    {
+      "task": "Send the updated brand guidelines by tomorrow",
+      "owner": "Nadia Sheikh",
+      "deadline_phrase": "tomorrow",
+      "deadline_date": "2026-07-30",
+      "priority": "High",
+      "raised_by": "Nadia Sheikh",
+      "line_no": 16
+    },
+    {
+      "task": "Prepare the loyalty programme wireframes by 12 August once those land",
+      "owner": "Faraz Khan",
+      "deadline_phrase": "12 august",
+      "deadline_date": "2026-08-12",
+      "priority": "Low",
+      "raised_by": "Faraz Khan",
+      "line_no": 17
+    },
+    {
+      "task": "Check with the till vendor about webhook support and confirm by next Friday",
+      "owner": "Nadia Sheikh",
+      "deadline_phrase": "next friday",
+      "deadline_date": "2026-08-07",
+      "priority": "Low",
+      "raised_by": "Sana Malik",
+      "line_no": 22
+    },
+    {
+      "task": "Draft an integration options document covering both real time and batch",
+      "owner": "Bilal Ahmed",
+      "deadline_phrase": null,
+      "deadline_date": null,
+      "priority": "Medium",
+      "raised_by": "Bilal Ahmed",
+      "line_no": 24
+    },
+    {
+      "task": "Circulate the revised statement of work for signature by 7 August",
+      "owner": "Sana Malik",
+      "deadline_phrase": "7 august",
+      "deadline_date": "2026-08-07",
+      "priority": "Low",
+      "raised_by": "Sana Malik",
+      "line_no": 27
+    }
+  ],
+  "blockers": [
+    "My concern is the points engine. (Bilal Ahmed)"
+  ],
+  "open_questions": [
+    "I do not know yet whether the till vendor supports webhooks. (Nadia Sheikh)",
+    "Do we need a separate data processing agreement for the loyalty data? (Sana Malik)"
+  ],
+  "topics": [
+    "loyalty",
+    "time",
+    "works",
+    "priority",
+    "real",
+    "real time",
+    "vendor",
+    "ll"
+  ],
+  "provider": "mock",
+  "stats": {
+    "turns": 27,
+    "participants": 5,
+    "decisions": 2,
+    "action_items": 5,
+    "action_items_with_owner": 5,
+    "action_items_with_deadline": 4,
+    "blockers": 1,
+    "open_questions": 2
+  }
+}

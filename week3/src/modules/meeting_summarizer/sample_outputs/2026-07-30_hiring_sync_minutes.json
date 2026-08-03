@@ -1,0 +1,114 @@
+{
+  "title": "Engineering Hiring Sync - Q3 Intake",
+  "meeting_date": "2026-07-30",
+  "participants": [
+    "Ayesha Rauf",
+    "Hina Shah",
+    "Sana Malik",
+    "Danish Iqbal"
+  ],
+  "summary": "Engineering Hiring Sync - Q3 Intake was held on 30 July 2026 with Ayesha Rauf, Hina Shah, Sana Malik and Danish Iqbal. We agreed to prioritise the mid level backend role first and start the QA automation role in September. We decided to drop the agency for this round and post directly on the university boards and LinkedIn. I'll set up the LinkedIn job posting for the backend role by Monday. I'll review the backend candidate pipeline every Tuesday and share a shortlist with Sana each week. The meeting produced 2 recorded decisions and 6 action items.",
+  "key_points": [
+    "We agreed to prioritise the mid level backend role first and start the QA automation role in September.",
+    "We decided to drop the agency for this round and post directly on the university boards and LinkedIn.",
+    "I'll set up the LinkedIn job posting for the backend role by Monday.",
+    "I'll review the backend candidate pipeline every Tuesday and share a shortlist with Sana each week."
+  ],
+  "decisions": [
+    {
+      "decision": "We agreed to prioritise the mid level backend role first and start the QA automation role in September.",
+      "decided_by": "Ayesha Rauf",
+      "line_no": 9
+    },
+    {
+      "decision": "We decided to drop the agency for this round and post directly on the university boards and LinkedIn.",
+      "decided_by": "Ayesha Rauf",
+      "line_no": 12
+    }
+  ],
+  "action_items": [
+    {
+      "task": "Set up the LinkedIn job posting for the backend role by Monday",
+      "owner": "Danish Iqbal",
+      "deadline_phrase": "by monday",
+      "deadline_date": "2026-08-03",
+      "priority": "Medium",
+      "raised_by": "Danish Iqbal",
+      "line_no": 13
+    },
+    {
+      "task": "Write up the QA automation job description by 20 August",
+      "owner": "Hina Shah",
+      "deadline_phrase": "20 august",
+      "deadline_date": "2026-08-20",
+      "priority": "Low",
+      "raised_by": "Hina Shah",
+      "line_no": 15
+    },
+    {
+      "task": "Review the backend candidate pipeline every Tuesday and share a shortlist with Sana each week",
+      "owner": "Ayesha Rauf",
+      "deadline_phrase": "tuesday",
+      "deadline_date": "2026-08-04",
+      "priority": "Medium",
+      "raised_by": "Ayesha Rauf",
+      "line_no": 16
+    },
+    {
+      "task": "Send the shortlist before Tuesday lunchtime, I have client calls in the afternoons",
+      "owner": "Unassigned",
+      "deadline_phrase": "before tuesday",
+      "deadline_date": "2026-08-04",
+      "priority": "Medium",
+      "raised_by": "Sana Malik",
+      "line_no": 17
+    },
+    {
+      "task": "Confirm the start dates with HR before we make any offers",
+      "owner": "Ayesha Rauf",
+      "deadline_phrase": null,
+      "deadline_date": null,
+      "priority": "Medium",
+      "raised_by": "Ayesha Rauf",
+      "line_no": 20
+    },
+    {
+      "task": "Take that to the partners",
+      "owner": "Ayesha Rauf",
+      "deadline_phrase": null,
+      "deadline_date": null,
+      "priority": "Medium",
+      "raised_by": "Ayesha Rauf",
+      "line_no": 22
+    }
+  ],
+  "blockers": [
+    "The agency invoice was over budget by about forty percent last time. (Sana Malik)"
+  ],
+  "open_questions": [
+    "Should the QA hire report into me or into delivery? (Hina Shah)",
+    "Do we have a referral bonus this quarter? (Sana Malik)",
+    "To be decided, finance has not signed off on the amount. (Ayesha Rauf)"
+  ],
+  "topics": [
+    "thanks",
+    "qa",
+    "automation",
+    "noted",
+    "qa automation",
+    "role",
+    "agency",
+    "engineers"
+  ],
+  "provider": "mock",
+  "stats": {
+    "turns": 20,
+    "participants": 4,
+    "decisions": 2,
+    "action_items": 6,
+    "action_items_with_owner": 5,
+    "action_items_with_deadline": 4,
+    "blockers": 1,
+    "open_questions": 3
+  }
+}
