@@ -1,0 +1,125 @@
+{
+  "description": "Hand-annotated gold standard for the AI Meeting Summarizer. Annotations were written by reading the transcripts, not by recording engine output, so the benchmark reports genuine misses as well as hits.",
+  "annotator": "Muhammad Faozan Mujtaba",
+  "annotated_on": "2026-08-03",
+  "matching_rule": "A gold action item counts as recalled when a produced item contains at least half of its task_keywords. Owner and deadline accuracy are then measured over matched pairs only.",
+  "cases": [
+    {
+      "transcript": "2026-07-28_sprint14_review.txt",
+      "meeting_date": "2026-07-28",
+      "expected_decision_count": 2,
+      "expected_action_items": [
+        {
+          "task": "Chase Orchard for fresh sandbox credentials",
+          "task_keywords": ["chase", "sandbox credentials"],
+          "owner": "Bilal Ahmed",
+          "deadline_date": "2026-07-29"
+        },
+        {
+          "task": "Mirror the sandbox configuration into the staging vault",
+          "task_keywords": ["mirror", "sandbox configuration", "staging vault"],
+          "owner": "Bilal Ahmed",
+          "deadline_date": null
+        },
+        {
+          "task": "Ship the order tracking screen",
+          "task_keywords": ["ship", "order tracking screen"],
+          "owner": "Usman Tariq",
+          "deadline_date": "2026-08-05"
+        },
+        {
+          "task": "Set up an automated artefact cleanup job on the staging cluster",
+          "task_keywords": ["cleanup job", "staging cluster"],
+          "owner": "Danish Iqbal",
+          "deadline_date": "2026-07-31"
+        },
+        {
+          "task": "Have the regression report ready for the client review",
+          "task_keywords": ["regression report", "ready"],
+          "owner": "Hina Shah",
+          "deadline_date": "2026-08-05"
+        },
+        {
+          "task": "Pick up the pnpm migration in sprint planning",
+          "task_keywords": ["pnpm migration", "planning"],
+          "owner": "Unassigned",
+          "deadline_date": null
+        }
+      ]
+    },
+    {
+      "transcript": "2026-07-29_orchard_client_kickoff.txt",
+      "meeting_date": "2026-07-29",
+      "expected_decision_count": 2,
+      "expected_action_items": [
+        {
+          "task": "Send the updated brand guidelines",
+          "task_keywords": ["send", "brand guidelines"],
+          "owner": "Nadia Sheikh",
+          "deadline_date": "2026-07-30"
+        },
+        {
+          "task": "Prepare the loyalty programme wireframes",
+          "task_keywords": ["prepare", "wireframes"],
+          "owner": "Faraz Khan",
+          "deadline_date": "2026-08-12"
+        },
+        {
+          "task": "Check webhook support with the till vendor and confirm",
+          "task_keywords": ["till vendor", "webhook"],
+          "owner": "Nadia Sheikh",
+          "deadline_date": "2026-08-07"
+        },
+        {
+          "task": "Draft an integration options document for real time and batch",
+          "task_keywords": ["draft", "integration options"],
+          "owner": "Bilal Ahmed",
+          "deadline_date": "2026-08-05"
+        },
+        {
+          "task": "Circulate the revised statement of work for signature",
+          "task_keywords": ["circulate", "statement of work"],
+          "owner": "Sana Malik",
+          "deadline_date": "2026-08-07"
+        }
+      ]
+    },
+    {
+      "transcript": "2026-07-30_hiring_sync.txt",
+      "meeting_date": "2026-07-30",
+      "expected_decision_count": 2,
+      "expected_action_items": [
+        {
+          "task": "Set up the LinkedIn job posting for the backend role",
+          "task_keywords": ["linkedin", "job posting"],
+          "owner": "Danish Iqbal",
+          "deadline_date": "2026-08-03"
+        },
+        {
+          "task": "Write the QA automation job description",
+          "task_keywords": ["write", "job description"],
+          "owner": "Hina Shah",
+          "deadline_date": "2026-08-20"
+        },
+        {
+          "task": "Review the backend candidate pipeline and share a weekly shortlist",
+          "task_keywords": ["review", "candidate pipeline", "shortlist"],
+          "owner": "Ayesha Rauf",
+          "deadline_date": "2026-08-04"
+        },
+        {
+          "task": "Confirm engineer start dates with HR before making offers",
+          "task_keywords": ["confirm", "start dates"],
+          "owner": "Ayesha Rauf",
+          "deadline_date": null
+        },
+        {
+          "task": "Take the QA reporting line question to the partners",
+          "task_keywords": ["take", "partners"],
+          "owner": "Ayesha Rauf",
+          "deadline_date": null
+        }
+      ]
+    }
+  ]
+}

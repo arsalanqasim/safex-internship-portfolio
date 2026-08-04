@@ -1,0 +1,25 @@
+Meeting: Engineering Hiring Sync - Q3 Intake
+Date: 2026-07-30
+Attendees: Ayesha Rauf (Delivery Lead), Hina Shah (QA Lead), Sana Malik (Account Manager), Danish Iqbal (DevOps)
+---
+
+Ayesha: Short one today. We have budget approved for two engineers and one QA automation hire this quarter.
+Sana: Two engineers is what the Orchard work needs, so the timing is right.
+Hina: My worry is that we are interviewing for QA automation with no automation suite of our own to talk about. It looks bad to candidates.
+Ayesha: Fair. We agreed to prioritise the mid level backend role first and start the QA automation role in September.
+Danish: Where are we advertising? The last round through the agency was expensive and slow.
+Sana: The agency invoice was over budget by about forty percent last time.
+Ayesha: We decided to drop the agency for this round and post directly on the university boards and LinkedIn.
+Danish: Much better. I'll set up the LinkedIn job posting for the backend role by Monday.
+Ayesha: Thanks. Hina, could you write the QA automation job description so it is ready when we open that role?
+Hina: I can do that. I'll write up the QA automation job description by 20 August.
+Ayesha: I'll review the backend candidate pipeline every Tuesday and share a shortlist with Sana each week.
+Sana: Please send the shortlist before Tuesday lunchtime, I have client calls in the afternoons.
+Ayesha: Noted.
+Danish: One risk. If both engineers start in the same week we have nobody free to onboard them properly.
+Ayesha: Good catch. We need to confirm the start dates with HR before we make any offers.
+Hina: Should the QA hire report into me or into delivery?
+Ayesha: Open question. I will take that to the partners.
+Sana: Do we have a referral bonus this quarter?
+Ayesha: To be decided, finance has not signed off on the amount.
+Ayesha: That is everything, thanks all.
