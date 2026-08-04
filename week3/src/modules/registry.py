@@ -30,7 +30,7 @@ MODULE_REGISTRY = {
             "developer": "Muhammad Faozan Mujtaba",
             "role": "Group Member",
             "email": "fozanmujtaba.480@gmail.com",
-            "status": "Placeholder (Scaffolding Ready)",
+            "status": "Submission Ready",
             "tech": ["Python", "LLM API", "Markdown / PDF Export", "Streamlit"],
             "description": "Transcript summarizer extracting structured key decisions, summary points, and action items with owners and deadlines.",
             "import_path": "src.modules.meeting_summarizer.ui",
