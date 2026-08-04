@@ -417,9 +417,9 @@ def show_dashboard() -> None:
     # Key Statistics
     col_stat1, col_stat2, col_stat3, col_stat4 = st.columns(4)
     with col_stat1:
-        st.markdown('<div class="metric-card"><div class="metric-card__val">3</div><div class="metric-card__lbl">Milestone Weeks</div></div>', unsafe_allow_html=True)
+        st.markdown('<div class="metric-card"><div class="metric-card__val">4</div><div class="metric-card__lbl">Milestone Weeks</div></div>', unsafe_allow_html=True)
     with col_stat2:
-        st.markdown('<div class="metric-card"><div class="metric-card__val">19</div><div class="metric-card__lbl">Total Modules</div></div>', unsafe_allow_html=True)
+        st.markdown('<div class="metric-card"><div class="metric-card__val">28</div><div class="metric-card__lbl">Total Modules</div></div>', unsafe_allow_html=True)
     with col_stat3:
         st.markdown('<div class="metric-card"><div class="metric-card__val">9</div><div class="metric-card__lbl">Team Members</div></div>', unsafe_allow_html=True)
     with col_stat4:
@@ -430,7 +430,7 @@ def show_dashboard() -> None:
     # Main Grid (Workspace milestones)
     st.subheader("🏁 Internship Milestones")
     
-    col_w1, col_w2, col_w3 = st.columns(3)
+    col_w1, col_w2, col_w3, col_w4 = st.columns(4)
     
     with col_w1:
         st.markdown(
@@ -504,6 +504,30 @@ def show_dashboard() -> None:
         if st.button("Launch Week 3", key="btn_w3", use_container_width=True):
             st.switch_page(week3_page)
 
+    with col_w4:
+        st.markdown(
+            """
+            <div class="portfolio-card">
+                <div class="card-header">
+                    <span class="card-icon">💼</span>
+                    <span class="status-badge status-badge--ready">9 Modules</span>
+                </div>
+                <div>
+                    <h3 class="card-title">Week 4: Client Sprint</h3>
+                    <p class="card-desc">
+                        Transition package featuring client proposals, ROI calculators, warm human escalation triggers, dynamic branding configs, and outreach tracker logging.
+                    </p>
+                </div>
+                <div style="font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.75rem;">
+                    <strong>Core Stack:</strong> Deploy Package · Excel Logs · ROI Metrics
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        if st.button("Launch Week 4", key="btn_w4", use_container_width=True):
+            st.switch_page(week4_page)
+
     st.markdown("---")
 
     # Double Column Layout for Timeline & Roster
@@ -532,6 +556,12 @@ def show_dashboard() -> None:
                     <div class="timeline-title">AI Agent Proposals</div>
                     <div class="timeline-desc">Deployed advanced agent systems including automated classifiers, schedulers, and document RAG.</div>
                 </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Week 4 Milestone</div>
+                    <div class="timeline-title">Client-Ready Deployment</div>
+                    <div class="timeline-desc">Productized chatbots, built automated ROI spreadsheets, integrated outreach tracker loggers, and wrote standalone deployment scripts.</div>
+                </div>
             </div>
             """,
             unsafe_allow_html=True
@@ -543,6 +573,7 @@ def show_dashboard() -> None:
         # Load registry data dynamically to show actual status
         w2_reg = load_weekly_registry("week2", "week2") or {}
         w3_reg = load_weekly_registry("week3", "week3") or {}
+        w4_reg = load_weekly_registry("week4", "week4") or {}
         
         team_members = [
             ("Arsalan Qasim", "Group Leader"),
@@ -575,7 +606,8 @@ def show_dashboard() -> None:
                 "Role": role,
                 "Week 1": "✅ Completed",
                 "Week 2": get_status(w2_reg, name),
-                "Week 3": get_status(w3_reg, name)
+                "Week 3": get_status(w3_reg, name),
+                "Week 4": get_status(w4_reg, name)
             })
             
         st.dataframe(table_data, use_container_width=True, hide_index=True)
@@ -625,6 +657,7 @@ home_page = st.Page(show_dashboard, title="Home Dashboard", icon="🏠", default
 week1_page = st.Page("week1/src/app.py", title="Week 1: FAQ Chatbot", icon="💬", url_path="week1")
 week2_page = st.Page("week2/src/app.py", title="Week 2: Automation Suite", icon="⚙️", url_path="week2")
 week3_page = st.Page("week3/src/app.py", title="Week 3: AI Agent Proposals", icon="🤖", url_path="week3")
+week4_page = st.Page("week4/src/app.py", title="Week 4: Client Sprint", icon="💼", url_path="week4")
 
 def main() -> None:
     # Set an environment variable so the child apps know they are running under the root dashboard
@@ -635,7 +668,7 @@ def main() -> None:
     pg = st.navigation(
         {
             "Workspace": [home_page],
-            "Submissions": [week1_page, week2_page, week3_page]
+            "Submissions": [week1_page, week2_page, week3_page, week4_page]
         }
     )
     

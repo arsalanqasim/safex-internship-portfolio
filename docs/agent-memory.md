@@ -25,6 +25,9 @@ Do not store:
 - 2026-07-23: Group Leader Arsalan Qasim's module `customer_support_chatbot` is submission-ready with 100% intent classification accuracy across 12 test queries, escalation trigger rules, and Streamlit UI.
 - 2026-07-23: 8 teammate modules (`email_auto_reply`, `meeting_summarizer`, `report_generation_agent`, `social_media_scheduler`, `lead_qualification`, `resume_interview_assistant`, `doc_knowledge_assistant`, `proposal_invoice_generator`) established with lightweight scaffolding (`engine.py`, `ui.py`, `__init__.py`) containing member name, target company, assigned task details, and status.
 - 2026-07-27: Added root Streamlit app (`app.py`) as a unified portfolio router using `st.navigation` and `st.Page`.
+- 2026-08-04: Created Week 4 workspace (`week4/`) for Client-Ready Sprint.
+- 2026-08-04: Added `deployed_url` configuration parameters in `registry.py` to allow team members to deploy their modules independently and register their live links in the root portfolio application.
+- 2026-08-04: Leader module `chatbot_deployment` implements dynamic client organization configuration, basic error validations, and sentiment-based human support handoffs, storing outreach tracker logs in `week4/data/outreach_tracker.xlsx`.
 
 ## Decisions Made
 

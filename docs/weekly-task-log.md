@@ -212,6 +212,56 @@ Important files:
 
 ---
 
+## Week 4 - Client-Ready Sprint
+
+### Original Task
+
+Turn a Week 2/3 chatbot prototype into a client-presentable package: hosted demo, pricing options, and a one-page proposal. Also identify up to 3 organizations or professionals for client outreach, log outreach platforms and response dates in the outreach tracker log, and record a 3-5 min screen walkthrough demo video.
+
+Group leader responsibility:
+- consolidate the group's weekly submissions
+- send a short status summary update to the Team Lead by Friday
+- submit anonymous feedback on the Team Lead via the feedback form
+
+### Group Direction
+
+Group 54 organized Week 4 as a Client-Ready Sprint Suite under `week4/` with dynamic branding configurations, basic validation guards, warm human-handoff triggers, and direct deployment URLs integration inside the registry.
+
+### Module Assignments
+
+| Member | Module Key | Assigned Project | Scope Summary |
+|---|---|---|---|
+| Arsalan Qasim | `chatbot_deployment` | Client-Ready AI Chatbot Deployment Package | Configurable client context, input validation, warm human handoff escalation, interactive ROI calculator, outreach Excel logger. |
+| MUHAMMAD WASIM | `roi_calculator_real_estate` | AI Automation ROI Calculator | Standard time/cost savings projection calculator. |
+| Muhammad Faozan Mujtaba | `knowledge_assistant_airline` | RAG-based Knowledge Assistant | Chunk/embed Q&A assistant for company policies. |
+| Shahidullah | `model_comparison_bank` | AI Model Comparison & Recommendation Report | Multi-vendor evaluation memo and recommendation scoring matrix. |
+| Ali Ammar Haider | `predictive_dashboard_tutor` | Predictive Dashboard for a Small Business | Moving average/regression projection actual vs predicted dashboard. |
+| Abdul Haseeb | `chatbot_deployment_courier` | Client-Ready AI Chatbot Deployment Package | Courier chatbot client-ready deployment. |
+| Hammad Abbas | `roi_calculator_daraz` | AI Automation ROI Calculator | Daraz business-case automation savings dashboard. |
+| Ali Zaib | `knowledge_assistant_foodpanda` | RAG-based Knowledge Assistant | RAG Q&A retrieval engine with hallucination checks. |
+| Malik Sudais | `model_comparison_careem` | AI Model Comparison & Recommendation Report | Provider accuracy/latency comparison audit. |
+
+### Week 4 Workspace
+
+Important files:
+
+- `week4/src/app.py`
+- `week4/src/config.py`
+- `week4/src/modules/registry.py`
+- `week4/src/modules/chatbot_deployment/`
+- `week4/data/outreach_tracker.xlsx`
+- `week4/deploy_prep.py`
+- `week4/docs/Weekly/Week4_Status_Report.md`
+
+### How It Was Built
+
+- Established a configurable brand input inside the UI so that chatbot, proposal documents, and ROI equations adapt dynamically.
+- Implemented robust regex vowel-checks and length-validators inside the chatbot engine to ensure input quality.
+- Added Excel logging capability (`openpyxl`) to track outreach actions.
+- Created `deploy_prep.py` to allow teammates to extract and deploy standalone widgets, linking them back via the registry.
+
+---
+
 ## Future Weeks
 
 Add future weekly tasks below using the same structure:
@@ -224,4 +274,5 @@ Add future weekly tasks below using the same structure:
 - deliverables
 - evidence
 - final status
+
 
