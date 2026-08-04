@@ -101,12 +101,12 @@ def render_ui() -> None:
         api_provider = st.selectbox("AI Model Provider", options=provider_options, index=default_index)
 
         api_key = ""
-        api_model_name = "gemini-1.5-flash"  # Default
+        api_model_name = "gemini-2.5-flash"  # Default
         if api_provider == "Gemini":
             # Model selection
             st.markdown("#### Gemini Model Selection")
             st.caption("Both of these models are available on the free tier. Flash is faster and has higher limits; Pro is more capable.")
-            api_model_name = st.selectbox("Select Model", ["gemini-1.5-flash", "gemini-1.5-pro"])
+            api_model_name = st.selectbox("Select Model", ["gemini-2.5-flash", "gemini-2.5-pro"])
             
             default_key = env_gemini_key or ""
             if default_key:
