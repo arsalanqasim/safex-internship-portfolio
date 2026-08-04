@@ -86,7 +86,7 @@ def render_ui() -> None:
         st.markdown("### 🔌 Live LLM API Configuration")
         st.caption("Select your AI model provider and input an API key to enable advanced conversational intelligence with live fallback support.")
 
-        env_gemini_key = get_secret("GEMINI_API_KEY")
+        env_gemini_key = get_secret("GEMINI_API_KEY") or get_secret("GOOGLE_API_KEY")
         env_openai_key = get_secret("OPENAI_API_KEY")
 
         default_provider = "None (Local TF-IDF)"
