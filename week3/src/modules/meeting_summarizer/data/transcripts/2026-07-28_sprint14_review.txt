@@ -1,0 +1,26 @@
+Meeting: Sprint 14 Review - Orchard Foods Portal
+Date: 2026-07-28
+Attendees: Ayesha Rauf (Delivery Lead), Bilal Ahmed (Backend Engineer), Hina Shah (QA Lead), Usman Tariq (Frontend Engineer), Danish Iqbal (DevOps)
+---
+
+[00:02] Ayesha: Good morning everyone, let's get started.
+[00:09] Ayesha: We closed eleven of the fourteen stories this sprint, so velocity is holding at around forty points.
+[00:24] Bilal: The checkout service refactor is done and merged into main. The three open stories are all on the payments integration.
+[00:41] Hina: I want to flag a problem. Regression testing on the payments flow is blocked because the Orchard sandbox credentials expired on Friday.
+[01:03] Ayesha: That is a genuine blocker. Bilal will chase Orchard for fresh sandbox credentials by tomorrow so that QA is not sitting idle.
+[01:18] Bilal: Understood. I'll also mirror the sandbox configuration into our staging vault so this cannot happen again.
+[01:35] Usman: On the frontend, the order tracking screen is behind schedule. The design handoff came in late and I lost about three days.
+[01:52] Ayesha: How much more time do you actually need on it?
+[02:00] Usman: If the final icons land this week I can ship the order tracking screen by next Wednesday.
+[02:11] Ayesha: That works for me.
+[02:16] Ayesha: We agreed to move the order tracking screen into Sprint 15 rather than shipping it half finished.
+[02:30] Danish: Separate issue from my side. The staging cluster ran out of disk twice last week because nobody is rotating the build artefacts.
+[02:47] Danish: I'll set up an automated artefact cleanup job on the staging cluster by Friday.
+[03:02] Ayesha: Good. Hina, can you prepare the regression report for the client review?
+[03:11] Hina: Of course. I'll have the regression report ready by 5 August.
+[03:25] Ayesha: One more thing. We decided to standardise on pnpm across all three repositories, so the yarn lockfiles are removed this sprint.
+[03:44] Usman: Who is actually doing that migration?
+[03:48] Ayesha: We'll pick up the pnpm migration in planning, it is not assigned to anyone yet.
+[04:02] Hina: Do we still need the manual smoke test checklist once the automated suite lands?
+[04:12] Ayesha: That is an open question and it stays open until the client tells us either way.
+[04:25] Ayesha: Thanks everyone, good sprint.
