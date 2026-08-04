@@ -103,10 +103,26 @@ def render_ui() -> None:
         api_key = ""
         if api_provider == "Gemini":
             default_key = env_gemini_key or ""
-            api_key = st.text_input("Gemini API Key", value=default_key, type="password", help="Obtain a free key from Google AI Studio")
+            if default_key:
+                st.success("🔒 API Key loaded from server secrets.")
+                override = st.checkbox("Override server API Key")
+                if override:
+                    api_key = st.text_input("Enter Custom Gemini API Key", type="password", help="Obtain a free key from Google AI Studio")
+                else:
+                    api_key = default_key
+            else:
+                api_key = st.text_input("Gemini API Key", type="password", help="Obtain a free key from Google AI Studio")
         elif api_provider == "OpenAI":
             default_key = env_openai_key or ""
-            api_key = st.text_input("OpenAI API Key", value=default_key, type="password", help="Obtain an API key from OpenAI Platform")
+            if default_key:
+                st.success("🔒 API Key loaded from server secrets.")
+                override = st.checkbox("Override server API Key")
+                if override:
+                    api_key = st.text_input("Enter Custom OpenAI API Key", type="password", help="Obtain an API key from OpenAI Platform")
+                else:
+                    api_key = default_key
+            else:
+                api_key = st.text_input("OpenAI API Key", type="password", help="Obtain an API key from OpenAI Platform")
 
         engine_provider = None if api_provider == "None (Local TF-IDF)" else api_provider
         engine_key = api_key if engine_provider else None
