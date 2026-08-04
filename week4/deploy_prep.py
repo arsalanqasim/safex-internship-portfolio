@@ -106,6 +106,7 @@ pandas>=2.0.0
 numpy>=1.24.0
 scikit-learn>=1.2.0
 openpyxl>=3.1.0
+requests>=2.31.0
 """
     with open(DEPLOY_DIR / "requirements.txt", "w", encoding="utf-8") as f:
         f.write(requirements_content)

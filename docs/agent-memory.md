@@ -28,6 +28,7 @@ Do not store:
 - 2026-08-04: Created Week 4 workspace (`week4/`) for Client-Ready Sprint.
 - 2026-08-04: Added `deployed_url` configuration parameters in `registry.py` to allow team members to deploy their modules independently and register their live links in the root portfolio application.
 - 2026-08-04: Leader module `chatbot_deployment` implements dynamic client organization configuration, basic error validations, and sentiment-based human support handoffs, storing outreach tracker logs in `week4/data/outreach_tracker.xlsx`.
+- 2026-08-04: Upgraded the `chatbot_deployment` engine to a hybrid model supporting live Gemini or OpenAI API requests via direct HTTP POST calls, using local TF-IDF as a fail-safe offline fallback. Implemented key fetching from `.env` and Streamlit Secrets.
 
 ## Decisions Made
 

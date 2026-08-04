@@ -48,6 +48,16 @@ def save_outreach_log(org_name: str, platform: str, date_str: str, status: str, 
     df.to_excel(tracker_path, index=False, engine="openpyxl")
 
 
+def get_secret(key_name: str) -> str | None:
+    """Safely fetch a secret from Streamlit secrets or OS environment."""
+    try:
+        if key_name in st.secrets:
+            return st.secrets[key_name]
+    except Exception:
+        pass
+    return os.getenv(key_name)
+
+
 def render_ui() -> None:
     """Render Arsalan Qasim's submission-ready chatbot deployment package."""
     metadata = MODULE_REGISTRY["week4"]["chatbot_deployment"]
@@ -66,21 +76,56 @@ def render_ui() -> None:
         unsafe_allow_html=True,
     )
 
-    # 2. Dynamic Branding Config Panel
+    # 2. Dynamic Branding Config & API Config Panel
     with st.sidebar:
         st.markdown("### Client Branding Settings")
         st.caption("Change the client organization details below. The entire dashboard and chatbot will adapt dynamically!")
         brand_name = st.text_input("Configured Client Brand Name", value="ThreadStyle Co.")
         st.divider()
 
-    # Instantiate engine with the chosen brand name
-    engine = CustomerSupportEngine(brand_name=brand_name)
+        st.markdown("### 🔌 Live LLM API Configuration")
+        st.caption("Select your AI model provider and input an API key to enable advanced conversational intelligence with live fallback support.")
+
+        env_gemini_key = get_secret("GEMINI_API_KEY")
+        env_openai_key = get_secret("OPENAI_API_KEY")
+
+        default_provider = "None (Local TF-IDF)"
+        if env_gemini_key:
+            default_provider = "Gemini"
+        elif env_openai_key:
+            default_provider = "OpenAI"
+
+        provider_options = ["None (Local TF-IDF)", "Gemini", "OpenAI"]
+        default_index = provider_options.index(default_provider)
+
+        api_provider = st.selectbox("AI Model Provider", options=provider_options, index=default_index)
+
+        api_key = ""
+        if api_provider == "Gemini":
+            default_key = env_gemini_key or ""
+            api_key = st.text_input("Gemini API Key", value=default_key, type="password", help="Obtain a free key from Google AI Studio")
+        elif api_provider == "OpenAI":
+            default_key = env_openai_key or ""
+            api_key = st.text_input("OpenAI API Key", value=default_key, type="password", help="Obtain an API key from OpenAI Platform")
+
+        engine_provider = None if api_provider == "None (Local TF-IDF)" else api_provider
+        engine_key = api_key if engine_provider else None
+        st.divider()
+
+    # Instantiate engine with the chosen brand name and API credentials
+    engine = CustomerSupportEngine(
+        brand_name=brand_name,
+        confidence_threshold=0.20,
+        api_provider=engine_provider,
+        api_key=engine_key
+    )
 
     # Expanded details
     with st.expander("📌 Module Specifications", expanded=False):
         st.write(f"**Objective:** {metadata['description']}")
         st.write(f"**Tech Stack:** {' · '.join(metadata['tech'])}")
         st.write(f"**Configured Client:** {brand_name}")
+        st.write(f"**Engine Active:** {api_provider}")
 
     # UI Tabs
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
@@ -152,8 +197,12 @@ def render_ui() -> None:
                 st.markdown("#### Diagnostics")
                 st.metric("Intent Detected", res["intent"])
                 st.metric("Confidence Score", f"{res['confidence']:.2f}")
+                st.write(f"**Engine Used:** `{res.get('engine_used', 'Local TF-IDF')}`")
                 st.write(f"**Category:** {res['category']}")
-                if res.get("matched_pattern"):
+                
+                if res.get("api_error"):
+                    st.error(f"🔌 **API Error Details:**\n\n{res['api_error']}")
+                elif res.get("matched_pattern"):
                     st.caption(f"Matched training pattern: *\"{res['matched_pattern']}\"*")
 
     # Tab 2: 1-Page Client Proposal

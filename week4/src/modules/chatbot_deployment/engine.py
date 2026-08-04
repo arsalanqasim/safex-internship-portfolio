@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import re
+import requests
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -134,11 +135,19 @@ BENCHMARK_TEST_SUITE = [
 
 
 class CustomerSupportEngine:
-    """Client-ready NLP chatbot engine with custom branding and error fallbacks."""
+    """Client-ready NLP chatbot engine with custom branding, LLM APIs, and error fallbacks."""
 
-    def __init__(self, brand_name: str = "ThreadStyle Co.", confidence_threshold: float = 0.20):
+    def __init__(
+        self,
+        brand_name: str = "ThreadStyle Co.",
+        confidence_threshold: float = 0.20,
+        api_provider: str = None,
+        api_key: str = None
+    ):
         self.brand_name = brand_name
         self.confidence_threshold = confidence_threshold
+        self.api_provider = api_provider
+        self.api_key = api_key
         self._prepare_knowledge_base()
         self._prepare_vectorizer()
 
@@ -163,10 +172,93 @@ class CustomerSupportEngine:
         self.vectorizer = TfidfVectorizer(ngram_range=(1, 2), stop_words="english")
         self.tfidf_matrix = self.vectorizer.fit_transform(self.documents)
 
+    def _call_gemini_api(self, user_query: str) -> str:
+        """Call Google Gemini API using direct requests."""
+        if not self.api_key:
+            raise ValueError("Gemini API Key is missing.")
+
+        faq_data = json.dumps(self.knowledge_base, indent=2)
+        system_prompt = (
+            f"You are a professional, helpful customer support representative for the e-commerce clothing brand '{self.brand_name}'.\n"
+            f"Here is the official store policy knowledge base (FAQ):\n{faq_data}\n\n"
+            "Guidelines:\n"
+            "1. Answer the customer's query accurately using the knowledge base policies where applicable.\n"
+            "2. Adopt a helpful, warm, and professional tone.\n"
+            f"3. Refer to the store as '{self.brand_name}'.\n"
+            "4. If the query is outside the scope of the store policies, state that you cannot assist with that specific request and politely offer to escalate the customer to a live human agent.\n"
+            "5. Keep responses concise (under 3-4 sentences).\n"
+        )
+
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={self.api_key}"
+        headers = {"Content-Type": "application/json"}
+        payload = {
+            "contents": [
+                {
+                    "parts": [
+                        {"text": f"{system_prompt}\n\nCustomer: {user_query}\nSupport Representative:"}
+                    ]
+                }
+            ],
+            "generationConfig": {
+                "temperature": 0.3,
+                "maxOutputTokens": 200
+            }
+        }
+
+        response = requests.post(url, headers=headers, json=payload, timeout=8)
+        response.raise_for_status()
+        resp_json = response.json()
+
+        try:
+            return resp_json["candidates"][0]["content"]["parts"][0]["text"].strip()
+        except (KeyError, IndexError):
+            raise ValueError("Failed to parse Gemini API response structure.")
+
+    def _call_openai_api(self, user_query: str) -> str:
+        """Call OpenAI Chat Completions API using direct requests."""
+        if not self.api_key:
+            raise ValueError("OpenAI API Key is missing.")
+
+        faq_data = json.dumps(self.knowledge_base, indent=2)
+        system_prompt = (
+            f"You are a professional, helpful customer support representative for the e-commerce clothing brand '{self.brand_name}'.\n"
+            f"Here is the official store policy knowledge base (FAQ):\n{faq_data}\n\n"
+            "Guidelines:\n"
+            "1. Answer the customer's query accurately using the knowledge base policies where applicable.\n"
+            "2. Adopt a helpful, warm, and professional tone.\n"
+            f"3. Refer to the store as '{self.brand_name}'.\n"
+            "4. If the query is outside the scope of the store policies, state that you cannot assist with that specific request and politely offer to escalate the customer to a live human agent.\n"
+            "5. Keep responses concise (under 3-4 sentences).\n"
+        )
+
+        url = "https://api.openai.com/v1/chat/completions"
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {self.api_key}"
+        }
+        payload = {
+            "model": "gpt-4o-mini",
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_query}
+            ],
+            "temperature": 0.3,
+            "max_tokens": 200
+        }
+
+        response = requests.post(url, headers=headers, json=payload, timeout=8)
+        response.raise_for_status()
+        resp_json = response.json()
+
+        try:
+            return resp_json["choices"][0]["message"]["content"].strip()
+        except (KeyError, IndexError):
+            raise ValueError("Failed to parse OpenAI API response structure.")
+
     def classify_query(self, user_query: str) -> dict:
-        """Classify user query intent, check error states, and check escalation rules."""
+        """Classify user query intent, check error states, check escalation rules, and generate response."""
         cleaned_query = user_query.strip()
-        
+
         # 1. Error Handling: Empty query check
         if not cleaned_query:
             return {
@@ -211,39 +303,63 @@ class CustomerSupportEngine:
         max_idx = int(np.argmax(similarities))
         max_score = float(similarities[max_idx])
 
-        # Check if classification score falls below threshold
-        if max_score < self.confidence_threshold:
-            return {
-                "intent": "Out of Scope / Unmapped",
-                "category": "Fallback Support",
-                "confidence": max_score,
-                "response": f"I'm sorry, I couldn't find an exact match for your inquiry about '{cleaned_query}'. I am transferring your session to a live '{self.brand_name}' agent who will help you shortly.",
-                "escalated": True,
-                "escalation_reason": f"Similarity score ({max_score:.2f}) below threshold ({self.confidence_threshold})"
-            }
-
         faq_item = self.knowledge_base[self.intent_indices[max_idx]]
-        should_escalate = forced_escalation or faq_item["requires_escalation"]
+        intent_detected = faq_item["intent"] if max_score >= self.confidence_threshold else "Out of Scope / Unmapped"
+        category_detected = faq_item["category"] if max_score >= self.confidence_threshold else "Fallback Support"
+        matched_pattern_text = self.documents[max_idx] if max_score >= self.confidence_threshold else None
+
+        # Generate Response: Generative LLM vs Local TF-IDF Fallback
+        response_text = ""
+        engine_used = "Local TF-IDF"
+        api_error = None
+
+        if self.api_provider and self.api_key:
+            try:
+                if self.api_provider == "Gemini":
+                    response_text = self._call_gemini_api(cleaned_query)
+                    engine_used = "Generative AI (Gemini)"
+                elif self.api_provider == "OpenAI":
+                    response_text = self._call_openai_api(cleaned_query)
+                    engine_used = "Generative AI (OpenAI)"
+                else:
+                    raise ValueError(f"Unknown API provider: {self.api_provider}")
+            except Exception as e:
+                api_error = str(e)
+                # Fall back to TF-IDF response
+                engine_used = f"Local TF-IDF (Fallback - API Error: {type(e).__name__})"
+
+        # Use TF-IDF response if local is selected, or if API call failed/was bypassed
+        if not response_text:
+            if max_score < self.confidence_threshold:
+                response_text = f"I'm sorry, I couldn't find an exact match for your inquiry about '{cleaned_query}'. I am transferring your session to a live '{self.brand_name}' agent who will help you shortly."
+            else:
+                response_text = faq_item["response"]
+
+        should_escalate = forced_escalation or (max_score < self.confidence_threshold) or faq_item["requires_escalation"]
 
         escalation_reason = None
         if forced_escalation:
             escalation_reason = "Priority keyword triggered escalation"
+        elif max_score < self.confidence_threshold:
+            escalation_reason = f"Similarity score ({max_score:.2f}) below threshold ({self.confidence_threshold})"
         elif faq_item["requires_escalation"]:
             escalation_reason = "Policy trigger: Damaged/wrong goods issues require human agent care"
 
-        response_text = faq_item["response"]
         if should_escalate:
             ticket_id = f"TK-{hash(cleaned_query) % 100000:05d}"
-            response_text += f"\n\n🚨 **Human Support Handoff Triggered**: A support ticket ({ticket_id}) has been created. A representative from '{self.brand_name}' will contact you shortly."
+            if "Human Support Handoff Triggered" not in response_text:
+                response_text += f"\n\n🚨 **Human Support Handoff Triggered**: A support ticket ({ticket_id}) has been created. A representative from '{self.brand_name}' will contact you shortly."
 
         return {
-            "intent": faq_item["intent"],
-            "category": faq_item["category"],
+            "intent": intent_detected,
+            "category": category_detected,
             "confidence": round(max_score, 3),
             "response": response_text,
             "escalated": should_escalate,
             "escalation_reason": escalation_reason,
-            "matched_pattern": self.documents[max_idx]
+            "matched_pattern": matched_pattern_text,
+            "engine_used": engine_used,
+            "api_error": api_error
         }
 
     def run_benchmark(self) -> dict:
