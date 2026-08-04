@@ -143,7 +143,7 @@ class CustomerSupportEngine:
         confidence_threshold: float = 0.20,
         api_provider: str = None,
         api_key: str = None,
-        api_model: str = "gemini-2.5-flash"
+        api_model: str = "gemini-3.5-flash"
     ):
         self.brand_name = brand_name
         self.confidence_threshold = confidence_threshold
