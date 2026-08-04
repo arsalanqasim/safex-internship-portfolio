@@ -142,12 +142,14 @@ class CustomerSupportEngine:
         brand_name: str = "ThreadStyle Co.",
         confidence_threshold: float = 0.20,
         api_provider: str = None,
-        api_key: str = None
+        api_key: str = None,
+        api_model: str = "gemini-1.5-flash"
     ):
         self.brand_name = brand_name
         self.confidence_threshold = confidence_threshold
         self.api_provider = api_provider
         self.api_key = api_key
+        self.api_model = api_model
         self._prepare_knowledge_base()
         self._prepare_vectorizer()
 
@@ -189,7 +191,7 @@ class CustomerSupportEngine:
             "5. Keep responses concise (under 3-4 sentences).\n"
         )
 
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={self.api_key}"
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.api_model}:generateContent?key={self.api_key}"
         headers = {"Content-Type": "application/json"}
         payload = {
             "contents": [
