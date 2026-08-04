@@ -148,7 +148,7 @@ class CustomerSupportEngine:
         self.brand_name = brand_name
         self.confidence_threshold = confidence_threshold
         self.api_provider = api_provider
-        self.api_key = api_key
+        self.api_key = api_key.strip().replace(" ", "").replace("\n", "").replace("\r", "") if api_key else None
         self.api_model = api_model
         self._prepare_knowledge_base()
         self._prepare_vectorizer()
