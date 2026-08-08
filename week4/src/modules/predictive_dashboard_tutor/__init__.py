@@ -1,1 +1,1 @@
-"""Module package initialization."""
+"""Predictive Dashboard Tutor module initialization."""
