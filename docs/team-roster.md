@@ -79,7 +79,7 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 | MUHAMMAD WASIM | Member | AI Automation ROI Calculator | `week4/src/modules/roi_calculator_real_estate/` | In progress | 2026-08-04 | Scaffolding created. |
 | Muhammad Faozan Mujtaba | Member | RAG-based Knowledge Assistant | `week4/src/modules/knowledge_assistant_airline/` | In progress | 2026-08-04 | Scaffolding created. |
 | Shahidullah | Member | AI Model Comparison & Recommendation Report | `week4/src/modules/model_comparison_bank/` | In progress | 2026-08-04 | Scaffolding created. |
-| Ali Ammar Haider | Member | Predictive Dashboard for a Small Business | `week4/src/modules/predictive_dashboard_tutor/` | In progress | 2026-08-04 | Scaffolding created. |
+| Ali Ammar Haider | Member | Predictive Dashboard for a Small Business | `week4/src/modules/predictive_dashboard_tutor/` | Submitted | 2026-08-09 | Module completed and verified. |
 | Abdul Haseeb | Member | Client-Ready AI Chatbot Deployment Package | `week4/src/modules/chatbot_deployment_courier/` | In progress | 2026-08-04 | Scaffolding created. |
 | Hammad Abbas | Member | AI Automation ROI Calculator | `week4/src/modules/roi_calculator_daraz/` | In progress | 2026-08-04 | Scaffolding created. |
 | Ali Zaib | Member | RAG-based Knowledge Assistant | `week4/src/modules/knowledge_assistant_foodpanda/` | In progress | 2026-08-04 | Scaffolding created. |
@@ -93,7 +93,7 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 | MUHAMMAD WASIM | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
 | Muhammad Faozan Mujtaba | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
 | Shahidullah | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
-| Ali Ammar Haider | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
+| Ali Ammar Haider | Received | Received | Received | Received | Received | Received | Tracked in Sheet | None. |
 | Abdul Haseeb | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
 | Hammad Abbas | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
 | Ali Zaib | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
