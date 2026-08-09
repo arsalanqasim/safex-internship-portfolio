@@ -9,9 +9,11 @@ import sys
 import streamlit as st
 
 # Clean up sys.modules and sys.path to prevent cross-talk/collisions between weeks
-for key in list(sys.modules.keys()):
-    if (key == "src" or key.startswith("src.")) and key != __name__:
-        del sys.modules[key]
+if not os.environ.get("SAFEX_ROOT_DASHBOARD"):
+    for key in list(sys.modules.keys()):
+        if (key == "src" or key.startswith("src.")) and key != __name__ and not key.startswith(__name__ + "."):
+            sys.modules.pop(key, None)
+    importlib.invalidate_caches()
 
 current_week_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path = [p for p in sys.path if not any(w in p for w in ["week1", "week2", "week3", "week4"]) or p == current_week_dir]
