@@ -56,12 +56,12 @@ MODULE_REGISTRY = {
             "developer": "Ali Ammar Haider",
             "role": "Group Member",
             "email": "ahwheh688@gmail.com",
-            "status": "Placeholder (Scaffolding Ready)",
+            "status": "Submission Ready",
             "tech": ["Python", "scikit-learn", "Pandas", "Matplotlib", "Streamlit"],
             "description": "Small business forecasting dashboard displaying historical actual values vs model regression projections alongside business recommendations.",
             "import_path": "src.modules.predictive_dashboard_tutor.ui",
             "icon": "📈",
-            "deployed_url": None
+            "deployed_url": "https://safex-week4-predictive-dashboard-tutor.streamlit.app"
         },
         "chatbot_deployment_courier": {
             "title": "Client-Ready AI Chatbot Deployment Package",
