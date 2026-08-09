@@ -229,17 +229,17 @@ Group 54 organized Week 4 as a Client-Ready Sprint Suite under `week4/` with dyn
 
 ### Module Assignments
 
-| Member | Module Key | Assigned Project | Scope Summary |
-|---|---|---|---|
-| Arsalan Qasim | `chatbot_deployment` | Client-Ready AI Chatbot Deployment Package | Configurable client context, input validation, warm human handoff escalation, interactive ROI calculator, outreach Excel logger. |
-| MUHAMMAD WASIM | `roi_calculator_real_estate` | AI Automation ROI Calculator | Standard time/cost savings projection calculator. |
-| Muhammad Faozan Mujtaba | `knowledge_assistant_airline` | RAG-based Knowledge Assistant | Chunk/embed Q&A assistant for company policies. |
-| Shahidullah | `model_comparison_bank` | AI Model Comparison & Recommendation Report | Multi-vendor evaluation memo and recommendation scoring matrix. |
-| Ali Ammar Haider | `predictive_dashboard_tutor` | Predictive Dashboard for a Small Business | Moving average/regression projection actual vs predicted dashboard. |
-| Abdul Haseeb | `chatbot_deployment_courier` | Client-Ready AI Chatbot Deployment Package | Courier chatbot client-ready deployment. |
-| Hammad Abbas | `roi_calculator_daraz` | AI Automation ROI Calculator | Daraz business-case automation savings dashboard. |
-| Ali Zaib | `knowledge_assistant_foodpanda` | RAG-based Knowledge Assistant | RAG Q&A retrieval engine with hallucination checks. |
-| Malik Sudais | `model_comparison_careem` | AI Model Comparison & Recommendation Report | Provider accuracy/latency comparison audit. |
+| Member | Module Key | Assigned Project | Scope Summary | Status |
+|---|---|---|---|---|
+| Arsalan Qasim | `chatbot_deployment` | Client-Ready AI Chatbot Deployment Package | Configurable client context, input validation, warm human handoff escalation, interactive ROI calculator, outreach Excel logger. | **Submitted** |
+| MUHAMMAD WASIM | `roi_calculator_real_estate` | AI Automation ROI Calculator | Standard time/cost savings projection calculator. | In progress |
+| Muhammad Faozan Mujtaba | `knowledge_assistant_airline` | RAG-based Knowledge Assistant | Chunk/embed Q&A assistant for company policies. | In progress |
+| Shahidullah | `model_comparison_bank` | AI Model Comparison & Recommendation Report | Multi-vendor evaluation memo and recommendation scoring matrix. | In progress |
+| Ali Ammar Haider | `predictive_dashboard_tutor` | Predictive Dashboard for a Small Business | Moving average/regression projection actual vs predicted dashboard. | **Submitted** |
+| Abdul Haseeb | `chatbot_deployment_courier` | Client-Ready AI Chatbot Deployment Package | Courier chatbot client-ready deployment. | In progress |
+| Hammad Abbas | `roi_calculator_daraz` | AI Automation ROI Calculator | Daraz business-case automation savings dashboard. | In progress |
+| Ali Zaib | `knowledge_assistant_foodpanda` | RAG-based Knowledge Assistant | RAG Q&A retrieval engine with hallucination checks. | In progress |
+| Malik Sudais | `model_comparison_careem` | AI Model Comparison & Recommendation Report | Provider accuracy/latency comparison audit. | In progress |
 
 ### Week 4 Workspace
 
@@ -249,9 +249,27 @@ Important files:
 - `week4/src/config.py`
 - `week4/src/modules/registry.py`
 - `week4/src/modules/chatbot_deployment/`
+- `week4/src/modules/predictive_dashboard_tutor/`
+- `week4/tutor_deploy_package/`
 - `week4/data/outreach_tracker.xlsx`
 - `week4/deploy_prep.py`
 - `week4/docs/Weekly/Week4_Status_Report.md`
+
+### What Was Built
+
+1. **Client-Ready AI Chatbot Deployment Package (`chatbot_deployment`)**:
+   - Dynamic rebranding panel in Streamlit UI adapting corporate name and terminology across chatbot simulator, 1-page proposal generator, and ROI calculator.
+   - Input validation guards (regex gibberish checks and maximum length bounds).
+   - Warm human support escalation system generating ticket tokens (`TK-XXXXX`) upon keyword triggers or low-confidence matches.
+   - Excel outreach logger (`openpyxl`) storing client contact logs in `week4/data/outreach_tracker.xlsx`.
+   - Standalone extraction script (`deploy_prep.py`) generating production-ready deployment packages.
+
+2. **Predictive Dashboard for a Small Business (`predictive_dashboard_tutor`)**:
+   - `scikit-learn` OLS Linear Regression forecasting engine predicting Month 25 student enrollments based on 24 months of historical operations for LearnHub Academy.
+   - Model accuracy metrics ($R^2$ fit coefficient and Mean Absolute Error).
+   - Matplotlib trendline chart dynamically matching Light/Dark theme selections.
+   - Dynamically evaluated business recommendations (Tutor Recruiting, Funnel UX, Administrative Capacity).
+   - Standalone production package (`week4/tutor_deploy_package/`) deployed live on Streamlit Cloud (`https://safex-week4-predictive-dashboard-tutor.streamlit.app`).
 
 ### How It Was Built
 
@@ -259,6 +277,21 @@ Important files:
 - Implemented robust regex vowel-checks and length-validators inside the chatbot engine to ensure input quality.
 - Added Excel logging capability (`openpyxl`) to track outreach actions.
 - Created `deploy_prep.py` to allow teammates to extract and deploy standalone widgets, linking them back via the registry.
+- Built comprehensive unit tests (`pytest`) covering dataset loading, model predictions, recommendations count, and dynamic scenario evaluation.
+
+### Week 4 Member Tracking
+
+| Member | Module Key | Contribution & Submission | Evidence | Status |
+|---|---|---|---|---|
+| Arsalan Qasim | `chatbot_deployment` | Client-Ready AI Chatbot Deployment Package with dynamic branding, input validation, human handoff, ROI calculator, and Excel logger. | `week4/src/modules/chatbot_deployment/`, `deploy_prep.py`, `outreach_tracker.xlsx` | **Submitted** |
+| Ali Ammar Haider | `predictive_dashboard_tutor` | Predictive Dashboard for LearnHub Academy with OLS regression engine, dynamic recommendations, Matplotlib chart, tests, and live deployment package. | `week4/src/modules/predictive_dashboard_tutor/`, `week4/tutor_deploy_package/`, PR #15 | **Submitted** |
+| MUHAMMAD WASIM | `roi_calculator_real_estate` | AI Automation ROI Calculator (Scaffolding ready). | `week4/src/modules/roi_calculator_real_estate/` | In progress |
+| Muhammad Faozan Mujtaba | `knowledge_assistant_airline` | RAG-based Knowledge Assistant (Scaffolding ready). | `week4/src/modules/knowledge_assistant_airline/` | In progress |
+| Shahidullah | `model_comparison_bank` | AI Model Comparison & Recommendation Report (Scaffolding ready). | `week4/src/modules/model_comparison_bank/` | In progress |
+| Abdul Haseeb | `chatbot_deployment_courier` | Client-Ready AI Chatbot Deployment Package (Scaffolding ready). | `week4/src/modules/chatbot_deployment_courier/` | In progress |
+| Hammad Abbas | `roi_calculator_daraz` | AI Automation ROI Calculator (Scaffolding ready). | `week4/src/modules/roi_calculator_daraz/` | In progress |
+| Ali Zaib | `knowledge_assistant_foodpanda` | RAG-based Knowledge Assistant (Scaffolding ready). | `week4/src/modules/knowledge_assistant_foodpanda/` | In progress |
+| Malik Sudais | `model_comparison_careem` | AI Model Comparison & Recommendation Report (Scaffolding ready). | `week4/src/modules/proposal_invoice_generator/` | In progress |
 
 ---
 

@@ -51,17 +51,32 @@ To ensure code hygiene, avoid merge conflicts, and keep submissions clean, the r
 ### 🤖 [week3/](file:///c:/Users/arsal/Desktop/safex/week3/) — AI Agent Automation Proposal Suite
 * **Purpose:** Modular prototyping and proposal hub for AI agents across various domains.
 * **Core Technology:** Python, Streamlit, LLM APIs.
-* **Deliverable Status:** Active Development. Completed for active members (3 out of 9 modules fully implemented).
+* **Deliverable Status:** Active Development. Completed for active members (4 out of 9 modules fully implemented).
 * **Individual Module Assignments:**
   1. **Arsalan Qasim:** *AI Customer Support Chatbot* (Submitted)
   2. **MUHAMMAD WASIM:** *AI Email Automation & Auto-Reply* (In progress)
-  3. **Muhammad Faozan Mujtaba:** *AI Meeting Summarizer & Action-Item Extractor* (In progress)
+  3. **Muhammad Faozan Mujtaba:** *AI Meeting Summarizer & Action-Item Extractor* (Submitted)
   4. **Shahidullah:** *Automatic Report Generation Agent* (In progress)
   5. **Ali Ammar Haider:** *AI Social Media Scheduler & Caption Generator* (Submitted)
   6. **Abdul Haseeb:** *AI Lead Qualification & Sales Assistant* (In progress)
   7. **Hammad Abbas:** *Resume Screening & Interview Assistant* (In progress)
   8. **Ali Zaib:** *Document Analysis & Knowledge Assistant (RAG)* (Submitted)
   9. **Malik Sudais:** *Invoice / Proposal Generator Agent* (In progress)
+
+### 💼 [week4/](file:///c:/Users/arsal/Desktop/safex/week4/) — Client-Ready Sprint Suite
+* **Purpose:** Production-grade deployment packages, client outreach tracker, pricing ROI modelers, and small business forecasting dashboards.
+* **Core Technology:** Python, Streamlit, scikit-learn, Matplotlib, Pandas, openpyxl, LLM APIs.
+* **Deliverable Status:** Active Development. Completed for active members (2 out of 9 modules submission ready).
+* **Individual Module Assignments:**
+  1. **Arsalan Qasim:** *Client-Ready AI Chatbot Deployment Package* (Submitted)
+  2. **MUHAMMAD WASIM:** *AI Automation ROI Calculator* (In progress)
+  3. **Muhammad Faozan Mujtaba:** *RAG-based Knowledge Assistant* (In progress)
+  4. **Shahidullah:** *AI Model Comparison & Recommendation Report* (In progress)
+  5. **Ali Ammar Haider:** *Predictive Dashboard for a Small Business* (Submitted — [Live App](https://safex-week4-predictive-dashboard-tutor.streamlit.app))
+  6. **Abdul Haseeb:** *Client-Ready AI Chatbot Deployment Package* (In progress)
+  7. **Hammad Abbas:** *AI Automation ROI Calculator* (In progress)
+  8. **Ali Zaib:** *RAG-based Knowledge Assistant* (In progress)
+  9. **Malik Sudais:** *AI Model Comparison & Recommendation Report* (In progress)
 
 ---
 
@@ -102,6 +117,18 @@ cd week3
 pip install -r requirements.txt
 
 # Run automation hub routing app
+streamlit run src/app.py
+```
+
+### Running Week 4 Client-Ready Sprint Suite
+```bash
+# Navigate to Week 4 workspace
+cd week4
+
+# Install requirements
+pip install -r requirements.txt
+
+# Run client sprint routing app
 streamlit run src/app.py
 ```
 

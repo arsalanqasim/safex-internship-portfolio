@@ -48,6 +48,24 @@ Use this checklist before submitting weekly work or handing changes back to the 
 - [ ] Explanation video status is tracked.
 - [ ] Progress report status is tracked.
 
+## Week 3 Module Checklist
+
+- [ ] Module folder exists under `week3/src/modules/`.
+- [ ] Module has `__init__.py`, `engine.py`, and `ui.py`.
+- [ ] Module is registered correctly in `week3/src/modules/registry.py`.
+- [ ] Core prompt template / LLM integration logic is separated from UI.
+- [ ] Automated tests or benchmark evaluations are present in `week3/tests/`.
+- [ ] Documentation explains target company context, prompt architecture, and execution steps.
+
+## Week 4 Module Checklist
+
+- [ ] Module folder exists under `week4/src/modules/`.
+- [ ] Module has `__init__.py`, `engine.py`, and `ui.py`.
+- [ ] Standalone package exists under `week4/<module>_deploy_package/` for independent hosting.
+- [ ] Deployed live app link is configured inside `week4/src/modules/registry.py`.
+- [ ] Module has dynamic branding configuration or input validation guards.
+- [ ] Automated unit tests pass with `pytest`.
+
 ## Member Progress Checklist
 
 - [ ] `docs/team-roster.md` has current status.

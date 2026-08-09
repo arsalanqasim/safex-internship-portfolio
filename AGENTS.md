@@ -166,6 +166,41 @@ python -m pytest
 | `doc_knowledge_assistant` | Ali Zaib | Document Analysis & Knowledge-Base Assistant |
 | `proposal_invoice_generator` | Malik Sudais | Invoice / Proposal Generator Agent |
 
+## Week 4 Guide
+
+`week4/` contains the Client-Ready Sprint Suite. Each member owns a separate module under `week4/src/modules/` and can export a standalone package under `week4/<module>_deploy_package/`.
+
+Expected module shape:
+
+```text
+week4/src/modules/<module_name>/
+  __init__.py
+  engine.py
+  ui.py
+```
+
+Run from `week4/`:
+
+```bash
+pip install -r requirements.txt
+streamlit run src/app.py
+python -m pytest
+```
+
+## Week 4 Member Modules
+
+| Module | Owner | Week 4 Assignment |
+|---|---|---|
+| `chatbot_deployment` | Arsalan Qasim | Client-Ready AI Chatbot Deployment Package |
+| `roi_calculator_real_estate` | MUHAMMAD WASIM | AI Automation ROI Calculator |
+| `knowledge_assistant_airline` | Muhammad Faozan Mujtaba | RAG-based Knowledge Assistant |
+| `model_comparison_bank` | Shahidullah | AI Model Comparison & Recommendation Report |
+| `predictive_dashboard_tutor` | Ali Ammar Haider | Predictive Dashboard for a Small Business |
+| `chatbot_deployment_courier` | Abdul Haseeb | Client-Ready AI Chatbot Deployment Package |
+| `roi_calculator_daraz` | Hammad Abbas | AI Automation ROI Calculator |
+| `knowledge_assistant_foodpanda` | Ali Zaib | RAG-based Knowledge Assistant |
+| `model_comparison_careem` | Malik Sudais | AI Model Comparison & Recommendation Report |
+
 If the roster and code disagree, update `docs/team-roster.md` first with a note under open questions, then adjust code only when the requested ownership is clear.
 
 ## Documentation Standards
