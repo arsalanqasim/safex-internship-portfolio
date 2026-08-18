@@ -562,6 +562,18 @@ def show_dashboard() -> None:
                     <div class="timeline-title">Client-Ready Deployment</div>
                     <div class="timeline-desc">Productized chatbots, built automated ROI spreadsheets, integrated outreach tracker loggers, and wrote standalone deployment scripts.</div>
                 </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Week 5 Milestone</div>
+                    <div class="timeline-title">AI Products & Multi-Track Prototypes</div>
+                    <div class="timeline-desc">Deployed production-grade customer support chatbots with no-code admin panels, lead qualification engines, and executive BI forecasting dashboards.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Week 6 Milestone</div>
+                    <div class="timeline-title">Sell Your Skills & Commercialization</div>
+                    <div class="timeline-desc">Monetized prototypes into 3-tier commercial service packages, executed cold outreach to 47 international brands with live Excel tracking, and secured client discovery meetings.</div>
+                </div>
             </div>
             """,
             unsafe_allow_html=True
@@ -574,6 +586,8 @@ def show_dashboard() -> None:
         w2_reg = load_weekly_registry("week2", "week2") or {}
         w3_reg = load_weekly_registry("week3", "week3") or {}
         w4_reg = load_weekly_registry("week4", "week4") or {}
+        w5_reg = load_weekly_registry("week5", "week5") or {}
+        w6_reg = load_weekly_registry("week6", "week6") or {}
         
         team_members = [
             ("Arsalan Qasim", "Group Leader"),
@@ -607,7 +621,9 @@ def show_dashboard() -> None:
                 "Week 1": "✅ Completed",
                 "Week 2": get_status(w2_reg, name),
                 "Week 3": get_status(w3_reg, name),
-                "Week 4": get_status(w4_reg, name)
+                "Week 4": get_status(w4_reg, name),
+                "Week 5": get_status(w5_reg, name),
+                "Week 6": get_status(w6_reg, name)
             })
             
         st.dataframe(table_data, use_container_width=True, hide_index=True)
@@ -658,6 +674,8 @@ week1_page = st.Page("week1/src/app.py", title="Week 1: FAQ Chatbot", icon="💬
 week2_page = st.Page("week2/src/app.py", title="Week 2: Automation Suite", icon="⚙️", url_path="week2")
 week3_page = st.Page("week3/src/app.py", title="Week 3: AI Agent Proposals", icon="🤖", url_path="week3")
 week4_page = st.Page("week4/src/app.py", title="Week 4: Client Sprint", icon="💼", url_path="week4")
+week5_page = st.Page("week5/src/app.py", title="Week 5: AI Products", icon="🚀", url_path="week5")
+week6_page = st.Page("week6/src/app.py", title="Week 6: Sell Your Skills", icon="💰", url_path="week6")
 
 def main() -> None:
     # Set an environment variable so the child apps know they are running under the root dashboard
@@ -668,7 +686,7 @@ def main() -> None:
     pg = st.navigation(
         {
             "Workspace": [home_page],
-            "Submissions": [week1_page, week2_page, week3_page, week4_page]
+            "Submissions": [week1_page, week2_page, week3_page, week4_page, week5_page, week6_page]
         }
     )
     
@@ -677,3 +695,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

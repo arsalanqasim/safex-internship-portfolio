@@ -1,0 +1,3 @@
+ticket_id,employee_name,employee_email,leave_type,start_date,end_date,leave_days,reason,status,reviewer_notes,created_at,updated_at
+LR-67964834,Jane Doe,jane@safex.com,Annual,2026-04-01,2026-04-02,2,A,Pending,,2026-08-18T11:53:18,2026-08-18T11:53:18
+LR-17C6872E,John Smith,john@safex.com,Sick,2026-04-03,2026-04-03,1,B,Pending,,2026-08-18T11:53:18,2026-08-18T11:53:18

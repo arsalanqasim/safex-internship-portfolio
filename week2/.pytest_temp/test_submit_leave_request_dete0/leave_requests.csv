@@ -1,0 +1,2 @@
+ticket_id,employee_name,employee_email,leave_type,start_date,end_date,leave_days,reason,status,reviewer_notes,created_at,updated_at
+LR-3D3DE42C,Jane Doe,jane@safex.com,Annual,2026-03-01,2026-03-05,5,Trip,Pending,,2026-08-18T11:53:18,2026-08-18T11:53:18

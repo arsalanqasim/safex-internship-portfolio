@@ -1,0 +1,2 @@
+ticket_id,employee_name,employee_email,leave_type,start_date,end_date,leave_days,reason,status,reviewer_notes,created_at,updated_at
+LR-B97A17F9,John Smith,john@safex.com,Casual,2026-08-18,2026-08-19,2,Personal,Approved,Looks good,2026-08-18T11:53:18,2026-08-18T11:53:18

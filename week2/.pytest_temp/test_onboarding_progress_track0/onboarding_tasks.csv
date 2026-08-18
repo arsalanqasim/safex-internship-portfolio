@@ -1,0 +1,10 @@
+task_id,employee_id,task,due_date,completed
+TSK-9ED14529,EMP-95ABFABD,Send welcome email & offer letter confirmation,2026-08-18,True
+TSK-8CBB94BA,EMP-95ABFABD,Create company email and IT accounts,2026-08-18,False
+TSK-2F500826,EMP-95ABFABD,Provision laptop / hardware,2026-08-19,False
+TSK-B1CFCA16,EMP-95ABFABD,"Collect signed HR paperwork (NDA, tax forms)",2026-08-20,False
+TSK-50D432E1,EMP-95ABFABD,Enroll in payroll and benefits,2026-08-21,False
+TSK-FBDA6D86,EMP-95ABFABD,Schedule orientation / company overview session,2026-08-21,False
+TSK-28CBFD16,EMP-95ABFABD,Assign onboarding buddy and team introductions,2026-08-23,False
+TSK-0224E9BB,EMP-95ABFABD,Grant access to internal tools and repositories,2026-08-23,False
+TSK-1F9F96FB,EMP-95ABFABD,30-day check-in with manager,2026-09-17,False

@@ -1,0 +1,202 @@
+[
+  {
+    "timestamp": "2026-08-18T10:15:22",
+    "user_query": "How long does shipping take to Canada?",
+    "matched_faq_id": "faq_01",
+    "confidence_score": 0.88,
+    "source": "Knowledge Base Match",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "We offer Standard Shipping (3-5 business days across US/Canada, 5-7 days international) and Express Shipping (1-2 business days). All orders placed before 2 PM EST ship the same business day."
+  },
+  {
+    "timestamp": "2026-08-18T10:28:45",
+    "user_query": "What is the return window if clothes don't fit?",
+    "matched_faq_id": "faq_06",
+    "confidence_score": 0.82,
+    "source": "Knowledge Base Match",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "We offer a 30-day hassle-free return window for unworn items in original condition with tags attached. Returns are free for domestic orders via our prepaid return portal."
+  },
+  {
+    "timestamp": "2026-08-18T10:42:10",
+    "user_query": "I am extremely angry, my parcel arrived torn and nobody is answering me. I want a human agent now!",
+    "matched_faq_id": "faq_13",
+    "confidence_score": 0.94,
+    "source": "Human Escalation Fallback",
+    "sentiment": "negative",
+    "escalated": true,
+    "bot_response": "I hear your frustration and apologize for the trouble. I have flagged your request for urgent priority human assistance. A senior customer support agent will connect with you shortly, or you can email support@safex-apparel.com directly."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:47",
+    "user_query": "Connect me to a manager right now",
+    "matched_faq_id": "faq_13",
+    "confidence_score": 0.192,
+    "source": "Human Escalation Fallback",
+    "sentiment": "neutral",
+    "escalated": true,
+    "bot_response": "I understand your request and apologize for any inconvenience. I have flagged your conversation for **Priority Human Support**. A member of our customer care team will review your chat history and assist you immediately. You can also reach our live desk directly at **support@safex-apparel.com** or by phone at **1-800-555-SAFEX** (Mon-Fri 9am-7pm EST)."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:47",
+    "user_query": "xyz quantum astrophysics banana teleportation",
+    "matched_faq_id": null,
+    "confidence_score": 0.0,
+    "source": "Fallback Low Confidence",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "I'm not completely confident I understood your specific question. Our chatbot is trained on shipping times, free delivery thresholds, return policies, sizing charts, promo codes, and damaged item exchanges. Could you rephrase your question, or would you prefer to **connect with a human agent**?"
+  },
+  {
+    "timestamp": "2026-08-18T11:50:47",
+    "user_query": "How long does shipping take to Canada?",
+    "matched_faq_id": "faq_01",
+    "confidence_score": 0.375,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "We offer Standard Shipping (3-5 business days across US/Canada, 5-7 days international) and Express Shipping (1-2 business days). All orders placed before 2 PM EST ship the same business day."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:47",
+    "user_query": "How much do I need to spend for free shipping?",
+    "matched_faq_id": "faq_02",
+    "confidence_score": 0.717,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "Yes! We provide Free Standard Shipping on all domestic orders over $75. For international orders, free shipping applies to orders over $150."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:47",
+    "user_query": "Do you deliver to Dubai or Saudi Arabia?",
+    "matched_faq_id": null,
+    "confidence_score": 0.121,
+    "source": "Fallback Low Confidence",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "I'm not completely confident I understood your specific question. Our chatbot is trained on shipping times, free delivery thresholds, return policies, sizing charts, promo codes, and damaged item exchanges. Could you rephrase your question, or would you prefer to **connect with a human agent**?"
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "Where can I enter my tracking number to see package status?",
+    "matched_faq_id": "faq_04",
+    "confidence_score": 0.615,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "Once your order ships, you will receive an email and SMS with a tracking number and a direct carrier link. You can also view live status in the 'Track Order' portal on our website using your order ID."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "I made a typo in my address, can I change it before shipment?",
+    "matched_faq_id": "faq_05",
+    "confidence_score": 0.405,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "You can modify or cancel your order within 60 minutes of placing it by navigating to your Order History or replying directly to your confirmation email. After 60 minutes, our warehouse begins fulfillment and modifications cannot be guaranteed."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "What is the return window if the shirt does not fit?",
+    "matched_faq_id": "faq_06",
+    "confidence_score": 0.497,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "We offer a 30-day hassle-free return window for unworn items in original condition with tags attached. Returns are free for domestic orders via our prepaid return portal."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "When will the refund money be returned to my bank card?",
+    "matched_faq_id": "faq_07",
+    "confidence_score": 0.662,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "Once our warehouse receives and inspects your returned item (usually 2-3 business days), refunds are credited back to your original payment method within 3-5 business days depending on your bank."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "Where is your size guide and measurements chart?",
+    "matched_faq_id": "faq_08",
+    "confidence_score": 0.568,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "We provide a detailed Size Guide with body measurements (inches and cm) on every product page. If you are between sizes, we recommend sizing up for an oversized fit or sizing down for a tailored silhouette."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "Can I wash this organic cotton hoodie in a washing machine?",
+    "matched_faq_id": "faq_09",
+    "confidence_score": 0.505,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "Our apparel uses 100% premium organic cotton and ethically sourced sustainable blends. For best longevity, machine wash cold with like colors and tumble dry on low or hang dry."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "Do you accept Apple Pay or Klarna installment plans?",
+    "matched_faq_id": "faq_10",
+    "confidence_score": 0.674,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and flexible Buy Now Pay Later options including Klarna and Afterpay."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "My discount coupon code is not applying at checkout",
+    "matched_faq_id": "faq_11",
+    "confidence_score": 0.674,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "Enter your coupon or discount code in the 'Promo Code' box during checkout and click Apply. Only one promotional code can be applied per order."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "I received a defective t-shirt with a torn stitch",
+    "matched_faq_id": "faq_12",
+    "confidence_score": 0.483,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "We sincerely apologize! If your item arrived damaged or incorrect, please email support@safex-apparel.com or submit photos in our portal within 7 days of delivery. We will immediately dispatch a free replacement."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "Please connect me to a human representative right now",
+    "matched_faq_id": "faq_13",
+    "confidence_score": 0.506,
+    "source": "Human Escalation Fallback",
+    "sentiment": "neutral",
+    "escalated": true,
+    "bot_response": "I understand your request and apologize for any inconvenience. I have flagged your conversation for **Priority Human Support**. A member of our customer care team will review your chat history and assist you immediately. You can also reach our live desk directly at **support@safex-apparel.com** or by phone at **1-800-555-SAFEX** (Mon-Fri 9am-7pm EST)."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "Can our corporate company order 100 hoodies in bulk?",
+    "matched_faq_id": "faq_14",
+    "confidence_score": 0.519,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "Yes! For corporate or wholesale orders of 50+ units, we offer volume tier discounts ranging from 20% to 45% off MSRP plus custom branding options. Contact wholesale@safex-apparel.com."
+  },
+  {
+    "timestamp": "2026-08-18T11:50:48",
+    "user_query": "Do you offer digital e-gift cards and do they expire?",
+    "matched_faq_id": "faq_15",
+    "confidence_score": 0.695,
+    "source": "Knowledge Base Match (TF-IDF)",
+    "sentiment": "neutral",
+    "escalated": false,
+    "bot_response": "Yes, digital gift cards are available in denominations of $25, $50, $100, and $250. They are delivered instantly via email and never expire or carry maintenance fees."
+  }
+]

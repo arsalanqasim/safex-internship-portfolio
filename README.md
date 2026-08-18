@@ -66,7 +66,7 @@ To ensure code hygiene, avoid merge conflicts, and keep submissions clean, the r
 ### 💼 [week4/](file:///c:/Users/arsal/Desktop/safex/week4/) — Client-Ready Sprint Suite
 * **Purpose:** Production-grade deployment packages, client outreach tracker, pricing ROI modelers, and small business forecasting dashboards.
 * **Core Technology:** Python, Streamlit, scikit-learn, Matplotlib, Pandas, openpyxl, LLM APIs.
-* **Deliverable Status:** Active Development. Completed for active members (2 out of 9 modules submission ready).
+* **Deliverable Status:** Completed for active members (2 out of 9 modules submission ready).
 * **Individual Module Assignments:**
   1. **Arsalan Qasim:** *Client-Ready AI Chatbot Deployment Package* (Submitted)
   2. **MUHAMMAD WASIM:** *AI Automation ROI Calculator* (In progress)
@@ -78,63 +78,61 @@ To ensure code hygiene, avoid merge conflicts, and keep submissions clean, the r
   8. **Ali Zaib:** *RAG-based Knowledge Assistant* (In progress)
   9. **Malik Sudais:** *AI Model Comparison & Recommendation Report* (In progress)
 
+### 🚀 [week5/](file:///c:/Users/arsal/Desktop/safex/week5/) — AI Products & Prototypes Suite
+* **Purpose:** Production-grade client-ready AI products addressing business pain points across Customer Support Chatbots, Lead Qualification Engines, and Business Intelligence Dashboards.
+* **Core Technology:** Python, Streamlit, scikit-learn, Pandas, LLM APIs, JSON persistence, automated testing.
+* **Deliverable Status:** Active Development. Leader module submission-ready.
+* **Individual Module Assignments:**
+  1. **Arsalan Qasim:** *AI Customer Support Chatbot (Client-Ready)* (Submitted)
+  2. **MUHAMMAD WASIM:** *AI-Powered Lead Generation & Qualification Tool* (In progress)
+  3. **Muhammad Faozan Mujtaba:** *AI Business Intelligence Dashboard* (In progress)
+  4. **Shahidullah:** *AI Customer Support Chatbot (Client-Ready)* (In progress)
+  5. **Ali Ammar Haider:** *AI-Powered Lead Generation & Qualification Tool* (In progress)
+  6. **Abdul Haseeb:** *AI Business Intelligence Dashboard* (In progress)
+  7. **Hammad Abbas:** *AI Customer Support Chatbot (Client-Ready)* (In progress)
+  8. **Ali Zaib:** *AI-Powered Lead Generation & Qualification Tool* (In progress)
+  9. **Malik Sudais:** *AI Business Intelligence Dashboard* (In progress)
+
+### 💰 [week6/](file:///c:/Users/arsal/Desktop/safex/week6/) — Sell Your Skills: Commercialization & Client Acquisition
+* **Purpose:** Commercialization command center, 3-tier service packaging, automated cold outreach sequences, live Excel pipeline tracker, social media marketing campaigns, and group leader consolidation.
+* **Core Technology:** Python, Streamlit, Pandas, openpyxl, prompt engineering, Excel export.
+* **Deliverable Status:** Active Development. Leader module submission-ready.
+* **Individual Module Assignments:**
+  1. **Arsalan Qasim:** *Monetize AI Chatbot (Pitch, Pipeline, Outreach & Consolidation)* (Submitted)
+  2. **MUHAMMAD WASIM:** *Monetize AI Lead Gen Tool (Commercial Pitch & Outreach)* (In progress)
+  3. **Muhammad Faozan Mujtaba:** *Monetize AI BI Dashboard (Commercial Pitch & Outreach)* (In progress)
+  4. **Shahidullah:** *Monetize AI Chatbot (Commercial Pitch & Outreach)* (In progress)
+  5. **Ali Ammar Haider:** *Monetize AI Lead Gen Tool (Commercial Pitch & Outreach)* (In progress)
+  6. **Abdul Haseeb:** *Monetize AI BI Dashboard (Commercial Pitch & Outreach)* (In progress)
+  7. **Hammad Abbas:** *Monetize AI Chatbot (Commercial Pitch & Outreach)* (In progress)
+  8. **Ali Zaib:** *Monetize AI Lead Gen Tool (Commercial Pitch & Outreach)* (In progress)
+  9. **Malik Sudais:** *Monetize AI BI Dashboard (Commercial Pitch & Outreach)* (In progress)
+
 ---
 
 ## ⚙️ How to Navigate and Execute
 
-Since every week task is fully modular, you must navigate into the specific folder before installing requirements or running code:
+Since every week task is fully modular, you can run the entire unified suite from the root or navigate into any specific folder:
 
-### Running Week 1 FAQ Chatbot
+### Running Root Unified Portfolio (All 6 Weeks)
 ```bash
-# Navigate to Week 1 workspace
-cd week1
-
-# Install requirements
 pip install -r requirements.txt
-
-# Run original chatbot app
-streamlit run src/app.py
+streamlit run app.py
 ```
 
-### Running Week 2 Business Automation Suite
+### Running Week 5 AI Products Suite
 ```bash
-# Navigate to Week 2 workspace
-cd week2
-
-# Install requirements
+cd week5
 pip install -r requirements.txt
-
-# Run automation hub routing app
 streamlit run src/app.py
-```
-
-### Running Week 3 AI Agent Automation Proposal Suite
-```bash
-# Navigate to Week 3 workspace
-cd week3
-
-# Install requirements
-pip install -r requirements.txt
-
-# Run automation hub routing app
-streamlit run src/app.py
-```
-
-### Running Week 4 Client-Ready Sprint Suite
-```bash
-# Navigate to Week 4 workspace
-cd week4
-
-# Install requirements
-pip install -r requirements.txt
-
-# Run client sprint routing app
-streamlit run src/app.py
-```
-
-### Running Tests
-To run unit tests for a specific week:
-```bash
-cd week1
 python -m pytest
 ```
+
+### Running Week 6 Commercialization Command Center
+```bash
+cd week6
+pip install -r requirements.txt
+streamlit run src/app.py
+python -m pytest
+```
+

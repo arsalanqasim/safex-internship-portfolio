@@ -99,17 +99,73 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 | Ali Zaib | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
 | Malik Sudais | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
 
+## Week 5 Member Assignments
+
+| Member | Role | Week 5 Assignment | Module Folder | Current Status | Last Known Update | Notes |
+|---|---|---|---|---|---|---|
+| Arsalan Qasim | Group Leader | AI Customer Support Chatbot (Client-Ready) | `week5/src/modules/chatbot_arsalan/` | Submitted | 2026-08-18 | Production client-ready chatbot with dynamic JSON admin editor, fallback TF-IDF, live benchmarks, and standalone deployment package. |
+| MUHAMMAD WASIM | Member | AI-Powered Lead Generation & Qualification Tool | `week5/src/modules/lead_gen_wasim/` | In progress | 2026-08-18 | Scaffolding created with customizable domain selector and scoring pipeline. |
+| Muhammad Faozan Mujtaba | Member | AI Business Intelligence Dashboard | `week5/src/modules/bi_dashboard_faozan/` | In progress | 2026-08-18 | Scaffolding created with business metric forecasting and auto-narrative generator. |
+| Shahidullah | Member | AI Customer Support Chatbot (Client-Ready) | `week5/src/modules/chatbot_shahidullah/` | In progress | 2026-08-18 | Scaffolding created with customizable FAQ knowledge base. |
+| Ali Ammar Haider | Member | AI-Powered Lead Generation & Qualification Tool | `week5/src/modules/lead_gen_ali_ammar/` | In progress | 2026-08-18 | Scaffolding created with lead qualification scoring engine. |
+| Abdul Haseeb | Member | AI Business Intelligence Dashboard | `week5/src/modules/bi_dashboard_abdul_haseeb/` | In progress | 2026-08-18 | Scaffolding created with sample data trends and exportable reporting. |
+| Hammad Abbas | Member | AI Customer Support Chatbot (Client-Ready) | `week5/src/modules/chatbot_hammad/` | In progress | 2026-08-18 | Scaffolding created with multi-channel support widget. |
+| Ali Zaib | Member | AI-Powered Lead Generation & Qualification Tool | `week5/src/modules/lead_gen_ali_zaib/` | In progress | 2026-08-18 | Scaffolding created with rule/ML scoring engine. |
+| Malik Sudais | Member | AI Business Intelligence Dashboard | `week5/src/modules/bi_dashboard_malik_sudais/` | In progress | 2026-08-18 | Scaffolding created with revenue/ops forecasting pipeline. |
+
+## Week 5 Deliverable Tracker
+
+| Member | Source Code | Documentation | Screenshots / Recording | GitHub Ready | Working Demo | Progress Report | Explanation Video | Follow-up Needed |
+|---|---|---|---|---|---|---|---|---|
+| Arsalan Qasim | Received | Received | Received | Received | Received | Received | Tracked in Sheet | None. |
+| MUHAMMAD WASIM | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Muhammad Faozan Mujtaba | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Shahidullah | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Ali Ammar Haider | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Abdul Haseeb | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Hammad Abbas | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Ali Zaib | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Malik Sudais | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+
+## Week 6 Member Assignments
+
+| Member | Role | Week 6 Assignment | Module Folder | Current Status | Last Known Update | Notes |
+|---|---|---|---|---|---|---|
+| Arsalan Qasim | Group Leader | Monetize AI Chatbot (Commercial Pitch, Outreach & Group Dashboard) | `week6/src/modules/commercial_arsalan/` | Submitted | 2026-08-18 | Full commercialization hub: service proposal, 3 pricing tiers, 15+ real international prospects, cold email generator, interactive pipeline tracker with Excel export, and group consolidation. |
+| MUHAMMAD WASIM | Member | Monetize AI Lead Gen Tool (Commercial Pitch & Outreach) | `week6/src/modules/commercial_wasim/` | In progress | 2026-08-18 | Scaffolding created with pitch deck and outreach tracker templates. |
+| Muhammad Faozan Mujtaba | Member | Monetize AI BI Dashboard (Commercial Pitch & Outreach) | `week6/src/modules/commercial_faozan/` | In progress | 2026-08-18 | Scaffolding created with service tiers and cold outreach engine. |
+| Shahidullah | Member | Monetize AI Chatbot (Commercial Pitch & Outreach) | `week6/src/modules/commercial_shahidullah/` | In progress | 2026-08-18 | Scaffolding created with client pitch and email sequences. |
+| Ali Ammar Haider | Member | Monetize AI Lead Gen Tool (Commercial Pitch & Outreach) | `week6/src/modules/commercial_ali_ammar/` | In progress | 2026-08-18 | Scaffolding created with agency package and lead tracker. |
+| Abdul Haseeb | Member | Monetize AI BI Dashboard (Commercial Pitch & Outreach) | `week6/src/modules/commercial_abdul_haseeb/` | In progress | 2026-08-18 | Scaffolding created with BI service packages and cold templates. |
+| Hammad Abbas | Member | Monetize AI Chatbot (Commercial Pitch & Outreach) | `week6/src/modules/commercial_hammad/` | In progress | 2026-08-18 | Scaffolding created with clinic/ecom packages and outreach templates. |
+| Ali Zaib | Member | Monetize AI Lead Gen Tool (Commercial Pitch & Outreach) | `week6/src/modules/commercial_ali_zaib/` | In progress | 2026-08-18 | Scaffolding created with pricing calculator and lead pipeline. |
+| Malik Sudais | Member | Monetize AI BI Dashboard (Commercial Pitch & Outreach) | `week6/src/modules/commercial_malik_sudais/` | In progress | 2026-08-18 | Scaffolding created with retail analytics pitch and outreach log. |
+
+## Week 6 Deliverable Tracker
+
+| Member | Completed Project | Portfolio / Demo | Service Proposal | Target List (15-20) | Outreach Tracker | Cold Emails Sent | Social Media Posts | Presentation Video | Follow-up Needed |
+|---|---|---|---|---|---|---|---|---|---|
+| Arsalan Qasim | Verified | Live Hosted | Received | 15+ International Leads | Verified Excel & Log | Received | Published / Ready | Tracked in Sheet | None. |
+| MUHAMMAD WASIM | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Muhammad Faozan Mujtaba | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Shahidullah | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Ali Ammar Haider | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Abdul Haseeb | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Hammad Abbas | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Ali Zaib | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Malik Sudais | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+
 ## Non-Response Tracking
 
 Use this section when a member has not replied or submitted a usable update.
 
 | Member | First Follow-up Date | Second Follow-up Date | Status | Required Action |
 |---|---|---|---|---|
-| MUHAMMAD WASIM | 2026-07-19 | TBD | In progress | Week 3 task assigned. |
-| Abdul Haseeb | 2026-07-19 | TBD | In progress | Week 3 task assigned. |
-| Hammad Abbas | 2026-07-19 | TBD | In progress | Week 3 task assigned. |
-| Ali Zaib | 2026-07-19 | TBD | In progress | Week 3 task assigned. |
-| Malik Sudais | N/A | N/A | In progress | Assigned Invoice/Proposal Generator Agent for Week 3. |
+| MUHAMMAD WASIM | 2026-07-19 | TBD | In progress | Week 5 & 6 tasks assigned and scaffolded. |
+| Abdul Haseeb | 2026-07-19 | TBD | In progress | Week 5 & 6 tasks assigned and scaffolded. |
+| Hammad Abbas | 2026-07-19 | TBD | In progress | Week 5 & 6 tasks assigned and scaffolded. |
+| Ali Zaib | 2026-07-19 | TBD | In progress | Week 5 & 6 tasks assigned and scaffolded. |
+| Malik Sudais | N/A | N/A | In progress | Week 5 & 6 tasks assigned and scaffolded. |
 
 ## Update Protocol
 
@@ -120,4 +176,5 @@ When updating this file:
 3. Add short, factual notes.
 4. Do not add private contact details.
 5. Move completed deliverables from `Pending` to `Received` or `Verified`.
+
 

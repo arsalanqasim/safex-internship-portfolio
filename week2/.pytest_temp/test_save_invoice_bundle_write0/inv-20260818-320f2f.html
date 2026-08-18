@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>INV-20260818-320F2F</title>
+  <style>
+    body { font-family: Arial, sans-serif; color: #172033; margin: 40px; }
+    .header { display: flex; justify-content: space-between; border-bottom: 2px solid #1f6feb; padding-bottom: 18px; }
+    .brand { font-size: 24px; font-weight: 700; }
+    .muted { color: #5f6b7a; }
+    table { width: 100%; border-collapse: collapse; margin-top: 28px; }
+    th, td { border-bottom: 1px solid #d7dde6; padding: 10px; text-align: left; }
+    th { background: #f3f6fb; }
+    .totals { width: 340px; margin-left: auto; margin-top: 24px; }
+    .totals div { display: flex; justify-content: space-between; padding: 7px 0; }
+    .total { font-size: 20px; font-weight: 700; color: #1f6feb; border-top: 2px solid #1f6feb; }
+  </style>
+</head>
+<body>
+  <section class="header">
+    <div>
+      <div class="brand">SafeX Solutions</div>
+      <div class="muted">Business Automation Research - Invoice Module</div>
+    </div>
+    <div>
+      <strong>Invoice:</strong> INV-20260818-320F2F<br>
+      <strong>Issue date:</strong> 2026-08-18<br>
+      <strong>Due date:</strong> 2026-08-25<br>
+      <strong>Status:</strong> Draft
+    </div>
+  </section>
+  <section>
+    <h3>Bill To</h3>
+    <p>
+      <strong>SafeX Client</strong><br>
+      client@example.com<br>
+      <br>
+      
+    </p>
+  </section>
+  <table>
+    <thead>
+      <tr><th>Description</th><th>Qty</th><th>Unit Price</th><th>Subtotal</th></tr>
+    </thead>
+    <tbody><tr><td>Automation setup</td><td>1</td><td>PKR 10000.00</td><td>PKR 10000.00</td></tr></tbody>
+  </table>
+  <section class="totals">
+    <div><span>Subtotal</span><span>PKR 10000.00</span></div>
+    <div><span>Discount (0.00%)</span><span>PKR 0.00</span></div>
+    <div><span>Tax (0.00%)</span><span>PKR 0.00</span></div>
+    <div class="total"><span>Total</span><span>PKR 10000.00</span></div>
+  </section>
+  <section>
+    <h3>Notes</h3>
+    <p>Thank you for your business.</p>
+  </section>
+</body>
+</html>

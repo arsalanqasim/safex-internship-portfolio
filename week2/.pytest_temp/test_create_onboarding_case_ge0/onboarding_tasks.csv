@@ -1,0 +1,10 @@
+task_id,employee_id,task,due_date,completed
+TSK-041010C2,EMP-3D5635F3,Send welcome email & offer letter confirmation,2026-01-05,False
+TSK-363B09DA,EMP-3D5635F3,Create company email and IT accounts,2026-01-05,False
+TSK-BA0A0D75,EMP-3D5635F3,Provision laptop / hardware,2026-01-06,False
+TSK-446E3FE6,EMP-3D5635F3,"Collect signed HR paperwork (NDA, tax forms)",2026-01-07,False
+TSK-C38E4EE7,EMP-3D5635F3,Enroll in payroll and benefits,2026-01-08,False
+TSK-48004B20,EMP-3D5635F3,Schedule orientation / company overview session,2026-01-08,False
+TSK-88ADED0F,EMP-3D5635F3,Assign onboarding buddy and team introductions,2026-01-10,False
+TSK-E0861B9F,EMP-3D5635F3,Grant access to internal tools and repositories,2026-01-10,False
+TSK-D5CDF998,EMP-3D5635F3,30-day check-in with manager,2026-02-04,False

@@ -1,0 +1,28 @@
+{
+  "invoice_number": "INV-20260818-320F2F",
+  "issue_date": "2026-08-18",
+  "due_date": "2026-08-25",
+  "customer": {
+    "name": "SafeX Client",
+    "email": "client@example.com",
+    "phone": "",
+    "address": ""
+  },
+  "line_items": [
+    {
+      "description": "Automation setup",
+      "quantity": "1",
+      "unit_price": "10000.00",
+      "subtotal": "10000.00"
+    }
+  ],
+  "subtotal": "10000.00",
+  "discount_rate": "0.00",
+  "discount_amount": "0.00",
+  "tax_rate": "0.00",
+  "tax_amount": "0.00",
+  "total": "10000.00",
+  "status": "Draft",
+  "notes": "",
+  "created_at": "2026-08-18T06:53:18+00:00"
+}

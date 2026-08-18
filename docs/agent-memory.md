@@ -29,8 +29,14 @@ Do not store:
 - 2026-08-04: Added `deployed_url` configuration parameters in `registry.py` to allow team members to deploy their modules independently and register their live links in the root portfolio application.
 - 2026-08-04: Leader module `chatbot_deployment` implements dynamic client organization configuration, basic error validations, and sentiment-based human support handoffs, storing outreach tracker logs in `week4/data/outreach_tracker.xlsx`.
 - 2026-08-04: Upgraded the `chatbot_deployment` engine to a hybrid model supporting live Gemini or OpenAI API requests via direct HTTP POST calls, using local TF-IDF as a fail-safe offline fallback. Implemented key fetching from `.env` and Streamlit Secrets.
+- 2026-08-18: Created Week 5 workspace (`week5/`) for AI Products Suite. Member modules use member-keyed directories (`chatbot_arsalan`, `lead_gen_wasim`, etc.) with neutral domain selectors to allow teammates flexibility.
+- 2026-08-18: Week 5 Arsalan module `chatbot_arsalan` features production-grade customer support chatbot with persistent JSON-based no-code Admin Panel, 15+ FAQ benchmark tester, audit logs, and standalone deploy package exporter.
+- 2026-08-18: Created Week 6 workspace (`week6/`) for Sell Your Skills: Commercialization & Client Acquisition.
+- 2026-08-18: Week 6 Arsalan module `commercial_arsalan` features an interactive Commercial Command Center with dynamic 3-tier pricing calculator, automated cold email generator, interactive outreach tracker with Excel export (`outreach_tracker.xlsx`), social media marketing assets, and group consolidation metrics.
+- 2026-08-18: Registered `week5/src/app.py` and `week6/src/app.py` into the root multi-page navigation router in `app.py`.
 
 ## Decisions Made
+
 
 - 2026-07-17: Harness files should target any coding agent, not only one tool.
 - 2026-07-17: Harness files should avoid personal phone numbers and emails.

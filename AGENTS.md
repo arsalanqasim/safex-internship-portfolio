@@ -201,6 +201,76 @@ python -m pytest
 | `knowledge_assistant_foodpanda` | Ali Zaib | RAG-based Knowledge Assistant |
 | `model_comparison_careem` | Malik Sudais | AI Model Comparison & Recommendation Report |
 
+## Week 5 Guide
+
+`week5/` contains the AI Products & Prototypes Suite. Each member owns a separate module under `week5/src/modules/` with customizable domain selectors.
+
+Expected module shape:
+
+```text
+week5/src/modules/<module_name>/
+  __init__.py
+  engine.py
+  ui.py
+```
+
+Run from `week5/`:
+
+```bash
+pip install -r requirements.txt
+streamlit run src/app.py
+python -m pytest
+```
+
+## Week 5 Member Modules
+
+| Module | Owner | Week 5 Assignment |
+|---|---|---|
+| `chatbot_arsalan` | Arsalan Qasim | AI Customer Support Chatbot (Client-Ready) |
+| `lead_gen_wasim` | MUHAMMAD WASIM | AI-Powered Lead Generation & Qualification Tool |
+| `bi_dashboard_faozan` | Muhammad Faozan Mujtaba | AI Business Intelligence Dashboard |
+| `chatbot_shahidullah` | Shahidullah | AI Customer Support Chatbot (Client-Ready) |
+| `lead_gen_ali_ammar` | Ali Ammar Haider | AI-Powered Lead Generation & Qualification Tool |
+| `bi_dashboard_abdul_haseeb` | Abdul Haseeb | AI Business Intelligence Dashboard |
+| `chatbot_hammad` | Hammad Abbas | AI Customer Support Chatbot (Client-Ready) |
+| `lead_gen_ali_zaib` | Ali Zaib | AI-Powered Lead Generation & Qualification Tool |
+| `bi_dashboard_malik_sudais` | Malik Sudais | AI Business Intelligence Dashboard |
+
+## Week 6 Guide
+
+`week6/` contains the "Sell Your Skills: Monetize Your Project" Commercialization Command Center suite. Each member owns a commercialization module under `week6/src/modules/`.
+
+Expected module shape:
+
+```text
+week6/src/modules/<module_name>/
+  __init__.py
+  engine.py
+  ui.py
+```
+
+Run from `week6/`:
+
+```bash
+pip install -r requirements.txt
+streamlit run src/app.py
+python -m pytest
+```
+
+## Week 6 Member Modules
+
+| Module | Owner | Week 6 Assignment |
+|---|---|---|
+| `commercial_arsalan` | Arsalan Qasim | Monetize AI Chatbot (Pitch, Pipeline, Outreach & Consolidation) |
+| `commercial_wasim` | MUHAMMAD WASIM | Monetize AI Lead Gen Tool (Commercial Pitch & Outreach) |
+| `commercial_faozan` | Muhammad Faozan Mujtaba | Monetize AI BI Dashboard (Commercial Pitch & Outreach) |
+| `commercial_shahidullah` | Shahidullah | Monetize AI Chatbot (Commercial Pitch & Outreach) |
+| `commercial_ali_ammar` | Ali Ammar Haider | Monetize AI Lead Gen Tool (Commercial Pitch & Outreach) |
+| `commercial_abdul_haseeb` | Abdul Haseeb | Monetize AI BI Dashboard (Commercial Pitch & Outreach) |
+| `commercial_hammad` | Hammad Abbas | Monetize AI Chatbot (Commercial Pitch & Outreach) |
+| `commercial_ali_zaib` | Ali Zaib | Monetize AI Lead Gen Tool (Commercial Pitch & Outreach) |
+| `commercial_malik_sudais` | Malik Sudais | Monetize AI BI Dashboard (Commercial Pitch & Outreach) |
+
 If the roster and code disagree, update `docs/team-roster.md` first with a note under open questions, then adjust code only when the requested ownership is clear.
 
 ## Documentation Standards

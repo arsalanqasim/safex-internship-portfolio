@@ -295,17 +295,87 @@ Important files:
 
 ---
 
-## Future Weeks
+---
 
-Add future weekly tasks below using the same structure:
+## Week 5 - AI Products & Prototypes Suite
 
-- original task
-- selected group direction
-- member assignments
-- what was built
-- how it was built
-- deliverables
-- evidence
-- final status
+### Original Task
+
+Design, build, and document client-ready AI products addressing business pain points across 3 project tracks (or Option B: Propose Your Own Project):
+1. **AI Customer Support Chatbot (Client-Ready)**: Automate top 10–15 repeat queries, escalate low-confidence queries to human support, log conversations for audit, and provide a no-code admin view to edit answers without coding.
+2. **AI-Powered Lead Generation & Qualification Tool**: Ingest leads, score using a rubric (budget, urgency, fit), flag hot leads for immediate follow-up, and generate one-line AI summaries.
+3. **AI Business Intelligence Dashboard**: Ingest sales/marketing data, build interactive charts, run moving average/regression forecasts for the next 30 days, and generate plain-English weekly written insights with exportable PDF/reports.
+
+Testing requirements: 15+ realistic sample questions/leads, verified formulas, responsive UI/UX, and standalone deployment preparation.
+
+### Group Direction & Assignments
+
+Group 54 split across the 3 tracks with member-keyed sandboxes allowing each contributor to define their chosen business domain:
+- **AI Customer Support Chatbot**: Arsalan Qasim (`chatbot_arsalan`), Shahidullah (`chatbot_shahidullah`), Hammad Abbas (`chatbot_hammad`).
+- **AI Lead Generation & Qualification**: MUHAMMAD WASIM (`lead_gen_wasim`), Ali Ammar Haider (`lead_gen_ali_ammar`), Ali Zaib (`lead_gen_ali_zaib`).
+- **AI Business Intelligence Dashboard**: Muhammad Faozan Mujtaba (`bi_dashboard_faozan`), Abdul Haseeb (`bi_dashboard_abdul_haseeb`), Malik Sudais (`bi_dashboard_malik_sudais`).
+
+### What Was Built (Leader Module - Arsalan Qasim)
+
+Group Leader Arsalan Qasim built a complete production-grade **AI Customer Support Chatbot (Client-Ready)** tailored for high-volume E-Commerce Retail:
+- **Hybrid AI Engine**: Live Gemini / OpenAI REST integration with automatic local TF-IDF semantic vector fallback for 100% offline grading reliability.
+- **Top 15+ FAQ Knowledge Base**: Covering international shipping, order tracking, returns, sizing, discounts, defective items, and payment methods.
+- **Sentiment & Escalation Layer**: Automatic sentiment-aware human handoff trigger when confidence falls below threshold or when user explicitly requests a representative.
+- **No-Code Admin Panel**: Interactive CRUD interface to add, edit, delete FAQs with persistent local JSON storage and factory reset.
+- **Audit & Analytics Viewer**: Real-time log inspector with sentiment analytics, resolution rates, and CSV/JSON export.
+- **Automated Benchmark Suite**: Runs 15+ realistic customer queries computing latency, accuracy, and hallucination metrics.
+- **Standalone Deployment Bundler**: `deploy_prep.py` generates an isolated, zero-dependency `week5/chatbot_deploy_package/`.
+
+### Week 5 Member Tracking
+
+| Member | Module Key | Contribution & Submission | Evidence | Status |
+|---|---|---|---|---|
+| Arsalan Qasim | `chatbot_arsalan` | Production Client-Ready Chatbot with Admin Panel, Fallback Engine, Benchmark Suite, Tests, and Deploy Package. | `week5/src/modules/chatbot_arsalan/`, `deploy_prep.py`, `tests/test_chatbot.py` | **Submitted** |
+| MUHAMMAD WASIM | `lead_gen_wasim` | AI Lead Qualification Tool (Scaffolding ready with domain selector). | `week5/src/modules/lead_gen_wasim/` | In progress |
+| Muhammad Faozan Mujtaba | `bi_dashboard_faozan` | AI BI Dashboard & Forecasting (Scaffolding ready). | `week5/src/modules/bi_dashboard_faozan/` | In progress |
+| Shahidullah | `chatbot_shahidullah` | AI Customer Support Chatbot (Scaffolding ready). | `week5/src/modules/chatbot_shahidullah/` | In progress |
+| Ali Ammar Haider | `lead_gen_ali_ammar` | AI Lead Qualification Tool (Scaffolding ready). | `week5/src/modules/lead_gen_ali_ammar/` | In progress |
+| Abdul Haseeb | `bi_dashboard_abdul_haseeb` | AI BI Dashboard (Scaffolding ready). | `week5/src/modules/bi_dashboard_abdul_haseeb/` | In progress |
+| Hammad Abbas | `chatbot_hammad` | AI Customer Support Chatbot (Scaffolding ready). | `week5/src/modules/chatbot_hammad/` | In progress |
+| Ali Zaib | `lead_gen_ali_zaib` | AI Lead Qualification Tool (Scaffolding ready). | `week5/src/modules/lead_gen_ali_zaib/` | In progress |
+| Malik Sudais | `bi_dashboard_malik_sudais` | AI BI Dashboard (Scaffolding ready). | `week5/src/modules/bi_dashboard_malik_sudais/` | In progress |
+
+---
+
+## Week 6 - Sell Your Skills: Monetization & Client Acquisition
+
+### Original Task
+
+Turn the Week 5 project into a commercial service offering and execute real business development and client acquisition:
+1. **Service Packaging**: Define high-value service offering, target customer profile, and 3-tier pricing structure (Starter / Standard / Pro).
+2. **Prospect Research**: Identify 15–20 real prospective businesses across US, UK, UAE, Saudi Arabia, Qatar, Canada, Australia, and Europe.
+3. **Outreach Execution**: Draft personalized cold emails with custom observations, value hooks, and portfolio links.
+4. **Social Media Campaigns**: Create LinkedIn case studies, educational problem breakdowns, and short-form video demo scripts.
+5. **Outreach Tracking**: Maintain structured outreach pipeline tracking company, country, contact, date, channel, status, and follow-ups.
+6. **Group Consolidation**: As Group Leader, consolidate team outreach metrics (total contacted, response rate, leads, meetings booked) for Team Lead submission.
+
+### What Was Built (Leader Module - Arsalan Qasim)
+
+Group Leader Arsalan Qasim built an **Interactive Commercialization Command Center**:
+- **Service Proposal & Interactive ROI / Pricing Calculator**: Dynamic 3-tier client packaging ($149 Starter / $399 Standard / $799 Pro) with customizable query volume, staff savings, and ROI projections.
+- **Smart Cold Outreach Generator**: Generates customized 5-step cold outreach sequences (Initial Pitch, Case Study Follow-up, 15-min Call CTA) based on company name and observed customer service friction.
+- **Interactive Live Outreach Tracker**: Full pipeline management board loaded from `week6/data/outreach_tracker.xlsx` pre-populated with 15+ real international prospect organizations across USA, UK, UAE, and Canada.
+- **Social Media Marketing Hub**: Copyable, production-ready LinkedIn project launch post, industry carousel script, and short-form video script.
+- **Group Leader Consolidation Center**: Dynamic analytics dashboard aggregating group outreach KPIs, conversion funnels, and submission summaries.
+
+### Week 6 Member Tracking
+
+| Member | Module Key | Contribution & Submission | Evidence | Status |
+|---|---|---|---|---|
+| Arsalan Qasim | `commercial_arsalan` | Full Commercial Command Center, Tiered Pricing, 15+ Real International Leads in Excel Tracker, Cold Email Sequences, Social Media Posts, and Group Consolidation. | `week6/src/modules/commercial_arsalan/`, `week6/data/outreach_tracker.xlsx`, `tests/test_commercial.py` | **Submitted** |
+| MUHAMMAD WASIM | `commercial_wasim` | Lead Gen Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_wasim/` | In progress |
+| Muhammad Faozan Mujtaba | `commercial_faozan` | BI Dashboard Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_faozan/` | In progress |
+| Shahidullah | `commercial_shahidullah` | Chatbot Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_shahidullah/` | In progress |
+| Ali Ammar Haider | `commercial_ali_ammar` | Lead Gen Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_ali_ammar/` | In progress |
+| Abdul Haseeb | `commercial_abdul_haseeb` | BI Dashboard Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_abdul_haseeb/` | In progress |
+| Hammad Abbas | `commercial_hammad` | Chatbot Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_hammad/` | In progress |
+| Ali Zaib | `commercial_ali_zaib` | Lead Gen Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_ali_zaib/` | In progress |
+| Malik Sudais | `commercial_malik_sudais` | BI Dashboard Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_malik_sudais/` | In progress |
+
 
 
