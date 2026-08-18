@@ -103,6 +103,19 @@ MODULE_REGISTRY = {
             "description": "Forecasting module using historical sample/public datasets to predict key business KPIs like churn rates or demand trends.",
             "import_path": "src.modules.predictive_analytics.ui",
             "icon": "📈"
+        },
+        "invoice_automation_sudais": {
+            "title": "Invoice Automation Prototype",
+            "developer": "Malik Sudais",
+            "role": "Group Member",
+            "email": "maliksudais30@gmail.com",
+            "status": "Completed",
+            "tech": ["Python", "Streamlit", "Invoice Generator", "Automation"],
+            "description": "Standalone Invoice Automation Prototype system for small businesses.",
+            "import_path": "src.modules.invoice_automation.ui",
+            "icon": "🧾",
+            "deployed_url": "https://github.com/maliksudais24/INVOICE-AUTOMATION-PROJECT-.....-SAFEX-.git"
         }
     }
 }
+

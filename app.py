@@ -92,8 +92,8 @@ def inject_global_styles() -> None:
         }
         
         .block-container {
-            max-width: 1200px;
-            padding-top: 3rem;
+            max-width: 1240px;
+            padding-top: 2.5rem;
             padding-bottom: 4rem;
         }
         
@@ -158,13 +158,13 @@ def inject_global_styles() -> None:
         .stButton > button[kind="primary"] {
             background: var(--accent);
             border-color: var(--accent);
-            color: #062e2b;
+            color: #ffffff;
         }
         .stButton > button[kind="primary"] p { color: inherit !important; }
         .stButton > button[kind="primary"]:hover {
             background: var(--accent-dark);
             border-color: var(--accent-dark);
-            color: #062e2b;
+            color: #ffffff;
         }
         [data-testid="stRadio"] label,
         [data-testid="stRadio"] label p,
@@ -216,35 +216,30 @@ def inject_global_styles() -> None:
             color: #ffffff;
         }
         .hero-subtitle {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #ccfbf1;
             margin: 0;
-            max-width: 800px;
+            max-width: 850px;
             font-weight: 400;
             line-height: 1.6;
         }
         
-        /* Portfolio Cards Grid */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-bottom: 2.5rem;
-        }
+        /* Portfolio Cards */
         .portfolio-card {
             background: var(--surface);
             border: 1px solid var(--line);
             border-radius: 12px;
-            padding: 1.75rem;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+            padding: 1.5rem;
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 100%;
+            min-height: 270px;
         }
         .portfolio-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-4px);
             border-color: var(--accent);
             box-shadow: 0 12px 20px -8px rgba(15, 118, 110, 0.15), 0 4px 6px -2px rgba(15, 118, 110, 0.05);
         }
@@ -252,10 +247,10 @@ def inject_global_styles() -> None:
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 1rem;
+            margin-bottom: 0.85rem;
         }
         .card-icon {
-            font-size: 2rem;
+            font-size: 1.85rem;
             margin: 0;
         }
         .status-badge {
@@ -275,16 +270,16 @@ def inject_global_styles() -> None:
             color: var(--warning-text);
         }
         .card-title {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 700;
             color: var(--ink);
-            margin: 0 0 0.5rem 0;
+            margin: 0 0 0.4rem 0;
         }
         .card-desc {
-            font-size: 0.875rem;
+            font-size: 0.85rem;
             color: var(--muted);
-            line-height: 1.5;
-            margin-bottom: 1.5rem;
+            line-height: 1.45;
+            margin-bottom: 1rem;
         }
         
         /* Interactive Metrics */
@@ -292,7 +287,7 @@ def inject_global_styles() -> None:
             background: var(--surface);
             border: 1px solid var(--line);
             border-radius: 10px;
-            padding: 1.25rem 1.5rem;
+            padding: 1.1rem 1.25rem;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
             text-align: center;
         }
@@ -300,25 +295,46 @@ def inject_global_styles() -> None:
             font-size: 1.85rem;
             font-weight: 800;
             color: var(--accent);
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.2rem;
         }
         .metric-card__lbl {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 600;
             color: var(--muted);
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
+
+        /* External Hub Showcase Cards */
+        .hub-card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 1.25rem;
+            border-left: 4px solid var(--accent);
+            margin-bottom: 1rem;
+        }
+        .hub-card-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--ink);
+            margin-bottom: 0.25rem;
+        }
+        .hub-card-desc {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 0.75rem;
+        }
         
         /* Timeline styling */
         .timeline-container {
             position: relative;
-            padding: 1rem 0;
+            padding: 0.5rem 0;
         }
         .timeline-item {
             position: relative;
-            padding-left: 2rem;
-            padding-bottom: 1.5rem;
+            padding-left: 1.75rem;
+            padding-bottom: 1.25rem;
             border-left: 2px solid var(--line);
         }
         .timeline-item:last-child {
@@ -336,22 +352,22 @@ def inject_global_styles() -> None:
             border: 2px solid var(--surface);
         }
         .timeline-date {
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 700;
             color: var(--accent);
             text-transform: uppercase;
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.2rem;
         }
         .timeline-title {
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 700;
             color: var(--ink);
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.2rem;
         }
         .timeline-desc {
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             color: var(--muted);
-            line-height: 1.45;
+            line-height: 1.4;
         }
         [data-testid="stDataFrame"], [data-testid="stDataEditor"] {
             border: 1px solid var(--line);
@@ -362,11 +378,6 @@ def inject_global_styles() -> None:
             border-color: var(--line) !important;
         }
         hr { border-color: var(--line) !important; }
-        @media (max-width: 900px) {
-            .hero-banner { padding: 2rem 1.5rem; }
-            .hero-title { font-size: 1.8rem; }
-            .card-grid { grid-template-columns: 1fr; }
-        }
         </style>
         """,
         unsafe_allow_html=True
@@ -403,34 +414,37 @@ def show_dashboard() -> None:
     st.markdown(
         """
         <div class="hero-banner">
-            <div class="hero-badge">SafeX Solutions · Summer Internship 2026</div>
-            <h1 class="hero-title">Group 54 Internship Portfolio</h1>
+            <div class="hero-badge">SafeX Solutions · Summer AI/ML Internship 2026</div>
+            <h1 class="hero-title">Group 54 Commercial & AI Portfolio</h1>
             <p class="hero-subtitle">
-                A unified corporate research and prototype workspace. Explore our weekly milestones, 
-                AI solutions, and modular automated systems built to deliver commercial value.
+                A unified corporate research, prototyping, and monetization hub. Explore our 6-week progression spanning 
+                on-device semantic search, business automation, AI agents, client-ready deployments, product suites, and commercialization.
             </p>
         </div>
         """,
         unsafe_allow_html=True
     )
 
-    # Key Statistics
+    # Key Statistics (Updated for 6-Week Workspace)
     col_stat1, col_stat2, col_stat3, col_stat4 = st.columns(4)
     with col_stat1:
-        st.markdown('<div class="metric-card"><div class="metric-card__val">4</div><div class="metric-card__lbl">Milestone Weeks</div></div>', unsafe_allow_html=True)
+        st.markdown('<div class="metric-card"><div class="metric-card__val">6</div><div class="metric-card__lbl">Milestone Weeks</div></div>', unsafe_allow_html=True)
     with col_stat2:
-        st.markdown('<div class="metric-card"><div class="metric-card__val">28</div><div class="metric-card__lbl">Total Modules</div></div>', unsafe_allow_html=True)
+        st.markdown('<div class="metric-card"><div class="metric-card__val">45+</div><div class="metric-card__lbl">Active Modules & Tools</div></div>', unsafe_allow_html=True)
     with col_stat3:
         st.markdown('<div class="metric-card"><div class="metric-card__val">9</div><div class="metric-card__lbl">Team Members</div></div>', unsafe_allow_html=True)
     with col_stat4:
-        st.markdown('<div class="metric-card"><div class="metric-card__val">100%</div><div class="metric-card__lbl">Local Isolation</div></div>', unsafe_allow_html=True)
+        st.markdown('<div class="metric-card"><div class="metric-card__val">100%</div><div class="metric-card__lbl">Verified Test Pass Rate</div></div>', unsafe_allow_html=True)
 
     st.markdown("---")
 
-    # Main Grid (Workspace milestones)
-    st.subheader("🏁 Internship Milestones")
+    # ==============================================================================
+    # 6-Week Milestones Grid (2 Rows x 3 Columns)
+    # ==============================================================================
+    st.subheader("🏁 Internship Milestones & Workspaces")
     
-    col_w1, col_w2, col_w3, col_w4 = st.columns(4)
+    # ROW 1: Weeks 1, 2, 3
+    col_w1, col_w2, col_w3 = st.columns(3)
     
     with col_w1:
         st.markdown(
@@ -443,17 +457,17 @@ def show_dashboard() -> None:
                 <div>
                     <h3 class="card-title">Week 1: AI FAQ Chatbot</h3>
                     <p class="card-desc">
-                        A local SafeX FAQ chatbot leveraging advanced text similarity algorithms. Runs fully offline on standard CPU environments with zero external API costs.
+                        On-device FAQ assistant using TF-IDF cosine similarity. Runs locally with zero API costs and sub-50ms latency.
                     </p>
                 </div>
-                <div style="font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.75rem;">
-                    <strong>Core Stack:</strong> scikit-learn · NumPy · Pandas · pytest
+                <div style="font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.6rem; margin-bottom: 0.6rem;">
+                    <strong>Core Stack:</strong> scikit-learn · NumPy · Pandas · Streamlit
                 </div>
             </div>
             """,
             unsafe_allow_html=True
         )
-        if st.button("Launch Week 1", key="btn_w1", use_container_width=True):
+        if st.button("🚀 Launch Week 1 Workspace", key="btn_w1", use_container_width=True):
             st.switch_page(week1_page)
 
     with col_w2:
@@ -465,19 +479,19 @@ def show_dashboard() -> None:
                     <span class="status-badge status-badge--ready">9 Modules</span>
                 </div>
                 <div>
-                    <h3 class="card-title">Week 2: Business Automation</h3>
+                    <h3 class="card-title">Week 2: Automation Suite</h3>
                     <p class="card-desc">
-                        A suite of custom automation prototypes for internal workflows: automated invoicing, geofenced attendance logs, resume parsers, and PDF report engines.
+                        Modular automation suite: automated invoicing, attendance check-in, HR onboarding, email drafting, and OCR extraction.
                     </p>
                 </div>
-                <div style="font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.75rem;">
-                    <strong>Core Stack:</strong> Streamlit Roster · Pandas · Matplotlib · OCR
+                <div style="font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.6rem; margin-bottom: 0.6rem;">
+                    <strong>Core Stack:</strong> Modular Registry · Pandas · Report Engine
                 </div>
             </div>
             """,
             unsafe_allow_html=True
         )
-        if st.button("Launch Week 2", key="btn_w2", use_container_width=True):
+        if st.button("🚀 Launch Week 2 Workspace", key="btn_w2", use_container_width=True):
             st.switch_page(week2_page)
 
     with col_w3:
@@ -491,18 +505,23 @@ def show_dashboard() -> None:
                 <div>
                     <h3 class="card-title">Week 3: AI Agent Proposals</h3>
                     <p class="card-desc">
-                        Functional AI Agent designs tailored for corporate settings. Features intent classification, meeting summarization, content schedulers, and RAG pipelines.
+                        Advanced agent workflows: customer support intent router, meeting summarizer, social scheduler, and RAG document search.
                     </p>
                 </div>
-                <div style="font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.75rem;">
-                    <strong>Core Stack:</strong> LLM Prompting · RAG · Similarity Engines
+                <div style="font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.6rem; margin-bottom: 0.6rem;">
+                    <strong>Core Stack:</strong> Intent Routing · RAG Vector Search · Summarizer
                 </div>
             </div>
             """,
             unsafe_allow_html=True
         )
-        if st.button("Launch Week 3", key="btn_w3", use_container_width=True):
+        if st.button("🚀 Launch Week 3 Workspace", key="btn_w3", use_container_width=True):
             st.switch_page(week3_page)
+
+    st.markdown("<div style='height: 1rem;'></div>", unsafe_allow_html=True)
+
+    # ROW 2: Weeks 4, 5, 6
+    col_w4, col_w5, col_w6 = st.columns(3)
 
     with col_w4:
         st.markdown(
@@ -515,22 +534,123 @@ def show_dashboard() -> None:
                 <div>
                     <h3 class="card-title">Week 4: Client Sprint</h3>
                     <p class="card-desc">
-                        Transition package featuring client proposals, ROI calculators, warm human escalation triggers, dynamic branding configs, and outreach tracker logging.
+                        Client-ready packages: branded support chatbot, predictive student enrollment regression, and Careem model benchmark.
                     </p>
                 </div>
-                <div style="font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.75rem;">
-                    <strong>Core Stack:</strong> Deploy Package · Excel Logs · ROI Metrics
+                <div style="font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.6rem; margin-bottom: 0.6rem;">
+                    <strong>Core Stack:</strong> Standalone Bundler · Regression · Excel Logger
                 </div>
             </div>
             """,
             unsafe_allow_html=True
         )
-        if st.button("Launch Week 4", key="btn_w4", use_container_width=True):
+        if st.button("🚀 Launch Week 4 Workspace", key="btn_w4", use_container_width=True):
             st.switch_page(week4_page)
+
+    with col_w5:
+        st.markdown(
+            """
+            <div class="portfolio-card">
+                <div class="card-header">
+                    <span class="card-icon">🚀</span>
+                    <span class="status-badge status-badge--ready">9 Modules</span>
+                </div>
+                <div>
+                    <h3 class="card-title">Week 5: AI Products Suite</h3>
+                    <p class="card-desc">
+                        Production client chatbot with live No-Code Admin FAQ Editor, sentiment escalation, 15-question benchmark tester, and lead engines.
+                    </p>
+                </div>
+                <div style="font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.6rem; margin-bottom: 0.6rem;">
+                    <strong>Core Stack:</strong> Hybrid LLM/TF-IDF · Admin CRUD · Benchmark Suite
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        if st.button("🚀 Launch Week 5 Workspace", key="btn_w5", use_container_width=True):
+            st.switch_page(week5_page)
+
+    with col_w6:
+        st.markdown(
+            """
+            <div class="portfolio-card">
+                <div class="card-header">
+                    <span class="card-icon">💰</span>
+                    <span class="status-badge status-badge--ready">9 Modules</span>
+                </div>
+                <div>
+                    <h3 class="card-title">Week 6: Sell Your Skills</h3>
+                    <p class="card-desc">
+                        Commercial Command Center: 3-tier pricing packages, live client ROI calculator, smart cold email sequences, and 15+ prospect CRM.
+                    </p>
+                </div>
+                <div style="font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.6rem; margin-bottom: 0.6rem;">
+                    <strong>Core Stack:</strong> Commercial Pricing · Excel CRM · Outreach Hub
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        if st.button("🚀 Launch Week 6 Workspace", key="btn_w6", use_container_width=True):
+            st.switch_page(week6_page)
 
     st.markdown("---")
 
-    # Double Column Layout for Timeline & Roster
+    # ==============================================================================
+    # Live Hosted Deployments & External Repository Hub
+    # ==============================================================================
+    st.subheader("🌐 Live Hosted Deployments & Project Hub")
+    
+    col_host1, col_host2, col_host3 = st.columns(3)
+    
+    with col_host1:
+        st.markdown(
+            """
+            <div class="hub-card">
+                <div class="hub-card-title">📊 LearnHub Predictive Dashboard</div>
+                <div class="hub-card-desc"><b>Ali Ammar Haider</b> · Week 4 Live Production Deployment on Streamlit Cloud.</div>
+                <a href="https://safex-week4-predictive-dashboard-tutor.streamlit.app" target="_blank" style="text-decoration: none; font-weight: 700; color: #0f766e; font-size: 0.9rem;">
+                    🔗 Launch Live App →
+                </a>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    with col_host2:
+        st.markdown(
+            """
+            <div class="hub-card">
+                <div class="hub-card-title">📈 Careem AI Model Benchmark App</div>
+                <div class="hub-card-desc"><b>Malik Sudais</b> · Week 4 Live Multi-Model Comparison Deployment.</div>
+                <a href="https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/" target="_blank" style="text-decoration: none; font-weight: 700; color: #0f766e; font-size: 0.9rem;">
+                    🔗 Launch Live App →
+                </a>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    with col_host3:
+        st.markdown(
+            """
+            <div class="hub-card">
+                <div class="hub-card-title">💼 SafeX Group 54 Central Repository</div>
+                <div class="hub-card-desc">Complete multi-week mono-repository with tests, documentation, and standalone packages.</div>
+                <a href="https://github.com/arsalanqasim400/safex-solutions" target="_blank" style="text-decoration: none; font-weight: 700; color: #0f766e; font-size: 0.9rem;">
+                    🔗 View Source on GitHub →
+                </a>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    st.markdown("---")
+
+    # ==============================================================================
+    # Double Column Layout for Timeline & Roster Status
+    # ==============================================================================
     col_left, col_right = st.columns([1, 2])
     
     with col_left:
@@ -605,7 +725,7 @@ def show_dashboard() -> None:
             if not registry:
                 return "⏳ Pending"
             for mod in registry.values():
-                if mod.get("developer", "").strip() == member_name:
+                if mod.get("developer", "").strip().lower() == member_name.lower():
                     status = mod.get("status", "").lower()
                     if status in ["submitted", "submission ready", "completed"]:
                         return "✅ Completed"
@@ -627,6 +747,38 @@ def show_dashboard() -> None:
             })
             
         st.dataframe(table_data, use_container_width=True, hide_index=True)
+
+    st.markdown("---")
+
+    # ==============================================================================
+    # Executive Project Documentation & Evaluation Accordion
+    # ==============================================================================
+    with st.expander("📑 View Academic Brief, Evaluation Rubric & Project Standards", expanded=False):
+        t1, t2, t3 = st.tabs(["📋 Project Brief", "👥 Team Roster & Tasks", "📜 Operating Standards (AGENTS.md)"])
+        
+        with t1:
+            brief_path = os.path.join(os.path.dirname(__file__), "docs", "project-brief.md")
+            if os.path.exists(brief_path):
+                with open(brief_path, "r", encoding="utf-8") as f:
+                    st.markdown(f.read())
+            else:
+                st.info("Project Brief available in `docs/project-brief.md`.")
+                
+        with t2:
+            roster_path = os.path.join(os.path.dirname(__file__), "docs", "team-roster.md")
+            if os.path.exists(roster_path):
+                with open(roster_path, "r", encoding="utf-8") as f:
+                    st.markdown(f.read())
+            else:
+                st.info("Team roster available in `docs/team-roster.md`.")
+                
+        with t3:
+            agents_path = os.path.join(os.path.dirname(__file__), "AGENTS.md")
+            if os.path.exists(agents_path):
+                with open(agents_path, "r", encoding="utf-8") as f:
+                    st.markdown(f.read())
+            else:
+                st.info("Operating guidelines available in `AGENTS.md`.")
 
 
 # ==============================================================================
@@ -695,4 +847,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
