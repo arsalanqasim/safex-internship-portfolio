@@ -104,12 +104,13 @@ MODULE_REGISTRY = {
             "developer": "Malik Sudais",
             "role": "Group Member",
             "email": "maliksudais30@gmail.com",
-            "status": "Placeholder (Scaffolding Ready)",
+            "status": "Submitted",
             "tech": ["Python", "LLM API Evaluation", "Technical Writing", "Streamlit"],
-            "description": "Comparison audit comparing provider responses to identify the most cost-effective and accurate vendor for client deployment.",
+            "description": "Comparison audit evaluating LLM provider responses (Gemini vs GPT vs Claude) to identify the most cost-effective and accurate model for Careem ride-hailing support.",
             "import_path": "src.modules.model_comparison_careem.ui",
             "icon": "📊",
-            "deployed_url": None
+            "deployed_url": "https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/"
         }
     }
 }
+

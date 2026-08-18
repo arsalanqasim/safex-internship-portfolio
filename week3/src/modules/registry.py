@@ -96,11 +96,13 @@ MODULE_REGISTRY = {
             "developer": "Malik Sudais",
             "role": "Group Member",
             "email": "maliksudais30@gmail.com",
-            "status": "Placeholder (Scaffolding Ready)",
+            "status": "Submitted",
+            "deployed_url": "https://github.com/maliksudais24/Proposal-invoice-automation-.git",
             "tech": ["Python", "Document Generator Engine", "LLM Narrative Writer", "Streamlit"],
             "description": "Document generation agent converting structured service inputs into formatted commercial proposals and invoice packages.",
             "import_path": "src.modules.proposal_invoice_generator.ui",
             "icon": "📄"
         }
+
     }
 }

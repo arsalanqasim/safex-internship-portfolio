@@ -24,7 +24,7 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 | Abdul Haseeb | Member | COMSATS University Islamabad, Computer Science | FAQ chatbot group contribution | Resume Screening Prototype | `week2/src/modules/resume_screening/` | No response | 2026-07-19 | No PR or code submission received for Week 2. |
 | Hammad Abbas | Member | Agriculture University of Peshawar, Computer Science | FAQ chatbot group contribution | OCR / Document Processing Prototype | `week2/src/modules/ocr_document/` | No response | 2026-07-19 | No PR or code submission received for Week 2. |
 | Ali Zaib | Member | COMSATS Islamabad, BS Artificial Intelligence | FAQ chatbot group contribution | Predictive Analytics Mini-Study | `week2/src/modules/predictive_analytics/` | Submitted | 2026-07-26 | Demand forecasting & churn prediction mini-study. PR #12 merged and verified. |
-| Malik Sudais | Member | Sarhad University of Science and Information Technology Peshawar, Software Engineering | FAQ chatbot group contribution | Invoice Automation Prototype | Confirm module ownership | Not active | 2026-07-19 | Not active for Week 2. Team leadership will review whether to add him to the team in Week 3. |
+| Malik Sudais | Member | Sarhad University of Science and Information Technology Peshawar, Software Engineering | FAQ chatbot group contribution (Self-initiative: "Add New Features", completed 2026-07-07) | Invoice Automation Prototype | Standalone Repo | Submitted | 2026-07-17 | Completed standalone Invoice Automation Prototype (GitHub: [Repo](https://github.com/maliksudais24/INVOICE-AUTOMATION-PROJECT-.....-SAFEX-.git), Drive: [Folder](https://drive.google.com/drive/folders/17N0Cgsge8z8Qbr4A4H6zXhyxowJfPMQh)). |
 
 ## Week 2 Deliverable Tracker
 
@@ -41,7 +41,7 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 | Abdul Haseeb | Missing | Missing | Missing | Missing | Missing | Missing | Missing | Followed up on 2026-07-19 regarding missing code. |
 | Hammad Abbas | Missing | Missing | Missing | Missing | Missing | Missing | Missing | Followed up on 2026-07-19 regarding missing code. |
 | Ali Zaib | Received | Received | Tracked in Sheet | Received | Received | Tracked in Sheet | Tracked in Sheet | None. |
-| Malik Sudais | N/A | N/A | N/A | N/A | N/A | N/A | N/A | None (Not yet added to team). |
+| Malik Sudais | Received | Received | Tracked in Sheet | Received | Received | Tracked in Sheet | Tracked in Sheet | None. Verified GitHub & Drive submission. |
 
 ## Week 3 Member Assignments
 
@@ -55,7 +55,7 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 | Abdul Haseeb | Member | AI Lead Qualification & Sales Assistant | `week3/src/modules/lead_qualification/` | In progress | 2026-07-23 | Module scaffolding & task assignment ready. |
 | Hammad Abbas | Member | Resume Screening & Interview Assistant | `week3/src/modules/resume_interview_assistant/` | In progress | 2026-07-23 | Module scaffolding & task assignment ready. |
 | Ali Zaib | Member | Document Analysis & Knowledge Assistant (RAG) | `week3/src/modules/doc_knowledge_assistant/` | Submitted | 2026-07-26 | RAG pipeline over policy docs implemented. PR #13 merged and verified. |
-| Malik Sudais | Member | Invoice / Proposal Generator Agent | `week3/src/modules/proposal_invoice_generator/` | In progress | 2026-07-23 | Module scaffolding & task assignment ready. |
+| Malik Sudais | Member | Invoice / Proposal Generator Agent | `week3/src/modules/proposal_invoice_generator/` | Submitted | 2026-07-26 | Completed Proposal Invoice Automation system (GitHub: [Repo](https://github.com/maliksudais24/Proposal-invoice-automation-.git), Drive: [Folder](https://drive.google.com/drive/folders/1UWGCupMZC2UafccOs2fStmVO_WEQxPfJ?usp=sharing)). |
 
 ## Week 3 Deliverable Tracker
 
@@ -69,7 +69,7 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 | Abdul Haseeb | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
 | Hammad Abbas | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
 | Ali Zaib | Received | Received | Tracked in Sheet | Received | Received | Tracked in Sheet | Tracked in Sheet | None. |
-| Malik Sudais | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
+| Malik Sudais | Received | Received | Received | Received | Received | Tracked in Sheet | Tracked in Sheet | None. Verified GitHub & Drive submission. |
 
 ## Week 4 Member Assignments
 
@@ -83,7 +83,7 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 | Abdul Haseeb | Member | Client-Ready AI Chatbot Deployment Package | `week4/src/modules/chatbot_deployment_courier/` | In progress | 2026-08-04 | Scaffolding created. |
 | Hammad Abbas | Member | AI Automation ROI Calculator | `week4/src/modules/roi_calculator_daraz/` | In progress | 2026-08-04 | Scaffolding created. |
 | Ali Zaib | Member | RAG-based Knowledge Assistant | `week4/src/modules/knowledge_assistant_foodpanda/` | In progress | 2026-08-04 | Scaffolding created. |
-| Malik Sudais | Member | AI Model Comparison & Recommendation Report | `week4/src/modules/model_comparison_careem/` | In progress | 2026-08-04 | Scaffolding created. |
+| Malik Sudais | Member | AI Model Comparison & Recommendation Report | `week4/src/modules/model_comparison_careem/` | Submitted | 2026-08-18 | Deployed live Streamlit app for Careem Model Comparison: [Live App](https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/). |
 
 ## Week 4 Deliverable Tracker
 
@@ -97,7 +97,7 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 | Abdul Haseeb | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
 | Hammad Abbas | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
 | Ali Zaib | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
-| Malik Sudais | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module assigned. |
+| Malik Sudais | Received | Received | Received | Received | Received | Tracked in Sheet | Tracked in Sheet | None. Live Streamlit App deployed. |
 
 ## Week 5 Member Assignments
 
@@ -165,7 +165,6 @@ Use this section when a member has not replied or submitted a usable update.
 | Abdul Haseeb | 2026-07-19 | TBD | In progress | Week 5 & 6 tasks assigned and scaffolded. |
 | Hammad Abbas | 2026-07-19 | TBD | In progress | Week 5 & 6 tasks assigned and scaffolded. |
 | Ali Zaib | 2026-07-19 | TBD | In progress | Week 5 & 6 tasks assigned and scaffolded. |
-| Malik Sudais | N/A | N/A | In progress | Week 5 & 6 tasks assigned and scaffolded. |
 
 ## Update Protocol
 
@@ -176,5 +175,6 @@ When updating this file:
 3. Add short, factual notes.
 4. Do not add private contact details.
 5. Move completed deliverables from `Pending` to `Received` or `Verified`.
+
 
 

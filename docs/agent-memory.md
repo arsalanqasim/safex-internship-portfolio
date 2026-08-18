@@ -63,8 +63,10 @@ Do not store:
 - 2026-07-19: Malik Sudais is confirmed to be not active as a team member for Week 2. Leadership will review his status in Week 3.
 - 2026-07-19: Screenshot, recording, progress report, and video submissions are tracked dynamically in the shared Google Sheet: https://docs.google.com/spreadsheets/d/1KySlQDSuPAtdBWXqFlEKz8NFvk0yfzs6KrTVqTZ5AaQ/edit?gid=800509207#gid=800509207.
 - 2026-08-09: Reviewed and merged PR #15 implementing the Week 4 Predictive Dashboard Tutor module for Ali Ammar Haider, updating the module registry status to "Submission Ready" and the team roster to "Submitted".
+- 2026-08-18: Verified and integrated Malik Sudais's submissions across Weeks 1–4: Week 1 SafeX AI prototype (Self-initiative: "Add New Features"), Week 2 standalone Invoice Automation repo, Week 3 Proposal Invoice Automation repo, and Week 4 live hosted Careem Model Comparison Streamlit deployment (https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/). Updated team roster and registries accordingly.
 
 ## Open Questions
+
 
 - 2026-07-19: Are there any specific integration challenges faced by the 3 active members during team branch merges? (None reported so far.)
 

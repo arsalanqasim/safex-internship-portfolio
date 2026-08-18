@@ -115,7 +115,8 @@ The shared Streamlit app routes to member-owned modules. Each module should stay
 | Abdul Haseeb | Resume Screening Prototype | Build a small tool that scores sample resumes against a job description using keyword or embedding matching. | Advanced |
 | Hammad Abbas | OCR / Document Processing Prototype | Build a prototype that extracts structured fields from a scanned sample document using OCR. | Intermediate |
 | Ali Zaib | Predictive Analytics Mini-Study | Use a small sample or public dataset to build a simple predictive model and report findings. | Advanced |
-| Malik Sudais | Invoice Automation Prototype | Source roster lists this assignment; confirm whether it is shared or separate. | Intermediate |
+| Malik Sudais | Invoice Automation Prototype | Standalone Invoice Automation Prototype (GitHub repo & Google Drive submission). | Submitted |
+
 
 ### Week 2 Workspace
 
@@ -239,7 +240,7 @@ Group 54 organized Week 4 as a Client-Ready Sprint Suite under `week4/` with dyn
 | Abdul Haseeb | `chatbot_deployment_courier` | Client-Ready AI Chatbot Deployment Package | Courier chatbot client-ready deployment. | In progress |
 | Hammad Abbas | `roi_calculator_daraz` | AI Automation ROI Calculator | Daraz business-case automation savings dashboard. | In progress |
 | Ali Zaib | `knowledge_assistant_foodpanda` | RAG-based Knowledge Assistant | RAG Q&A retrieval engine with hallucination checks. | In progress |
-| Malik Sudais | `model_comparison_careem` | AI Model Comparison & Recommendation Report | Provider accuracy/latency comparison audit. | In progress |
+| Malik Sudais | `model_comparison_careem` | AI Model Comparison & Recommendation Report | Careem model comparison audit and live hosted Streamlit deployment. | **Submitted** |
 
 ### Week 4 Workspace
 
@@ -250,6 +251,7 @@ Important files:
 - `week4/src/modules/registry.py`
 - `week4/src/modules/chatbot_deployment/`
 - `week4/src/modules/predictive_dashboard_tutor/`
+- `week4/src/modules/model_comparison_careem/`
 - `week4/tutor_deploy_package/`
 - `week4/data/outreach_tracker.xlsx`
 - `week4/deploy_prep.py`
@@ -271,6 +273,10 @@ Important files:
    - Dynamically evaluated business recommendations (Tutor Recruiting, Funnel UX, Administrative Capacity).
    - Standalone production package (`week4/tutor_deploy_package/`) deployed live on Streamlit Cloud (`https://safex-week4-predictive-dashboard-tutor.streamlit.app`).
 
+3. **AI Model Comparison & Recommendation Report (`model_comparison_careem`)**:
+   - Multi-model evaluation comparing Gemini 1.5 Flash, GPT-4o-mini, and Claude 3.5 Haiku on Careem ride-hailing support prompts.
+   - Live standalone Streamlit deployment hosted at `https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/`.
+
 ### How It Was Built
 
 - Established a configurable brand input inside the UI so that chatbot, proposal documents, and ROI equations adapt dynamically.
@@ -291,7 +297,8 @@ Important files:
 | Abdul Haseeb | `chatbot_deployment_courier` | Client-Ready AI Chatbot Deployment Package (Scaffolding ready). | `week4/src/modules/chatbot_deployment_courier/` | In progress |
 | Hammad Abbas | `roi_calculator_daraz` | AI Automation ROI Calculator (Scaffolding ready). | `week4/src/modules/roi_calculator_daraz/` | In progress |
 | Ali Zaib | `knowledge_assistant_foodpanda` | RAG-based Knowledge Assistant (Scaffolding ready). | `week4/src/modules/knowledge_assistant_foodpanda/` | In progress |
-| Malik Sudais | `model_comparison_careem` | AI Model Comparison & Recommendation Report (Scaffolding ready). | `week4/src/modules/proposal_invoice_generator/` | In progress |
+| Malik Sudais | `model_comparison_careem` | AI Model Comparison & Recommendation Report for Careem (Live App: https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/). | `week4/src/modules/model_comparison_careem/`, Live App | **Submitted** |
+
 
 ---
 
