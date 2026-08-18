@@ -598,60 +598,10 @@ def show_dashboard() -> None:
     st.markdown("---")
 
     # ==============================================================================
-    # Live Hosted Deployments & External Repository Hub
-    # ==============================================================================
-    st.subheader("🌐 Live Hosted Deployments & Project Hub")
-    
-    col_host1, col_host2, col_host3 = st.columns(3)
-    
-    with col_host1:
-        st.markdown(
-            """
-            <div class="hub-card">
-                <div class="hub-card-title">📊 LearnHub Predictive Dashboard</div>
-                <div class="hub-card-desc"><b>Ali Ammar Haider</b> · Week 4 Live Production Deployment on Streamlit Cloud.</div>
-                <a href="https://safex-week4-predictive-dashboard-tutor.streamlit.app" target="_blank" style="text-decoration: none; font-weight: 700; color: #0f766e; font-size: 0.9rem;">
-                    🔗 Launch Live App →
-                </a>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-    with col_host2:
-        st.markdown(
-            """
-            <div class="hub-card">
-                <div class="hub-card-title">📈 Careem AI Model Benchmark App</div>
-                <div class="hub-card-desc"><b>Malik Sudais</b> · Week 4 Live Multi-Model Comparison Deployment.</div>
-                <a href="https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/" target="_blank" style="text-decoration: none; font-weight: 700; color: #0f766e; font-size: 0.9rem;">
-                    🔗 Launch Live App →
-                </a>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-    with col_host3:
-        st.markdown(
-            """
-            <div class="hub-card">
-                <div class="hub-card-title">💼 SafeX Group 54 Central Repository</div>
-                <div class="hub-card-desc">Complete multi-week mono-repository with tests, documentation, and standalone packages.</div>
-                <a href="https://github.com/arsalanqasim400/safex-solutions" target="_blank" style="text-decoration: none; font-weight: 700; color: #0f766e; font-size: 0.9rem;">
-                    🔗 View Source on GitHub →
-                </a>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-    st.markdown("---")
-
-    # ==============================================================================
     # Double Column Layout for Timeline & Roster Status
     # ==============================================================================
     col_left, col_right = st.columns([1, 2])
+
     
     with col_left:
         st.subheader("📅 Workspace Timeline")
