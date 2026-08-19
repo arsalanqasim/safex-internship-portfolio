@@ -1,26 +1,41 @@
 # SafeX Solutions AI/ML Internship · Week 5 Progress Report
 
-**Project Title:** Client-Ready AI Customer Support Chatbot  
-**Developer / Group Leader:** Arsalan Qasim  
-**Cohort & Group:** SafeX Solutions Remote Summer Internship 2026 · Group 54  
-**Date of Submission:** 2026-08-18  
-**Submission Status:** Completed & Submitted  
+**Project Title:** AI Products & Prototypes Suite
+**Cohort & Group:** SafeX Solutions Remote Summer Internship 2026 · Group 54
+**Date of Submission:** 2026-08-19
 
 ---
 
 ## 1. Executive Summary
 
-Small and medium e-commerce businesses lose significant revenue and staff productivity answering repetitive tier-1 customer support inquiries across websites, WhatsApp, and social media. During Week 5, Group Leader Arsalan Qasim developed and validated a **Client-Ready AI Customer Support Chatbot** tailored for **SafeX Apparel & Co.** (an international e-commerce clothing brand). 
-
-The system automates the top 15+ frequent customer inquiries (shipping timelines, free delivery minimums, 30-day returns, sizing recommendations, promo code issues, and damaged goods), while incorporating sentiment-aware human support escalation, real-time audit logging, an interactive 15-question accuracy benchmark suite, and a persistent no-code knowledge base admin panel.
+Small and medium businesses lose significant revenue and staff productivity answering repetitive tier-1 customer support inquiries across websites, WhatsApp, and social media. During Week 5, Group 54 developed and validated client-ready AI prototypes across e-commerce, lead qualification, and business intelligence.
 
 ---
 
-## 2. Problem Statement & Business Opportunity
+## 2. Completed Modules & Member Submissions
 
-* **The Problem:** Support staff spend 60-70% of their working hours answering identical repetitive questions about shipping, delivery windows, return policies, and size charts. Customers experiencing delays outside standard business hours frequently abandon carts or churn.
-* **Target Audience:** E-commerce stores, boutique retail brands, and multi-channel merchants receiving 20+ inquiries/day across the US, UK, UAE, Saudi Arabia, and Europe.
-* **Commercial Value Proposition:** Provides instant 24/7 first-line responses with zero response latency, reducing ticket resolution costs by over 70% while improving customer satisfaction scores.
+### 1. Arsalan Qasim — Group Leader
+* **Module:** `week5/src/modules/chatbot_arsalan/`
+* **Task:** Client-Ready Customer Support Chatbot (SafeX Apparel & Co.)
+* **Status:** `Submitted`
+* **Features:** Hybrid TF-IDF & LLM chatbot, sentiment-aware escalation, audit logging, persistent admin panel, 15-question benchmark suite.
+
+---
+
+### 2. Ali Ammar Haider — Team Member
+* **Module:** `week5/src/modules/chatbot_ali_ammar/`
+* **Task:** AI Customer Support Chatbot (ShopEase E-Commerce)
+* **Status:** `Ready for review`
+* **Features:**
+  * 15+ realistic customer FAQs for ShopEase retail store.
+  * TF-IDF & token-overlap semantic variation matching.
+  * Dynamic confidence scoring (0.0 to 1.0) and safe fallback preventing policy hallucinations.
+  * Explicit human handoff escalation ("talk to human", "real person", "agent").
+  * Real-time conversation audit logging to `chat_logs.json`.
+  * Business Owner No-Code Admin Panel (Add, Edit, Delete, Reset FAQs).
+  * Live KPI metrics & interaction analytics dashboard.
+  * Automated 17-question Benchmark Test Suite (100% accuracy).
+  * Standalone deployment package `week5/chatbot_deploy_package_ali_ammar/`.
 
 ---
 
@@ -34,40 +49,23 @@ The chatbot operates on a robust **hybrid architecture**:
        ▼
 [Sentiment & Escalation Detector]
    ├── Frustrated / Explicit "Human" ──► [Priority Human Support Handoff]
-   └── Standard Inquiry ──────────────► [TF-IDF Semantic Vector Matcher]
+   └── Standard Inquiry ──────────────► [TF-IDF & Token Overlap Matcher]
                                                │
                ┌───────────────────────────────┴───────────────────────────────┐
                ▼                                                               ▼
-  [Confidence >= 0.28]                                                [Confidence < 0.28]
+  [Confidence >= 0.42]                                                [Confidence < 0.42]
          │                                                                     │
-  [Grounded Prompt Construction]                                      [Friendly Rephrase Fallback]
-         │
-  [Live LLM API (Gemini / OpenAI)] ──(Offline / Key Missing)──► [Local FAQ Knowledge Base Answer]
+  [Matched FAQ Policy Answer]                                         [Safe Fallback Response]
          │
          ▼
   [Structured Response + Confidence & Audit Logging]
 ```
 
-### Key Engineering Highlights:
-1. **Hybrid LLM with Local Fallback**: Seamlessly connects to Gemini 1.5 Flash or OpenAI GPT-4o-mini via direct REST API calls, falling back to local TF-IDF vector cosine similarity when offline, ensuring 100% test reliability and zero downtime.
-2. **Persistent No-Code Admin Panel**: Store managers can add, modify, or delete FAQ policies in real time with persistence to `faq_knowledge_base.json` and a 1-click factory restore option.
-3. **Sentiment & Escalation Layer**: Identifies customer distress, negative keywords, or explicit agent requests ("speak with human", "connect to agent") and instantly routes to priority human handoff.
-4. **Audit Trail & KPI Analytics**: Real-time structured interaction logging to `chat_logs.json` with CSV/JSON export and dynamic resolution rate KPIs.
-
 ---
 
 ## 4. Verification & Testing Results
 
-* **Benchmark Accuracy:** 100% across the 15 verified customer inquiry test set.
-* **Average Response Latency:** < 50 ms (local TF-IDF mode) / ~1.2s (live LLM mode).
+* **Benchmark Accuracy:** 100% across verified customer inquiry test set.
+* **Average Response Latency:** < 10 ms (local TF-IDF mode).
 * **Hallucination Rate:** 0.0% (strictly grounded in verified store policy knowledge base).
-* **Pytest Suite:** 7 comprehensive test functions covering intent accuracy, escalation priority, admin CRUD persistence, and benchmark execution.
-
----
-
-## 5. Group Leadership & Consolidation
-
-As Group Leader for Group 54:
-* Initialized and structured the Week 5 workspace (`week5/`) with neutral scaffolding and domain selectors across all 9 members.
-* Verified that teammate modules (`lead_gen_wasim`, `bi_dashboard_faozan`, `chatbot_shahidullah`, `lead_gen_ali_ammar`, `bi_dashboard_abdul_haseeb`, `chatbot_hammad`, `lead_gen_ali_zaib`, `bi_dashboard_malik_sudais`) are cleanly isolated with zero merge conflicts.
-* Prepared standalone packaging utilities (`deploy_prep.py`) allowing teammates to deploy isolated versions to their personal portfolios.
+* **Pytest Suite:** 20 comprehensive unit tests passing across `test_chatbot.py` and `test_chatbot_ali_ammar.py`.

@@ -1,0 +1,222 @@
+{
+  "business": {
+    "name": "ShopEase",
+    "industry": "E-commerce & Retail",
+    "description": "ShopEase is a leading online retail store offering fashion, electronics, home accessories, and lifestyle products.",
+    "support_hours": "Monday to Saturday, 9:00 AM to 6:00 PM EST",
+    "support_email": "support@shopease-demo.com",
+    "support_phone": "+1 (800) 555-EASE"
+  },
+  "faqs": [
+    {
+      "id": "FAQ001",
+      "category": "Orders",
+      "question": "How can I track my order or package?",
+      "answer": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+      "keywords": [
+        "track order",
+        "order tracking",
+        "where is my order",
+        "package status",
+        "parcel location",
+        "delivery status",
+        "check order"
+      ]
+    },
+    {
+      "id": "FAQ002",
+      "category": "Shipping",
+      "question": "How long does delivery take?",
+      "answer": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+      "keywords": [
+        "delivery time",
+        "shipping time",
+        "how long delivery",
+        "when will my order arrive",
+        "shipping duration",
+        "transit time"
+      ]
+    },
+    {
+      "id": "FAQ003",
+      "category": "Shipping",
+      "question": "How much does shipping cost?",
+      "answer": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+      "keywords": [
+        "shipping cost",
+        "delivery charges",
+        "shipping fee",
+        "delivery fee",
+        "free shipping",
+        "shipping rates"
+      ]
+    },
+    {
+      "id": "FAQ004",
+      "category": "Returns",
+      "question": "What is your return policy?",
+      "answer": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+      "keywords": [
+        "return policy",
+        "return item",
+        "can I return",
+        "product return",
+        "how to return",
+        "return period",
+        "30 days return"
+      ]
+    },
+    {
+      "id": "FAQ005",
+      "category": "Refunds",
+      "question": "How long does a refund take to process?",
+      "answer": "Once our warehouse receives and inspects your returned package, refunds are issued to your original payment method within 5 to 7 business days.",
+      "keywords": [
+        "refund",
+        "refund time",
+        "money back",
+        "when refund",
+        "reimbursement",
+        "refund status"
+      ]
+    },
+    {
+      "id": "FAQ006",
+      "category": "Exchanges",
+      "question": "Can I exchange an item for a different size or color?",
+      "answer": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+      "keywords": [
+        "exchange",
+        "replace product",
+        "change size",
+        "change color",
+        "swap item",
+        "product exchange"
+      ]
+    },
+    {
+      "id": "FAQ007",
+      "category": "Cancellation",
+      "question": "Can I cancel or modify my order after placing it?",
+      "answer": "Orders can be cancelled or updated within 1 hour of placement. After 1 hour, processing begins and orders cannot be cancelled prior to delivery.",
+      "keywords": [
+        "cancel order",
+        "order cancellation",
+        "stop order",
+        "cancel purchase",
+        "modify order",
+        "change address"
+      ]
+    },
+    {
+      "id": "FAQ008",
+      "category": "Payments",
+      "question": "What payment methods do you accept?",
+      "answer": "ShopEase accepts Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Cash on Delivery (COD) in eligible regions.",
+      "keywords": [
+        "payment methods",
+        "how can I pay",
+        "payment options",
+        "credit card",
+        "debit card",
+        "paypal",
+        "apple pay"
+      ]
+    },
+    {
+      "id": "FAQ009",
+      "category": "Payments",
+      "question": "Do you offer Cash on Delivery (COD)?",
+      "answer": "Yes, Cash on Delivery is available for eligible domestic shipping addresses. Availability is confirmed at checkout.",
+      "keywords": [
+        "cash on delivery",
+        "COD",
+        "pay on delivery",
+        "pay cash"
+      ]
+    },
+    {
+      "id": "FAQ010",
+      "category": "Problems",
+      "question": "What should I do if I receive a damaged or incorrect item?",
+      "answer": "We sincerely apologize! Please take clear photos of the damaged/wrong item and contact support within 48 hours for an immediate free replacement.",
+      "keywords": [
+        "damaged item",
+        "wrong item",
+        "incorrect product",
+        "broken product",
+        "defective item",
+        "missing item"
+      ]
+    },
+    {
+      "id": "FAQ011",
+      "category": "Products",
+      "question": "How can I check if an item is in stock?",
+      "answer": "Product availability is shown live on each product detail page. If an item is sold out, click 'Notify Me' to receive an email alert upon restocking.",
+      "keywords": [
+        "product availability",
+        "in stock",
+        "stock status",
+        "available product",
+        "sold out",
+        "restock"
+      ]
+    },
+    {
+      "id": "FAQ012",
+      "category": "Products",
+      "question": "Where can I find size charts and product specifications?",
+      "answer": "Detailed sizing charts, dimensions, material composition, and care instructions are located in the 'Specifications' tab on each product page.",
+      "keywords": [
+        "size chart",
+        "specifications",
+        "product details",
+        "dimensions",
+        "measurements",
+        "fit guide"
+      ]
+    },
+    {
+      "id": "FAQ013",
+      "category": "Shipping",
+      "question": "Do you offer international shipping?",
+      "answer": "Yes, ShopEase ships to over 50 countries worldwide. International shipping fees and estimated delivery times are calculated at checkout.",
+      "keywords": [
+        "international shipping",
+        "ship internationally",
+        "overseas delivery",
+        "global shipping",
+        "foreign delivery"
+      ]
+    },
+    {
+      "id": "FAQ014",
+      "category": "Support",
+      "question": "How can I contact ShopEase customer support?",
+      "answer": "Reach out to our support team via email at support@shopease-demo.com or call +1 (800) 555-EASE during business hours (Mon-Sat, 9AM-6PM EST).",
+      "keywords": [
+        "contact support",
+        "customer service",
+        "support email",
+        "phone number",
+        "help desk",
+        "talk to support"
+      ]
+    },
+    {
+      "id": "FAQ015",
+      "category": "Account",
+      "question": "Do I need an account to place an order?",
+      "answer": "No, you can check out as a guest. However, creating a free ShopEase account allows you to track orders faster, save wishlists, and store addresses.",
+      "keywords": [
+        "create account",
+        "guest checkout",
+        "register account",
+        "sign up",
+        "login",
+        "account benefits"
+      ]
+    }
+  ]
+}

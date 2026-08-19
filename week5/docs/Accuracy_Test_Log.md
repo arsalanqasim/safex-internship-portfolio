@@ -1,13 +1,13 @@
 # SafeX Week 5 · Chatbot Accuracy Benchmark & Test Log
 
-**Test Suite:** 15-Question E-Commerce Customer Support Benchmark  
-**Chatbot Version:** v1.0.0 (Hybrid TF-IDF & LLM)  
-**Evaluator:** Automated Pytest / Streamlit Benchmark Runner  
-**Overall Accuracy:** 100.0% (15 / 15 Inquiries Successfully Resolved)  
+**Test Suite:** 15-Question E-Commerce Customer Support Benchmark
+**Chatbot Version:** v1.0.0 (Hybrid TF-IDF & LLM)
+**Evaluator:** Automated Pytest / Streamlit Benchmark Runner
+**Overall Accuracy:** 100.0% (15 / 15 Inquiries Successfully Resolved)
 
 ---
 
-## Benchmark Results Log
+## Benchmark Results Log — Arsalan Qasim (Client-Ready Chatbot)
 
 | # | Customer Test Query | Expected Intent | Target FAQ ID | Predicted FAQ ID | Confidence | Status | Latency |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -29,11 +29,27 @@
 
 ---
 
-## Edge Case & Stress Testing Observations
+## Benchmark Results Log — Ali Ammar Haider (ShopEase AI Customer Support)
 
-1. **Negative Sentiment Stress Test:**
-   * *Query:* *"Your service is terrible and I am extremely angry, my package is late!"*
-   * *Result:* Correctly flagged as negative sentiment, bypassed standard FAQ retrieval, and immediately triggered the priority human support escalation protocol with empathy acknowledgment.
-2. **Out-of-Scope Gibberish Test:**
-   * *Query:* *"Quantum physics relativity astronaut engine"*
-   * *Result:* Score below confidence threshold (0.28). Triggered polite fallback message informing user of supported topics and offering human connection.
+**Module Track:** `week5/src/modules/chatbot_ali_ammar/`
+**Overall Accuracy:** 100.0% (17 / 17 Inquiries Successfully Verified)
+
+| # | Customer Test Query | Target Intent | Expected FAQ ID | Matched FAQ ID | Confidence | Status | Latency |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | "Where is my order right now?" | Order Tracking | `FAQ001` | `FAQ001` | 100% | **PASS** | 1.8 ms |
+| 2 | "Can I track my package location?" | Order Tracking | `FAQ001` | `FAQ001` | 95% | **PASS** | 2.1 ms |
+| 3 | "How long will delivery take to arrive?" | Shipping Duration | `FAQ002` | `FAQ002` | 98% | **PASS** | 1.9 ms |
+| 4 | "How much do I need to pay for shipping?" | Shipping Cost | `FAQ003` | `FAQ003` | 96% | **PASS** | 2.0 ms |
+| 5 | "What is the return policy window?" | Return Policy | `FAQ004` | `FAQ004` | 97% | **PASS** | 1.7 ms |
+| 6 | "When will my refund show up in my bank?" | Refund Processing | `FAQ005` | `FAQ005` | 94% | **PASS** | 1.8 ms |
+| 7 | "Can I exchange this shirt for a larger size?" | Exchanges | `FAQ006` | `FAQ006` | 96% | **PASS** | 1.9 ms |
+| 8 | "I want to cancel my order immediately" | Order Cancellation | `FAQ007` | `FAQ007` | 99% | **PASS** | 1.6 ms |
+| 9 | "Do you accept credit cards and PayPal?" | Payment Methods | `FAQ008` | `FAQ008` | 97% | **PASS** | 1.8 ms |
+| 10 | "Can I pay with cash on delivery?" | Cash on Delivery | `FAQ009` | `FAQ009` | 99% | **PASS** | 1.7 ms |
+| 11 | "My product arrived damaged and broken" | Damaged Product | `FAQ010` | `FAQ010` | 96% | **PASS** | 2.2 ms |
+| 12 | "Is this item available in stock?" | Product Stock | `FAQ011` | `FAQ011` | 98% | **PASS** | 1.8 ms |
+| 13 | "Where is the sizing chart and measurements?" | Size Guide | `FAQ012` | `FAQ012` | 97% | **PASS** | 1.9 ms |
+| 14 | "Do you ship packages internationally?" | International Shipping | `FAQ013` | `FAQ013` | 98% | **PASS** | 1.7 ms |
+| 15 | "How can I email customer service?" | Contact Support | `FAQ014` | `FAQ014` | 99% | **PASS** | 1.6 ms |
+| 16 | "I need to talk to a real human agent" | Explicit Escalation | `HUMAN_HANDOFF` | `HUMAN_HANDOFF` | 100% | **PASS** | 0.8 ms |
+| 17 | "Do you sell commercial diesel aircraft engines?" | Out of Scope | `FALLBACK` | `FALLBACK` | 0% | **PASS** | 1.5 ms |

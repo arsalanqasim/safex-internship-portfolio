@@ -59,6 +59,17 @@ MODULE_REGISTRY: Dict[str, Dict[str, Dict[str, Any]]] = {
             "deployed_url": "",
             "description": "Intelligent inbound lead scoring evaluating budget, timeline urgency, and company fit.",
         },
+        "chatbot_ali_ammar": {
+            "name": "ShopEase AI Customer Support Chatbot",
+            "developer": "Ali Ammar Haider",
+            "role": "Team Member",
+            "institution": "COMSATS University Islamabad",
+            "task": "AI Customer Support Chatbot (Client-Ready)",
+            "domain": "E-Commerce & Retail (ShopEase)",
+            "status": "Ready for review",
+            "deployed_url": "",
+            "description": "Production-grade AI chatbot for ShopEase automating customer support FAQs, TF-IDF semantic matching, confidence-based human handoff, conversation logging, admin CRUD panel, and benchmark testing.",
+        },
         "bi_dashboard_abdul_haseeb": {
             "name": "Marketing Agency BI Analytics Hub",
             "developer": "Abdul Haseeb",
