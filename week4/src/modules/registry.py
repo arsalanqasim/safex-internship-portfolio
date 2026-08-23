@@ -32,9 +32,9 @@ MODULE_REGISTRY = {
             "developer": "Muhammad Faozan Mujtaba",
             "role": "Group Member",
             "email": "fozanmujtaba.480@gmail.com",
-            "status": "Placeholder (Scaffolding Ready)",
-            "tech": ["Python", "Chroma / FAISS", "Embeddings API", "LLM API", "Streamlit"],
-            "description": "Retrieval-Augmented Generation assistant answering Q&A queries over a customized operational document set (FAQ/policies).",
+            "status": "Submission Ready",
+            "tech": ["Python", "scikit-learn", "TF-IDF Retrieval", "RAG Pipeline", "Streamlit"],
+            "description": "Retrieval-Augmented Generation assistant answering Q&A queries over Indus Air's operational policy set (FAQ/policies), with cited passages and a similarity floor that refuses out-of-scope questions instead of guessing.",
             "import_path": "src.modules.knowledge_assistant_airline.ui",
             "icon": "📚",
             "deployed_url": None

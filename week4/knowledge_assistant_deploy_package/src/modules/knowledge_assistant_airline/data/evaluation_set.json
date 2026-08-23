@@ -1,0 +1,201 @@
+{
+  "description": "Gold question set for the Indus Air RAG knowledge assistant. Questions were written from the contact-centre agent's point of view before the retriever was tuned, using passenger phrasing rather than the wording used in the policy documents. Out-of-scope cases test the similarity floor: the assistant is expected to refuse them, not to answer from the closest loosely related section.",
+  "author": "Muhammad Faozan Mujtaba",
+  "created": "2026-08-24",
+  "cases": [
+    {
+      "question": "How much hand luggage can I take on board?",
+      "expected_document": "baggage_policy.md",
+      "expected_section": "Cabin Baggage Allowance",
+      "notes": "Passenger says 'hand luggage'; the policy says 'cabin baggage'."
+    },
+    {
+      "question": "What is the checked baggage allowance on an Indus Flex ticket to Dubai?",
+      "expected_document": "baggage_policy.md",
+      "expected_section": "Checked Baggage Allowance",
+      "notes": "Needs the international column of the fare family table."
+    },
+    {
+      "question": "How much do you charge per kilo for overweight bags on a domestic flight?",
+      "expected_document": "baggage_policy.md",
+      "expected_section": "Excess Baggage Charges"
+    },
+    {
+      "question": "My suitcase never arrived. What do I do and what will you pay?",
+      "expected_document": "baggage_policy.md",
+      "expected_section": "Delayed, Damaged and Lost Baggage"
+    },
+    {
+      "question": "Can I take my golf clubs?",
+      "expected_document": "baggage_policy.md",
+      "expected_section": "Sports and Oversized Equipment"
+    },
+    {
+      "question": "I booked a Saver fare and want my money back. Will I get a refund?",
+      "expected_document": "booking_changes_and_refunds.md",
+      "expected_section": "Cancellations and Refund Amounts"
+    },
+    {
+      "question": "How much does it cost to change the date on a Saver ticket?",
+      "expected_document": "booking_changes_and_refunds.md",
+      "expected_section": "Date and Flight Changes"
+    },
+    {
+      "question": "Can I put my brother's name on my ticket instead of mine?",
+      "expected_document": "booking_changes_and_refunds.md",
+      "expected_section": "Date and Flight Changes",
+      "notes": "Name change rule sits inside the change section."
+    },
+    {
+      "question": "How long does a refund take to reach my credit card?",
+      "expected_document": "booking_changes_and_refunds.md",
+      "expected_section": "Refund Processing Times"
+    },
+    {
+      "question": "I booked yesterday by mistake, can I cancel free of charge?",
+      "expected_document": "booking_changes_and_refunds.md",
+      "expected_section": "24 Hour Cancellation Window"
+    },
+    {
+      "question": "How early does the airport counter close for an international flight?",
+      "expected_document": "check_in_and_boarding.md",
+      "expected_section": "Airport Counter Timings"
+    },
+    {
+      "question": "When does online check-in open?",
+      "expected_document": "check_in_and_boarding.md",
+      "expected_section": "Online and Mobile Check-in"
+    },
+    {
+      "question": "I got to the gate late and they would not let me on. What happens to my ticket?",
+      "expected_document": "check_in_and_boarding.md",
+      "expected_section": "Boarding Gate"
+    },
+    {
+      "question": "Can my 12 year old sit in the emergency exit row?",
+      "expected_document": "check_in_and_boarding.md",
+      "expected_section": "Seat Selection"
+    },
+    {
+      "question": "I was bumped off an overbooked flight. What compensation do I get?",
+      "expected_document": "check_in_and_boarding.md",
+      "expected_section": "Denied Boarding and Overbooking"
+    },
+    {
+      "question": "My flight was delayed four hours because of an engineering fault. What am I owed?",
+      "expected_document": "disruptions_and_compensation.md",
+      "expected_section": "Compensation for Controllable Disruption"
+    },
+    {
+      "question": "Do I get a hotel if my flight is delayed overnight?",
+      "expected_document": "disruptions_and_compensation.md",
+      "expected_section": "Duty of Care During Delays"
+    },
+    {
+      "question": "You cancelled my flight. What are my options?",
+      "expected_document": "disruptions_and_compensation.md",
+      "expected_section": "Passenger Choices When a Flight Is Cancelled"
+    },
+    {
+      "question": "Is there compensation when the delay was caused by fog?",
+      "expected_document": "disruptions_and_compensation.md",
+      "expected_section": "Compensation for Controllable Disruption",
+      "notes": "Weather is uncontrollable; the assistant must find the exclusion."
+    },
+    {
+      "question": "I missed my connecting flight because the first leg landed late.",
+      "expected_document": "disruptions_and_compensation.md",
+      "expected_section": "Missed Connections"
+    },
+    {
+      "question": "How many miles do I need for Gold tier?",
+      "expected_document": "indusmiles_loyalty_program.md",
+      "expected_section": "Membership Tiers"
+    },
+    {
+      "question": "When do my points expire?",
+      "expected_document": "indusmiles_loyalty_program.md",
+      "expected_section": "Mile Expiry and Account Rules"
+    },
+    {
+      "question": "Can I share my miles with my wife?",
+      "expected_document": "indusmiles_loyalty_program.md",
+      "expected_section": "Mile Expiry and Account Rules"
+    },
+    {
+      "question": "Do I get lounge access as a Gold member?",
+      "expected_document": "indusmiles_loyalty_program.md",
+      "expected_section": "Tier Benefits"
+    },
+    {
+      "question": "Can my 7 year old fly alone and what does it cost?",
+      "expected_document": "special_assistance_and_minors.md",
+      "expected_section": "Unaccompanied Minors"
+    },
+    {
+      "question": "I am 34 weeks pregnant, can I fly?",
+      "expected_document": "special_assistance_and_minors.md",
+      "expected_section": "Medical Clearance"
+    },
+    {
+      "question": "How do I book wheelchair assistance for my mother?",
+      "expected_document": "special_assistance_and_minors.md",
+      "expected_section": "Requesting Assistance"
+    },
+    {
+      "question": "Do you charge for a baby travelling on my lap?",
+      "expected_document": "special_assistance_and_minors.md",
+      "expected_section": "Infants and Children"
+    },
+    {
+      "question": "Can I bring my dog in the cabin and how much is it?",
+      "expected_document": "pets_and_restricted_items.md",
+      "expected_section": "Pets in the Cabin"
+    },
+    {
+      "question": "Is a power bank allowed in my checked suitcase?",
+      "expected_document": "pets_and_restricted_items.md",
+      "expected_section": "Lithium Batteries and Power Banks"
+    },
+    {
+      "question": "Can my pug travel in the hold?",
+      "expected_document": "pets_and_restricted_items.md",
+      "expected_section": "Pets in the Hold"
+    },
+    {
+      "question": "How much liquid can I carry through security in my cabin bag?",
+      "expected_document": "pets_and_restricted_items.md",
+      "expected_section": "Liquids and Sharp Objects in the Cabin"
+    },
+    {
+      "question": "What documents does my cat need to fly?",
+      "expected_document": "pets_and_restricted_items.md",
+      "expected_section": "Documentation for Animals"
+    },
+    {
+      "question": "Who won the cricket match between Pakistan and Australia last night?",
+      "out_of_scope": true,
+      "notes": "Completely unrelated. Must refuse."
+    },
+    {
+      "question": "What is the share price of Indus Air today?",
+      "out_of_scope": true,
+      "notes": "Plausible company question with no policy coverage. Must refuse."
+    },
+    {
+      "question": "Can you upgrade me to business class for free because it is my birthday?",
+      "out_of_scope": true,
+      "notes": "Airline-flavoured vocabulary but no policy grants this. Must refuse rather than improvise from the fare family table."
+    },
+    {
+      "question": "What is the wifi password on board?",
+      "out_of_scope": true,
+      "notes": "In-flight product is not covered by the current library. Must refuse and name the closest topic."
+    },
+    {
+      "question": "Which meals are served on the Islamabad to Jeddah route?",
+      "out_of_scope": true,
+      "notes": "Catering is not in the library. Must refuse."
+    }
+  ]
+}
