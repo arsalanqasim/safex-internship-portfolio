@@ -13,13 +13,14 @@ Date: 2026-08-24
 | `demo_video_script.md` | 3-5 minute client demo script |
 | `explanation_video_script.md` | 5-10 minute technical explanation script |
 | `outreach_log.md` | Committed mirror of the 3 outreach records |
+| `outreach_messages.md` | The 3 finalised outreach messages, ready to send |
 
 ## Outstanding at time of writing
 
 - ~~Live deployment URL~~ - **done 2026-08-25**: https://indus-air-knowledge-assistant-msjvdeswzeu3drqeasmytn.streamlit.app
 - Both videos - scripts written, recording not possible in the build environment.
-- Outreach messages - drafted and logged, not yet sent. The live URL now exists, so the
-  `<deployed URL>` placeholder in the workbook can be substituted and the messages sent.
+- Outreach messages - **finalised with the live demo link, ready to send but not yet sent**.
+  Full text in `outreach_messages.md`.
 - Screenshots - must be captured by hand from a running app; Streamlit renders over a
   websocket so headless capture returns only the loading skeleton.
 

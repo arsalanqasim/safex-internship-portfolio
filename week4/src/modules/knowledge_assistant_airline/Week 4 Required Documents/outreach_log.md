@@ -15,9 +15,9 @@ phone numbers are stored, per `AGENTS.md`.
 
 | # | Company | Country | Website | Contact (role) | Channel | Date | Status |
 |---|---|---|---|---|---|---|---|
-| 1 | Airblue | Pakistan | airblue.com | Head of Customer Experience | Corporate contact form + LinkedIn | 2026-08-24 | Prepared, not yet sent |
-| 2 | Serene Air | Pakistan | sereneair.com | Contact Centre / Ground Ops Manager | Corporate enquiry form | 2026-08-24 | Prepared, not yet sent |
-| 3 | Bookme.pk | Pakistan | bookme.pk | Customer Support Operations Lead | LinkedIn + support enquiry form | 2026-08-24 | Prepared, not yet sent |
+| 1 | Airblue | Pakistan | airblue.com | Head of Customer Experience | Corporate contact form + LinkedIn | 2026-08-24 | Ready to send |
+| 2 | Serene Air | Pakistan | sereneair.com | Contact Centre / Ground Ops Manager | Corporate enquiry form | 2026-08-24 | Ready to send |
+| 3 | Bookme.pk | Pakistan | bookme.pk | Customer Support Operations Lead | LinkedIn + support enquiry form | 2026-08-24 | Ready to send |
 
 **Service offered:** RAG Knowledge Assistant (client-ready) - cited answers over a
 company's own policy documents, with an explicit refusal path for out-of-scope questions.
@@ -32,8 +32,15 @@ content without any data access.
 
 ## Status Note
 
-These rows are logged as **prepared and awaiting send**, not as completed outreach. The
-drafted messages are in the *Outreach Messages* sheet of the workbook. Before sending,
-replace the `<deployed URL>` placeholder with the live Streamlit link, then update
-`Response`, `Follow-up Date` and `Result/Status` in the workbook with what actually
-happens. Follow-up date set for all three: **2026-08-28**.
+Updated **2026-08-25**: all three messages are now **finalised and ready to send**. The live
+demo link is embedded in each one:
+
+https://indus-air-knowledge-assistant-msjvdeswzeu3drqeasmytn.streamlit.app
+
+They are **not yet sent**. The full text of each message is in `outreach_messages.md` in this
+folder, and in the *Outreach Messages* sheet of the workbook.
+
+After sending each message, record what actually happened - set `Date Sent` in the
+*Outreach Messages* sheet, and update `Response`, `Follow-up Date` and `Result/Status` in
+the *Outreach Log* sheet. Do not record a response before one is received; this tracker is
+submission evidence. Follow-up date set for all three: **2026-08-28**.
