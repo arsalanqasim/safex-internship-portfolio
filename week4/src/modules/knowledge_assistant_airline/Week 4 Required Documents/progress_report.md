@@ -4,7 +4,7 @@
 **Role**: Group Member, SafeX Solutions Group 54
 **Module**: `week4/src/modules/knowledge_assistant_airline/`
 **Assignment**: RAG-based Knowledge Assistant (Client-Ready Sprint)
-**Report date**: 2026-08-24
+**Report date**: 2026-08-24 (updated 2026-08-25)
 **Status**: Ready for review
 
 ---
@@ -40,7 +40,7 @@ prevent**, and that shaped every design decision below.
 | Standalone deployment package + packaging script | Complete, verified running |
 | Registry entry updated (status, tech stack) | Complete |
 | Outreach tracker: 3 target records | Prepared, awaiting send |
-| Live deployment URL registered | **Blocked - see section 7** |
+| Live deployment URL registered | Complete - deployed and public |
 | Demo and explanation videos | **Not recorded - see section 7** |
 
 ## 4. How It Works
@@ -101,12 +101,12 @@ Three findings are documented rather than quietly tuned away. Full detail in
 
 ## 7. Blockers and Open Items
 
-- **Live deployment URL.** Deploying to Streamlit Community Cloud requires signing in to
-  my personal GitHub and Streamlit accounts, which cannot be done from the build
-  environment. The standalone package is built and verified running at
-  `week4/knowledge_assistant_deploy_package/`, so deployment is a push-and-connect step.
-  `deployed_url` is left as `None` until the live link exists; setting it to a guessed URL
-  would show a broken green "Live" badge on the master dashboard.
+- **Live deployment URL - resolved 2026-08-25.** Deployed to Streamlit Community Cloud at
+  https://indus-air-knowledge-assistant-msjvdeswzeu3drqeasmytn.streamlit.app
+  and verified loading in a clean incognito session. `deployed_url` is now registered in
+  `week4/src/modules/registry.py`, so the green "Live" badge on the master dashboard
+  points at a working app. The deployment repo is
+  https://github.com/fozanmujtaba/indus-air-knowledge-assistant.
 - **Demo and explanation videos.** Not recorded. Full scripts with timings are prepared in
   `demo_video_script.md` and `explanation_video_script.md`.
 - **Outreach.** The 3 target records are prepared with drafted messages but not yet sent,

@@ -37,7 +37,7 @@ MODULE_REGISTRY = {
             "description": "Retrieval-Augmented Generation assistant answering Q&A queries over Indus Air's operational policy set (FAQ/policies), with cited passages and a similarity floor that refuses out-of-scope questions instead of guessing.",
             "import_path": "src.modules.knowledge_assistant_airline.ui",
             "icon": "📚",
-            "deployed_url": None
+            "deployed_url": "https://indus-air-knowledge-assistant-msjvdeswzeu3drqeasmytn.streamlit.app"
         },
         "model_comparison_bank": {
             "title": "AI Model Comparison & Recommendation Report",

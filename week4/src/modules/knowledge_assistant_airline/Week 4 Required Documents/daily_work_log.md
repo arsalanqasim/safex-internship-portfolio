@@ -25,13 +25,14 @@ and outreach sending remain - all three need interactive accounts or a camera.
 
 ---
 
-## Planned - Tuesday 2026-08-25
+## Tuesday 2026-08-25 - Deployment
 
-- Push `knowledge_assistant_deploy_package/` to a personal GitHub repo and deploy on
-  Streamlit Community Cloud.
-- Test the live link: ask flow, refusal path, benchmark tab, cold start.
-- Set `deployed_url` in `week4/src/modules/registry.py` to the live link and confirm the
-  green "Live" badge appears on the master dashboard.
+| Activity | Outcome |
+|---|---|
+| Created the public deployment repo `fozanmujtaba/indus-air-knowledge-assistant` and pushed the standalone package from a clean copy taken outside the internship repo, to avoid a nested git repository inside `week4/`. | Repo live with README and `.gitignore`. |
+| Deployed on Streamlit Community Cloud with main file `app.py`. No secrets configured - the module runs fully offline with no API key. | App built and served. |
+| First load redirected to Streamlit's login gate. Traced it to app viewer access, switched Sharing to "public and searchable" and saved. | Verified loading in a clean incognito session. |
+| Registered the live link in `week4/src/modules/registry.py`. | https://indus-air-knowledge-assistant-msjvdeswzeu3drqeasmytn.streamlit.app |
 
 ## Planned - Wednesday 2026-08-26
 

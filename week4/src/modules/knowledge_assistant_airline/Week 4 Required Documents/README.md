@@ -16,9 +16,10 @@ Date: 2026-08-24
 
 ## Outstanding at time of writing
 
-- Live deployment URL - package built and verified, deployment needs interactive sign-in.
+- ~~Live deployment URL~~ - **done 2026-08-25**: https://indus-air-knowledge-assistant-msjvdeswzeu3drqeasmytn.streamlit.app
 - Both videos - scripts written, recording not possible in the build environment.
-- Outreach messages - drafted and logged, not yet sent (they reference the live URL).
+- Outreach messages - drafted and logged, not yet sent. The live URL now exists, so the
+  `<deployed URL>` placeholder in the workbook can be substituted and the messages sent.
 - Screenshots - must be captured by hand from a running app; Streamlit renders over a
   websocket so headless capture returns only the loading skeleton.
 
