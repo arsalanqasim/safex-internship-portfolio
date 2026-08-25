@@ -13,7 +13,7 @@ Copy each message as-is. After sending, record the date and any reply in
 
 ## 1. Airblue
 
-**Channel:** Corporate contact form (airblue.com) + LinkedIn company page
+**Channel:** Corporate contact page (airblue.com/about/contact) · feedback address `wearelistening@airblue.com`
 **Contact:** Head of Customer Experience (role-based)
 **Subject:** Cutting contact-centre handling time with a cited policy assistant
 
@@ -31,19 +31,23 @@ Copy each message as-is. After sending, record the date and any reply in
 
 ---
 
-## 2. Serene Air
+## 2. Fly Jinnah
 
-**Channel:** Corporate enquiry form (sereneair.com)
-**Contact:** Contact Centre / Ground Operations Manager (role-based)
+**Channel:** Corporate contact page (flyjinnah.com/contact-us) · published address `contactus@flyjinnah.com`
+**Contact:** Customer Experience / Contact Centre Manager (role-based)
 **Subject:** Consistent policy answers for your contact centre agents
 
+*Replaced Serene Air on 2026-08-26 - Serene Air's flight operations have been suspended
+since 2025-10-02 pending regulatory compliance.*
+
 > Hello, I am an AI/automation intern with SafeX Solutions (Group 54). Contact-centre
-> agents usually lose time searching separate policy PDFs while a passenger waits, and
-> answers drift between agents. I built a knowledge assistant that retrieves the relevant
-> policy section and answers only from it, showing the source passage and a confidence
-> score for every answer, with an explicit refusal when the rule is not in the library.
-> It runs on ordinary hosting with no per-query model cost. Could I show you a 10-minute
-> demo using your published baggage and refund policies?
+> agents lose time searching separate policy documents while a passenger waits, and answers
+> drift between agents - which matters most on a growing network where query volume climbs
+> faster than headcount. I built a knowledge assistant that retrieves the relevant policy
+> section and answers only from it, showing the source passage and a confidence score for
+> every answer, with an explicit refusal when the rule is not in the library. It runs on
+> ordinary hosting with no per-query model cost. Could I show you a 10-minute demo using
+> your published baggage and refund policies?
 >
 > Live demo: https://indus-air-knowledge-assistant-msjvdeswzeu3drqeasmytn.streamlit.app
 
@@ -51,7 +55,7 @@ Copy each message as-is. After sending, record the date and any reply in
 
 ## 3. Bookme.pk
 
-**Channel:** LinkedIn company page + support enquiry form (bookme.pk)
+**Channel:** Contact form (bookme.pk/contact-us) · published address `support@bookme.pk`
 **Contact:** Customer Support Operations Lead (role-based)
 **Subject:** Reducing repeat refund and cancellation queries
 
@@ -73,6 +77,9 @@ Copy each message as-is. After sending, record the date and any reply in
 - The demo runs on **synthetic Indus Air data**, and each message says so. Do not imply it is
   already running on the recipient's own policies.
 - Send from your own account so replies reach you directly.
+- Routes are each company's **published corporate** channel. If you would rather reach a named
+  person, find the relevant manager on LinkedIn yourself and message them there - do not guess
+  at an individual's email address.
 
 ## After you send
 

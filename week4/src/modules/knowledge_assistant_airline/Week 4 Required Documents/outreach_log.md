@@ -8,15 +8,16 @@ This file is the committed mirror of `week4/data/outreach_tracker.xlsx`. The wor
 itself is listed in `week4/.gitignore`, so it stays local and this Markdown copy is what
 survives in the pull request as review evidence.
 
-Contacts are recorded **by role only**. No personal names, personal email addresses or
-phone numbers are stored, per `AGENTS.md`.
+Contacts are recorded **by role only**, routed through each company's **published corporate**
+contact channel. No personal names, personal email addresses or phone numbers are stored,
+per `AGENTS.md`.
 
 ## Target Outreach Records
 
 | # | Company | Country | Website | Contact (role) | Channel | Date | Status |
 |---|---|---|---|---|---|---|---|
 | 1 | Airblue | Pakistan | airblue.com | Head of Customer Experience | Corporate contact form + LinkedIn | 2026-08-24 | Ready to send |
-| 2 | Serene Air | Pakistan | sereneair.com | Contact Centre / Ground Ops Manager | Corporate enquiry form | 2026-08-24 | Ready to send |
+| 2 | Fly Jinnah | Pakistan | flyjinnah.com | Customer Experience / Contact Centre Manager | Corporate contact page + published support address | 2026-08-25 | Ready to send |
 | 3 | Bookme.pk | Pakistan | bookme.pk | Customer Support Operations Lead | LinkedIn + support enquiry form | 2026-08-24 | Ready to send |
 
 **Service offered:** RAG Knowledge Assistant (client-ready) - cited answers over a
@@ -29,6 +30,15 @@ and a wrong answer has a direct financial cost - refunds, baggage claims, resche
 fees. That is the exact problem this module addresses, and each publishes the policy
 documents that would form the knowledge base, so a demo can be built against their real
 content without any data access.
+
+### Target changed 2026-08-26: Serene Air replaced with Fly Jinnah
+
+Serene Air was the original second target. Checking its current status before sending showed
+its **flight operations have been suspended since 2025-10-02**, pending compliance with safety
+and regulatory conditions. An airline that is not flying is not buying a contact-centre tool,
+so the slot was reassigned to **Fly Jinnah**, an operating carrier on an expanding domestic
+network - the case where contact-centre query volume grows faster than headcount, which is
+exactly the pressure this module relieves.
 
 ## Status Note
 
