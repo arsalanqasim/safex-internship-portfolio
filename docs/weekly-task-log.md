@@ -292,11 +292,11 @@ Important files:
 | Arsalan Qasim | `chatbot_deployment` | Client-Ready AI Chatbot Deployment Package with dynamic branding, input validation, human handoff, ROI calculator, and Excel logger. | `week4/src/modules/chatbot_deployment/`, `deploy_prep.py`, `outreach_tracker.xlsx` | **Submitted** |
 | Ali Ammar Haider | `predictive_dashboard_tutor` | Predictive Dashboard for LearnHub Academy with OLS regression engine, dynamic recommendations, Matplotlib chart, tests, and live deployment package. | `week4/src/modules/predictive_dashboard_tutor/`, `week4/tutor_deploy_package/`, PR #15 | **Submitted** |
 | MUHAMMAD WASIM | `roi_calculator_real_estate` | AI Automation ROI Calculator (Scaffolding ready). | `week4/src/modules/roi_calculator_real_estate/` | In progress |
-| Muhammad Faozan Mujtaba | `knowledge_assistant_airline` | RAG-based Knowledge Assistant (Scaffolding ready). | `week4/src/modules/knowledge_assistant_airline/` | In progress |
+| Muhammad Faozan Mujtaba | `knowledge_assistant_airline` | Indus Air RAG Knowledge Assistant with grounded retrieval, full refusal guards, standalone deployment package, and live deployment demo. | `week4/src/modules/knowledge_assistant_airline/`, `week4/airline_deploy_package/`, PR #17 | **Submitted** |
 | Shahidullah | `model_comparison_bank` | AI Model Comparison & Recommendation Report (Scaffolding ready). | `week4/src/modules/model_comparison_bank/` | In progress |
 | Abdul Haseeb | `chatbot_deployment_courier` | Client-Ready AI Chatbot Deployment Package (Scaffolding ready). | `week4/src/modules/chatbot_deployment_courier/` | In progress |
 | Hammad Abbas | `roi_calculator_daraz` | AI Automation ROI Calculator (Scaffolding ready). | `week4/src/modules/roi_calculator_daraz/` | In progress |
-| Ali Zaib | `knowledge_assistant_foodpanda` | RAG-based Knowledge Assistant (Scaffolding ready). | `week4/src/modules/knowledge_assistant_foodpanda/` | In progress |
+| Ali Zaib | `knowledge_assistant_foodpanda` | Foodpanda / QuickBite RAG Knowledge Assistant with markdown policy base, standalone deployment package, and live Streamlit demo. | `week4/src/modules/knowledge_assistant_foodpanda/`, `week4/foodpanda_deploy_package/`, PR #18 | **Submitted** |
 | Malik Sudais | `model_comparison_careem` | AI Model Comparison & Recommendation Report for Careem (Live App: https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/). | `week4/src/modules/model_comparison_careem/`, Live App | **Submitted** |
 
 

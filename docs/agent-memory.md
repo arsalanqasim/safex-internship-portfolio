@@ -68,13 +68,13 @@ Do not store:
 - 2026-07-19: Screenshot, recording, progress report, and video submissions are tracked dynamically in the shared Google Sheet: https://docs.google.com/spreadsheets/d/1KySlQDSuPAtdBWXqFlEKz8NFvk0yfzs6KrTVqTZ5AaQ/edit?gid=800509207#gid=800509207.
 - 2026-08-09: Reviewed and merged PR #15 implementing the Week 4 Predictive Dashboard Tutor module for Ali Ammar Haider, updating the module registry status to "Submission Ready" and the team roster to "Submitted".
 - 2026-08-18: Verified and integrated Malik Sudais's submissions across Weeks 1–4: Week 1 SafeX AI prototype (Self-initiative: "Add New Features"), Week 2 standalone Invoice Automation repo, Week 3 Proposal Invoice Automation repo, and Week 4 live hosted Careem Model Comparison Streamlit deployment (https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/). Updated team roster and registries accordingly.
+- 2026-08-27: Reviewed and merged PR #17 (Muhammad Faozan Mujtaba - `knowledge_assistant_airline`) and PR #18 (Ali Zaib - `knowledge_assistant_foodpanda`), maintaining distinct standalone packages (`week4/airline_deploy_package/` and `week4/foodpanda_deploy_package/`). All 44 Week 4 tests passing. Added `matplotlib` to `week4/requirements.txt`.
 
 ## Open Questions
 
 
 - 2026-07-19: Are there any specific integration challenges faced by the 3 active members during team branch merges? (None reported so far.)
 - 2026-08-24: `week4/.gitignore` line 6 ignores `data/outreach_tracker.xlsx`, so member outreach workbooks cannot reach a pull request. Was that rule meant only for the runtime-generated copy written by the chatbot module? Until confirmed, `knowledge_assistant_airline` commits a Markdown mirror at `Week 4 Required Documents/outreach_log.md`.
-- 2026-08-24: `week4/requirements.txt` does not list `matplotlib`, which `predictive_dashboard_tutor` imports. That module fails to load in a clean environment built from that file. Needs the owner or leader to add the dependency.
 
 ## Do-Not-Repeat Mistakes
 
