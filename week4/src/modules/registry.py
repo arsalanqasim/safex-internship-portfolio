@@ -92,12 +92,12 @@ MODULE_REGISTRY = {
             "developer": "Ali Zaib",
             "role": "Group Member",
             "email": "aliofficialzaib@gmail.com",
-            "status": "Placeholder (Scaffolding Ready)",
+            "status": "Submission Ready",
             "tech": ["Python", "Vector DB", "Embeddings API", "RAG Pipeline", "Streamlit"],
             "description": "Retrieval-augmented Q&A assistant retrieving policy contexts to answer user queries with hallucination controls.",
             "import_path": "src.modules.knowledge_assistant_foodpanda.ui",
             "icon": "📚",
-            "deployed_url": None
+            "deployed_url": None  # Update after deploying to Streamlit Cloud/Render — see README.md
         },
         "model_comparison_careem": {
             "title": "AI Model Comparison & Recommendation Report",

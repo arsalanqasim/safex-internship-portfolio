@@ -3,12 +3,12 @@ from __future__ import annotations
 import pandas as pd
 import streamlit as st
 
-from src.modules.registry import MODULE_REGISTRY
-from src.modules.knowledge_assistant_foodpanda.engine import (
+from src.registry import MODULE_REGISTRY
+from src.engine import (
     DocKnowledgeAssistantEngine,
     DocKnowledgeAssistantError,
 )
-from src.modules.knowledge_assistant_foodpanda.test_suite import TEST_SUITE
+from src.test_suite import TEST_SUITE
 
 _CSS = """
 <style>
