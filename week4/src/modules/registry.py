@@ -97,7 +97,7 @@ MODULE_REGISTRY = {
             "description": "Retrieval-augmented Q&A assistant retrieving policy contexts to answer user queries with hallucination controls.",
             "import_path": "src.modules.knowledge_assistant_foodpanda.ui",
             "icon": "📚",
-            "deployed_url": None  # Update after deploying to Streamlit Cloud/Render — see README.md
+            "deployed_url": "https://quickbite-knowledge-assistant-mp3h2h4h2mnbdqdhmyttkg.streamlit.app/"
         },
         "model_comparison_careem": {
             "title": "AI Model Comparison & Recommendation Report",
