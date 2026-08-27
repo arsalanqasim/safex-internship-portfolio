@@ -18,13 +18,13 @@ During Week 4, Group 54 transitioned their Week 3 AI agent prototypes into produ
 |---|---|---|---|---|
 | **Arsalan Qasim** | Client-Ready AI Chatbot Deployment Package | `week4/src/modules/chatbot_deployment/` | *Simulated Store Mockup* | **Submission Ready** |
 | **MUHAMMAD WASIM** | AI Automation ROI Calculator | `week4/src/modules/roi_calculator_real_estate/` | *Pending Member release* | In Progress |
-| **Muhammad Faozan Mujtaba** | RAG-based Knowledge Assistant | `week4/src/modules/knowledge_assistant_airline/` | *Pending Member release* | In Progress |
+| **Muhammad Faozan Mujtaba** | RAG-based Knowledge Assistant | `week4/src/modules/knowledge_assistant_airline/` | [Live Streamlit App](https://indus-air-knowledge-assistant-msjvdeswzeu3drqeasmytn.streamlit.app) | **Submission Ready** |
 | **Shahidullah** | AI Model Comparison & Recommendation Report | `week4/src/modules/model_comparison_bank/` | *Pending Member release* | In Progress |
 | **Ali Ammar Haider** | Predictive Dashboard for a Small Business | `week4/src/modules/predictive_dashboard_tutor/` | [Live Streamlit App](https://safex-week4-predictive-dashboard-tutor.streamlit.app) | **Submission Ready** |
 | **Abdul Haseeb** | Client-Ready AI Chatbot Deployment Package | `week4/src/modules/chatbot_deployment_courier/` | *Pending Member release* | In Progress |
 | **Hammad Abbas** | AI Automation ROI Calculator | `week4/src/modules/roi_calculator_daraz/` | *Pending Member release* | In Progress |
-| **Ali Zaib** | RAG-based Knowledge Assistant | `week4/src/modules/knowledge_assistant_foodpanda/` | *Pending Member release* | In Progress |
-| **Malik Sudais** | AI Model Comparison & Recommendation Report | `week4/src/modules/model_comparison_careem/` | *Pending Member release* | In Progress |
+| **Ali Zaib** | RAG-based Knowledge Assistant | `week4/src/modules/knowledge_assistant_foodpanda/` | [Live Streamlit App](https://quickbite-knowledge-assistant-mp3h2h4h2mnbdqdhmyttkg.streamlit.app/) | **Submission Ready** |
+| **Malik Sudais** | AI Model Comparison & Recommendation Report | `week4/src/modules/model_comparison_careem/` | [Live Streamlit App](https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/) | **Submission Ready** |
 
 ---
 
