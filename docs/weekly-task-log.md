@@ -341,7 +341,7 @@ Group Leader Arsalan Qasim built a complete production-grade **AI Customer Suppo
 | MUHAMMAD WASIM | `lead_gen_wasim` | AI Lead Qualification Tool (Scaffolding ready with domain selector). | `week5/src/modules/lead_gen_wasim/` | In progress |
 | Muhammad Faozan Mujtaba | `bi_dashboard_faozan` | AI BI Dashboard & Forecasting (Scaffolding ready). | `week5/src/modules/bi_dashboard_faozan/` | In progress |
 | Shahidullah | `chatbot_shahidullah` | AI Customer Support Chatbot (Scaffolding ready). | `week5/src/modules/chatbot_shahidullah/` | In progress |
-| Ali Ammar Haider | `lead_gen_ali_ammar` | AI Lead Qualification Tool (Scaffolding ready). | `week5/src/modules/lead_gen_ali_ammar/` | In progress |
+| Ali Ammar Haider | `chatbot_ali_ammar` | ShopEase Client-Ready Customer Support Chatbot with TF-IDF engine, conversation logging, dynamic Admin CRUD panel, 12 benchmark tests, and standalone deployment package. | `week5/src/modules/chatbot_ali_ammar/`, `week5/chatbot_deploy_package_ali_ammar/`, PR #16 | **Submitted** |
 | Abdul Haseeb | `bi_dashboard_abdul_haseeb` | AI BI Dashboard (Scaffolding ready). | `week5/src/modules/bi_dashboard_abdul_haseeb/` | In progress |
 | Hammad Abbas | `chatbot_hammad` | AI Customer Support Chatbot (Scaffolding ready). | `week5/src/modules/chatbot_hammad/` | In progress |
 | Ali Zaib | `lead_gen_ali_zaib` | AI Lead Qualification Tool (Scaffolding ready). | `week5/src/modules/lead_gen_ali_zaib/` | In progress |

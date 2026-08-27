@@ -69,6 +69,7 @@ Do not store:
 - 2026-08-09: Reviewed and merged PR #15 implementing the Week 4 Predictive Dashboard Tutor module for Ali Ammar Haider, updating the module registry status to "Submission Ready" and the team roster to "Submitted".
 - 2026-08-18: Verified and integrated Malik Sudais's submissions across Weeks 1–4: Week 1 SafeX AI prototype (Self-initiative: "Add New Features"), Week 2 standalone Invoice Automation repo, Week 3 Proposal Invoice Automation repo, and Week 4 live hosted Careem Model Comparison Streamlit deployment (https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/). Updated team roster and registries accordingly.
 - 2026-08-27: Reviewed and merged PR #17 (Muhammad Faozan Mujtaba - `knowledge_assistant_airline`) and PR #18 (Ali Zaib - `knowledge_assistant_foodpanda`), maintaining distinct standalone packages (`week4/airline_deploy_package/` and `week4/foodpanda_deploy_package/`). All 44 Week 4 tests passing. Added `matplotlib` to `week4/requirements.txt`.
+- 2026-08-27: Reviewed and merged PR #16 (Ali Ammar Haider - `chatbot_ali_ammar`), integrating ShopEase customer support chatbot with Admin CRUD panel, 12 benchmark tests, and standalone deployment package (`week5/chatbot_deploy_package_ali_ammar/`). Cleaned up obsolete `lead_gen_ali_ammar` scaffold. All 20 Week 5 tests passing.
 
 ## Open Questions
 

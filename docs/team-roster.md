@@ -107,7 +107,7 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 | MUHAMMAD WASIM | Member | AI-Powered Lead Generation & Qualification Tool | `week5/src/modules/lead_gen_wasim/` | In progress | 2026-08-18 | Scaffolding created with customizable domain selector and scoring pipeline. |
 | Muhammad Faozan Mujtaba | Member | AI Business Intelligence Dashboard | `week5/src/modules/bi_dashboard_faozan/` | In progress | 2026-08-18 | Scaffolding created with business metric forecasting and auto-narrative generator. |
 | Shahidullah | Member | AI Customer Support Chatbot (Client-Ready) | `week5/src/modules/chatbot_shahidullah/` | In progress | 2026-08-18 | Scaffolding created with customizable FAQ knowledge base. |
-| Ali Ammar Haider | Member | AI-Powered Lead Generation & Qualification Tool | `week5/src/modules/lead_gen_ali_ammar/` | In progress | 2026-08-18 | Scaffolding created with lead qualification scoring engine. |
+| Ali Ammar Haider | Member | AI Customer Support Chatbot (Client-Ready) | `week5/src/modules/chatbot_ali_ammar/` | Submitted | 2026-08-20 | ShopEase AI Customer Support Chatbot with TF-IDF matching, admin CRUD panel, benchmark tester, and standalone deployment package. PR #16 merged. |
 | Abdul Haseeb | Member | AI Business Intelligence Dashboard | `week5/src/modules/bi_dashboard_abdul_haseeb/` | In progress | 2026-08-18 | Scaffolding created with sample data trends and exportable reporting. |
 | Hammad Abbas | Member | AI Customer Support Chatbot (Client-Ready) | `week5/src/modules/chatbot_hammad/` | In progress | 2026-08-18 | Scaffolding created with multi-channel support widget. |
 | Ali Zaib | Member | AI-Powered Lead Generation & Qualification Tool | `week5/src/modules/lead_gen_ali_zaib/` | In progress | 2026-08-18 | Scaffolding created with rule/ML scoring engine. |
@@ -121,7 +121,7 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 | MUHAMMAD WASIM | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
 | Muhammad Faozan Mujtaba | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
 | Shahidullah | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
-| Ali Ammar Haider | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Ali Ammar Haider | Received | Received | Tracked in Sheet | Received | Received | Received | Tracked in Sheet | None. PR #16 merged. |
 | Abdul Haseeb | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
 | Hammad Abbas | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
 | Ali Zaib | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
