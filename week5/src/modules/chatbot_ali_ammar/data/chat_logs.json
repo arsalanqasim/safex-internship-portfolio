@@ -1,0 +1,2587 @@
+[
+  {
+    "timestamp": "2026-08-19T07:05:43.739960+00:00",
+    "user_query": "Where is my order?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. If you cannot find the tracking email, our support team can help you.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "human_handoff": false,
+    "response_time_ms": 1.99
+  },
+  {
+    "timestamp": "2026-08-19T07:05:43.742951+00:00",
+    "user_query": "How much is shipping?",
+    "bot_response": "Standard shipping is free for orders above $50. Orders below $50 have a standard shipping fee of $5.",
+    "confidence": 0.725,
+    "matched_faq": "FAQ003",
+    "human_handoff": false,
+    "response_time_ms": 1.99
+  },
+  {
+    "timestamp": "2026-08-19T07:05:43.761901+00:00",
+    "user_query": "Can I return something?",
+    "bot_response": "Unused products can be returned within 30 days of delivery in their original condition and packaging.",
+    "confidence": 0.5,
+    "matched_faq": "FAQ004",
+    "human_handoff": false,
+    "response_time_ms": 1.0
+  },
+  {
+    "timestamp": "2026-08-19T07:05:43.905519+00:00",
+    "user_query": "I want to speak to a real person.",
+    "bot_response": "Absolutely. I'll connect you with a ShopEase support agent. Our support team is available Monday to Saturday, 9:00 AM to 6:00 PM. You can also email support@shopease-demo.com.",
+    "confidence": 1.0,
+    "matched_faq": "human_handoff",
+    "human_handoff": true,
+    "response_time_ms": 1.0
+  },
+  {
+    "timestamp": "2026-08-19T07:05:43.912499+00:00",
+    "user_query": "Do you sell cars?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact our ShopEase support team at support@shopease-demo.com, and they will be happy to help.",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "human_handoff": true,
+    "response_time_ms": 3.99
+  },
+  {
+    "timestamp": "2026-08-19T07:20:15.984230+00:00",
+    "user_query": "How can I track my order or package?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 30.94
+  },
+  {
+    "timestamp": "2026-08-19T07:20:16.059960+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.305,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": true,
+    "response_time_ms": 26.07
+  },
+  {
+    "timestamp": "2026-08-19T07:20:16.509111+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 25.31
+  },
+  {
+    "timestamp": "2026-08-19T07:20:16.525042+00:00",
+    "user_query": "I want to speak to a real human agent right now",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.03
+  },
+  {
+    "timestamp": "2026-08-19T07:20:16.585620+00:00",
+    "user_query": "quantum string theory astrophysics",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 30.68
+  },
+  {
+    "timestamp": "2026-08-19T07:20:16.638863+00:00",
+    "user_query": "How long does delivery take?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 28.44
+  },
+  {
+    "timestamp": "2026-08-19T07:20:16.679571+00:00",
+    "user_query": "What is return policy?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.743,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 30.7
+  },
+  {
+    "timestamp": "2026-08-19T07:20:16.721458+00:00",
+    "user_query": "gibberish 12345 xyz",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 28.29
+  },
+  {
+    "timestamp": "2026-08-19T07:20:16.737418+00:00",
+    "user_query": "human representative",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.07
+  },
+  {
+    "timestamp": "2026-08-19T07:20:16.776318+00:00",
+    "user_query": "shipping fee",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.568,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 24.12
+  },
+  {
+    "timestamp": "2026-08-19T07:20:16.841245+00:00",
+    "user_query": "How much is shipping?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.406,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": true,
+    "response_time_ms": 26.41
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.039275+00:00",
+    "user_query": "Where is my order right now?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.552,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 38.83
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.064207+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.305,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": true,
+    "response_time_ms": 23.37
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.098117+00:00",
+    "user_query": "How long will delivery take to arrive?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 0.468,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 22.63
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.136614+00:00",
+    "user_query": "How much do I need to pay for shipping?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.205,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": true,
+    "response_time_ms": 24.2
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.173538+00:00",
+    "user_query": "What is the return policy window?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.743,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 26.75
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.240630+00:00",
+    "user_query": "When will my refund show up in my bank?",
+    "bot_response": "Once our warehouse receives and inspects your returned package, refunds are issued to your original payment method within 5 to 7 business days.",
+    "confidence": 0.814,
+    "matched_faq": "FAQ005",
+    "category": "Refunds",
+    "human_handoff": false,
+    "response_time_ms": 53.28
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.350958+00:00",
+    "user_query": "Can I exchange this shirt for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.584,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 75.19
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.381861+00:00",
+    "user_query": "I want to cancel my order immediately",
+    "bot_response": "Orders can be cancelled or updated within 1 hour of placement. After 1 hour, processing begins and orders cannot be cancelled prior to delivery.",
+    "confidence": 0.532,
+    "matched_faq": "FAQ007",
+    "category": "Cancellation",
+    "human_handoff": false,
+    "response_time_ms": 29.34
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.453955+00:00",
+    "user_query": "Do you accept credit cards and PayPal?",
+    "bot_response": "ShopEase accepts Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Cash on Delivery (COD) in eligible regions.",
+    "confidence": 0.532,
+    "matched_faq": "FAQ008",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 53.9
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.608384+00:00",
+    "user_query": "Can I pay with cash on delivery?",
+    "bot_response": "Yes, Cash on Delivery is available for eligible domestic shipping addresses. Availability is confirmed at checkout.",
+    "confidence": 0.783,
+    "matched_faq": "FAQ009",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 148.63
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.644848+00:00",
+    "user_query": "My product arrived damaged and broken",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.412,
+    "matched_faq": "FAQ010",
+    "category": "Problems",
+    "human_handoff": true,
+    "response_time_ms": 34.65
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.695485+00:00",
+    "user_query": "Is this item available in stock?",
+    "bot_response": "Product availability is shown live on each product detail page. If an item is sold out, click 'Notify Me' to receive an email alert upon restocking.",
+    "confidence": 0.593,
+    "matched_faq": "FAQ011",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 33.8
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.747347+00:00",
+    "user_query": "Where is the sizing chart and measurements?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.359,
+    "matched_faq": "FAQ012",
+    "category": "Products",
+    "human_handoff": true,
+    "response_time_ms": 33.13
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.791229+00:00",
+    "user_query": "Do you ship packages internationally?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.296,
+    "matched_faq": "FAQ013",
+    "category": "Shipping",
+    "human_handoff": true,
+    "response_time_ms": 33.74
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.807188+00:00",
+    "user_query": "How can I email customer service?",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.09
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.822147+00:00",
+    "user_query": "I need to talk to a real human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:20:17.861043+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 24.97
+  },
+  {
+    "timestamp": "2026-08-19T07:20:37.964600+00:00",
+    "user_query": "How can I track my order or package?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 27.17
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.017501+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 26.65
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.118551+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 42.79
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.134749+00:00",
+    "user_query": "I want to speak to a real human agent right now",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.02
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.214517+00:00",
+    "user_query": "quantum string theory astrophysics",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 48.9
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.257181+00:00",
+    "user_query": "How long does delivery take?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 27.17
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.439488+00:00",
+    "user_query": "What is return policy?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 84.67
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.474397+00:00",
+    "user_query": "gibberish 12345 xyz",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 32.83
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.491249+00:00",
+    "user_query": "human representative",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.05
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.539221+00:00",
+    "user_query": "shipping fee",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 30.81
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.622324+00:00",
+    "user_query": "How much is shipping?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 31.53
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.837505+00:00",
+    "user_query": "Where is my order right now?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.521,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 32.02
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.869418+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 28.49
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.907317+00:00",
+    "user_query": "How long will delivery take to arrive?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 25.32
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.947210+00:00",
+    "user_query": "How much do I need to pay for shipping?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.46,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 24.93
+  },
+  {
+    "timestamp": "2026-08-19T07:20:38.994902+00:00",
+    "user_query": "What is the return policy window?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.784,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 31.38
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.043002+00:00",
+    "user_query": "When will my refund show up in my bank?",
+    "bot_response": "Once our warehouse receives and inspects your returned package, refunds are issued to your original payment method within 5 to 7 business days.",
+    "confidence": 0.713,
+    "matched_faq": "FAQ005",
+    "category": "Refunds",
+    "human_handoff": false,
+    "response_time_ms": 29.5
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.090844+00:00",
+    "user_query": "Can I exchange this shirt for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.614,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 31.47
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.139715+00:00",
+    "user_query": "I want to cancel my order immediately",
+    "bot_response": "Orders can be cancelled or updated within 1 hour of placement. After 1 hour, processing begins and orders cannot be cancelled prior to delivery.",
+    "confidence": 0.617,
+    "matched_faq": "FAQ007",
+    "category": "Cancellation",
+    "human_handoff": false,
+    "response_time_ms": 30.64
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.192066+00:00",
+    "user_query": "Do you accept credit cards and PayPal?",
+    "bot_response": "ShopEase accepts Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Cash on Delivery (COD) in eligible regions.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ008",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 35.59
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.236917+00:00",
+    "user_query": "Can I pay with cash on delivery?",
+    "bot_response": "Yes, Cash on Delivery is available for eligible domestic shipping addresses. Availability is confirmed at checkout.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ009",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 32.5
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.287152+00:00",
+    "user_query": "My product arrived damaged and broken",
+    "bot_response": "We sincerely apologize! Please take clear photos of the damaged/wrong item and contact support within 48 hours for an immediate free replacement.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ010",
+    "category": "Problems",
+    "human_handoff": false,
+    "response_time_ms": 29.44
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.326261+00:00",
+    "user_query": "Is this item available in stock?",
+    "bot_response": "Product availability is shown live on each product detail page. If an item is sold out, click 'Notify Me' to receive an email alert upon restocking.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ011",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 25.55
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.365194+00:00",
+    "user_query": "Where is the sizing chart and measurements?",
+    "bot_response": "Detailed sizing charts, dimensions, material composition, and care instructions are located in the 'Specifications' tab on each product page.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ012",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 23.8
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.405052+00:00",
+    "user_query": "Do you ship packages internationally?",
+    "bot_response": "Yes, ShopEase ships to over 50 countries worldwide. International shipping fees and estimated delivery times are calculated at checkout.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ013",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 25.59
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.420012+00:00",
+    "user_query": "How can I email customer service?",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.432981+00:00",
+    "user_query": "I need to talk to a real human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.05
+  },
+  {
+    "timestamp": "2026-08-19T07:20:39.473901+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 26.22
+  },
+  {
+    "timestamp": "2026-08-19T07:22:05.988806+00:00",
+    "user_query": "How can I track my order or package?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 38.64
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.034646+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 28.51
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.108372+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 43.22
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.126766+00:00",
+    "user_query": "I want to speak to a real human agent right now",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.190959+00:00",
+    "user_query": "quantum string theory astrophysics",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 27.35
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.245719+00:00",
+    "user_query": "How long does delivery take?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 27.0
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.285613+00:00",
+    "user_query": "What is return policy?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 25.13
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.322537+00:00",
+    "user_query": "gibberish 12345 xyz",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 22.97
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.338463+00:00",
+    "user_query": "human representative",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.07
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.375630+00:00",
+    "user_query": "shipping fee",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 24.46
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.512992+00:00",
+    "user_query": "How much is shipping?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 93.91
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.696289+00:00",
+    "user_query": "Where is my order right now?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.521,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 32.0
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.724213+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 24.13
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.762113+00:00",
+    "user_query": "How long will delivery take to arrive?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 24.74
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.800582+00:00",
+    "user_query": "How much do I need to pay for shipping?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.46,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 24.76
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.840475+00:00",
+    "user_query": "What is the return policy window?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.784,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 25.81
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.881399+00:00",
+    "user_query": "When will my refund show up in my bank?",
+    "bot_response": "Once our warehouse receives and inspects your returned package, refunds are issued to your original payment method within 5 to 7 business days.",
+    "confidence": 0.713,
+    "matched_faq": "FAQ005",
+    "category": "Refunds",
+    "human_handoff": false,
+    "response_time_ms": 27.07
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.922258+00:00",
+    "user_query": "Can I exchange this shirt for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.614,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 25.34
+  },
+  {
+    "timestamp": "2026-08-19T07:22:06.968167+00:00",
+    "user_query": "I want to cancel my order immediately",
+    "bot_response": "Orders can be cancelled or updated within 1 hour of placement. After 1 hour, processing begins and orders cannot be cancelled prior to delivery.",
+    "confidence": 0.617,
+    "matched_faq": "FAQ007",
+    "category": "Cancellation",
+    "human_handoff": false,
+    "response_time_ms": 31.43
+  },
+  {
+    "timestamp": "2026-08-19T07:22:07.008063+00:00",
+    "user_query": "Do you accept credit cards and PayPal?",
+    "bot_response": "ShopEase accepts Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Cash on Delivery (COD) in eligible regions.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ008",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 23.67
+  },
+  {
+    "timestamp": "2026-08-19T07:22:07.045929+00:00",
+    "user_query": "Can I pay with cash on delivery?",
+    "bot_response": "Yes, Cash on Delivery is available for eligible domestic shipping addresses. Availability is confirmed at checkout.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ009",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 24.84
+  },
+  {
+    "timestamp": "2026-08-19T07:22:07.205247+00:00",
+    "user_query": "My product arrived damaged and broken",
+    "bot_response": "We sincerely apologize! Please take clear photos of the damaged/wrong item and contact support within 48 hours for an immediate free replacement.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ010",
+    "category": "Problems",
+    "human_handoff": false,
+    "response_time_ms": 49.42
+  },
+  {
+    "timestamp": "2026-08-19T07:22:07.321189+00:00",
+    "user_query": "Is this item available in stock?",
+    "bot_response": "Product availability is shown live on each product detail page. If an item is sold out, click 'Notify Me' to receive an email alert upon restocking.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ011",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 72.54
+  },
+  {
+    "timestamp": "2026-08-19T07:22:07.358089+00:00",
+    "user_query": "Where is the sizing chart and measurements?",
+    "bot_response": "Detailed sizing charts, dimensions, material composition, and care instructions are located in the 'Specifications' tab on each product page.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ012",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 25.1
+  },
+  {
+    "timestamp": "2026-08-19T07:22:07.407020+00:00",
+    "user_query": "Do you ship packages internationally?",
+    "bot_response": "Yes, ShopEase ships to over 50 countries worldwide. International shipping fees and estimated delivery times are calculated at checkout.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ013",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 34.85
+  },
+  {
+    "timestamp": "2026-08-19T07:22:07.411011+00:00",
+    "user_query": "How can I email customer service?",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.05
+  },
+  {
+    "timestamp": "2026-08-19T07:22:07.425969+00:00",
+    "user_query": "I need to talk to a real human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.05
+  },
+  {
+    "timestamp": "2026-08-19T07:22:07.465863+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 25.64
+  },
+  {
+    "timestamp": "2026-08-19T07:47:53.341405+00:00",
+    "user_query": "How can I track my order or package?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 26.84
+  },
+  {
+    "timestamp": "2026-08-19T07:47:53.407729+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 31.04
+  },
+  {
+    "timestamp": "2026-08-19T07:47:53.476978+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 34.53
+  },
+  {
+    "timestamp": "2026-08-19T07:47:53.510865+00:00",
+    "user_query": "I want to speak to a real human agent right now",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.02
+  },
+  {
+    "timestamp": "2026-08-19T07:47:53.578388+00:00",
+    "user_query": "quantum string theory astrophysics",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 31.61
+  },
+  {
+    "timestamp": "2026-08-19T07:47:53.647386+00:00",
+    "user_query": "How long does delivery take?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 37.07
+  },
+  {
+    "timestamp": "2026-08-19T07:47:53.688280+00:00",
+    "user_query": "What is return policy?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 27.49
+  },
+  {
+    "timestamp": "2026-08-19T07:47:53.727594+00:00",
+    "user_query": "gibberish 12345 xyz",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 25.33
+  },
+  {
+    "timestamp": "2026-08-19T07:47:53.750533+00:00",
+    "user_query": "human representative",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.05
+  },
+  {
+    "timestamp": "2026-08-19T07:47:53.790868+00:00",
+    "user_query": "shipping fee",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 25.51
+  },
+  {
+    "timestamp": "2026-08-19T07:47:53.863590+00:00",
+    "user_query": "How much is shipping?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 27.97
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.031957+00:00",
+    "user_query": "Where is my order right now?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.521,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 29.39
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.059879+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 24.79
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.096450+00:00",
+    "user_query": "How long will delivery take to arrive?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 22.94
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.136308+00:00",
+    "user_query": "How much do I need to pay for shipping?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.46,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 23.77
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.178199+00:00",
+    "user_query": "What is the return policy window?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.784,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 27.66
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.218090+00:00",
+    "user_query": "When will my refund show up in my bank?",
+    "bot_response": "Once our warehouse receives and inspects your returned package, refunds are issued to your original payment method within 5 to 7 business days.",
+    "confidence": 0.713,
+    "matched_faq": "FAQ005",
+    "category": "Refunds",
+    "human_handoff": false,
+    "response_time_ms": 25.6
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.311832+00:00",
+    "user_query": "Can I exchange this shirt for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.614,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 76.82
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.359702+00:00",
+    "user_query": "I want to cancel my order immediately",
+    "bot_response": "Orders can be cancelled or updated within 1 hour of placement. After 1 hour, processing begins and orders cannot be cancelled prior to delivery.",
+    "confidence": 0.617,
+    "matched_faq": "FAQ007",
+    "category": "Cancellation",
+    "human_handoff": false,
+    "response_time_ms": 33.66
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.433504+00:00",
+    "user_query": "Do you accept credit cards and PayPal?",
+    "bot_response": "ShopEase accepts Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Cash on Delivery (COD) in eligible regions.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ008",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 42.69
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.468412+00:00",
+    "user_query": "Can I pay with cash on delivery?",
+    "bot_response": "Yes, Cash on Delivery is available for eligible domestic shipping addresses. Availability is confirmed at checkout.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ009",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 31.8
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.517281+00:00",
+    "user_query": "My product arrived damaged and broken",
+    "bot_response": "We sincerely apologize! Please take clear photos of the damaged/wrong item and contact support within 48 hours for an immediate free replacement.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ010",
+    "category": "Problems",
+    "human_handoff": false,
+    "response_time_ms": 30.91
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.582107+00:00",
+    "user_query": "Is this item available in stock?",
+    "bot_response": "Product availability is shown live on each product detail page. If an item is sold out, click 'Notify Me' to receive an email alert upon restocking.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ011",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 37.48
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.644941+00:00",
+    "user_query": "Where is the sizing chart and measurements?",
+    "bot_response": "Detailed sizing charts, dimensions, material composition, and care instructions are located in the 'Specifications' tab on each product page.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ012",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 45.39
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.684533+00:00",
+    "user_query": "Do you ship packages internationally?",
+    "bot_response": "Yes, ShopEase ships to over 50 countries worldwide. International shipping fees and estimated delivery times are calculated at checkout.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ013",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 36.27
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.708469+00:00",
+    "user_query": "How can I email customer service?",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.05
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.725424+00:00",
+    "user_query": "I need to talk to a real human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.07
+  },
+  {
+    "timestamp": "2026-08-19T07:47:54.771300+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 25.45
+  },
+  {
+    "timestamp": "2026-08-19T07:50:25.839334+00:00",
+    "user_query": "Where is my order?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 25.88
+  },
+  {
+    "timestamp": "2026-08-19T07:50:25.871218+00:00",
+    "user_query": "How much does shipping cost?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 26.67
+  },
+  {
+    "timestamp": "2026-08-19T07:50:25.918124+00:00",
+    "user_query": "What is your return policy?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 29.85
+  },
+  {
+    "timestamp": "2026-08-19T07:50:25.958017+00:00",
+    "user_query": "Can I exchange this for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.689,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 24.66
+  },
+  {
+    "timestamp": "2026-08-19T07:50:25.975938+00:00",
+    "user_query": "I want to talk to a human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:50:26.019859+00:00",
+    "user_query": "Do you sell quantum teleportation devices?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 28.17
+  },
+  {
+    "timestamp": "2026-08-19T07:50:40.917133+00:00",
+    "user_query": "Where is my order?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 27.72
+  },
+  {
+    "timestamp": "2026-08-19T07:50:40.945057+00:00",
+    "user_query": "How much does shipping cost?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 24.43
+  },
+  {
+    "timestamp": "2026-08-19T07:50:40.990936+00:00",
+    "user_query": "What is your return policy?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 28.59
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.028835+00:00",
+    "user_query": "Can I exchange this for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.689,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 22.97
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.044791+00:00",
+    "user_query": "I want to talk to a human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.03
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.086680+00:00",
+    "user_query": "Do you sell quantum teleportation devices?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 24.96
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.155146+00:00",
+    "user_query": "Where is my order right now?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.521,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 23.68
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.186062+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 25.37
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.225926+00:00",
+    "user_query": "How long will delivery take to arrive?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 23.99
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.266823+00:00",
+    "user_query": "How much do I need to pay for shipping?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.46,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 25.66
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.307724+00:00",
+    "user_query": "What is the return policy window?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.784,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 24.64
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.346625+00:00",
+    "user_query": "When will my refund show up in my bank?",
+    "bot_response": "Once our warehouse receives and inspects your returned package, refunds are issued to your original payment method within 5 to 7 business days.",
+    "confidence": 0.713,
+    "matched_faq": "FAQ005",
+    "category": "Refunds",
+    "human_handoff": false,
+    "response_time_ms": 23.17
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.386513+00:00",
+    "user_query": "Can I exchange this shirt for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.614,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 24.35
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.427409+00:00",
+    "user_query": "I want to cancel my order immediately",
+    "bot_response": "Orders can be cancelled or updated within 1 hour of placement. After 1 hour, processing begins and orders cannot be cancelled prior to delivery.",
+    "confidence": 0.617,
+    "matched_faq": "FAQ007",
+    "category": "Cancellation",
+    "human_handoff": false,
+    "response_time_ms": 23.83
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.470261+00:00",
+    "user_query": "Do you accept credit cards and PayPal?",
+    "bot_response": "ShopEase accepts Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Cash on Delivery (COD) in eligible regions.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ008",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 27.05
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.525940+00:00",
+    "user_query": "Can I pay with cash on delivery?",
+    "bot_response": "Yes, Cash on Delivery is available for eligible domestic shipping addresses. Availability is confirmed at checkout.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ009",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 31.97
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.569821+00:00",
+    "user_query": "My product arrived damaged and broken",
+    "bot_response": "We sincerely apologize! Please take clear photos of the damaged/wrong item and contact support within 48 hours for an immediate free replacement.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ010",
+    "category": "Problems",
+    "human_handoff": false,
+    "response_time_ms": 27.51
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.612708+00:00",
+    "user_query": "Is this item available in stock?",
+    "bot_response": "Product availability is shown live on each product detail page. If an item is sold out, click 'Notify Me' to receive an email alert upon restocking.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ011",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 26.31
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.655592+00:00",
+    "user_query": "Where is the sizing chart and measurements?",
+    "bot_response": "Detailed sizing charts, dimensions, material composition, and care instructions are located in the 'Specifications' tab on each product page.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ012",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 26.64
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.696523+00:00",
+    "user_query": "Do you ship packages internationally?",
+    "bot_response": "Yes, ShopEase ships to over 50 countries worldwide. International shipping fees and estimated delivery times are calculated at checkout.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ013",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 23.28
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.711442+00:00",
+    "user_query": "How can I email customer service?",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.03
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.729395+00:00",
+    "user_query": "I need to talk to a real human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:50:41.771315+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 25.94
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.325856+00:00",
+    "user_query": "Where is my order right now?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.521,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 24.65
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.355740+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 24.86
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.400654+00:00",
+    "user_query": "How long will delivery take to arrive?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 26.57
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.443542+00:00",
+    "user_query": "How much do I need to pay for shipping?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.46,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 25.92
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.486391+00:00",
+    "user_query": "What is the return policy window?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.784,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 26.84
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.535261+00:00",
+    "user_query": "When will my refund show up in my bank?",
+    "bot_response": "Once our warehouse receives and inspects your returned package, refunds are issued to your original payment method within 5 to 7 business days.",
+    "confidence": 0.713,
+    "matched_faq": "FAQ005",
+    "category": "Refunds",
+    "human_handoff": false,
+    "response_time_ms": 29.48
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.585128+00:00",
+    "user_query": "Can I exchange this shirt for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.614,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 29.19
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.642688+00:00",
+    "user_query": "I want to cancel my order immediately",
+    "bot_response": "Orders can be cancelled or updated within 1 hour of placement. After 1 hour, processing begins and orders cannot be cancelled prior to delivery.",
+    "confidence": 0.617,
+    "matched_faq": "FAQ007",
+    "category": "Cancellation",
+    "human_handoff": false,
+    "response_time_ms": 37.1
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.684576+00:00",
+    "user_query": "Do you accept credit cards and PayPal?",
+    "bot_response": "ShopEase accepts Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Cash on Delivery (COD) in eligible regions.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ008",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 25.14
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.725496+00:00",
+    "user_query": "Can I pay with cash on delivery?",
+    "bot_response": "Yes, Cash on Delivery is available for eligible domestic shipping addresses. Availability is confirmed at checkout.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ009",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 25.16
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.773369+00:00",
+    "user_query": "My product arrived damaged and broken",
+    "bot_response": "We sincerely apologize! Please take clear photos of the damaged/wrong item and contact support within 48 hours for an immediate free replacement.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ010",
+    "category": "Problems",
+    "human_handoff": false,
+    "response_time_ms": 28.42
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.819245+00:00",
+    "user_query": "Is this item available in stock?",
+    "bot_response": "Product availability is shown live on each product detail page. If an item is sold out, click 'Notify Me' to receive an email alert upon restocking.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ011",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 26.27
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.861103+00:00",
+    "user_query": "Where is the sizing chart and measurements?",
+    "bot_response": "Detailed sizing charts, dimensions, material composition, and care instructions are located in the 'Specifications' tab on each product page.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ012",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 27.32
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.902991+00:00",
+    "user_query": "Do you ship packages internationally?",
+    "bot_response": "Yes, ShopEase ships to over 50 countries worldwide. International shipping fees and estimated delivery times are calculated at checkout.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ013",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 25.9
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.926959+00:00",
+    "user_query": "How can I email customer service?",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.941888+00:00",
+    "user_query": "I need to talk to a real human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:50:53.986797+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 28.42
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.434096+00:00",
+    "user_query": "Where is my order?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 25.94
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.467469+00:00",
+    "user_query": "How much does shipping cost?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 26.53
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.515342+00:00",
+    "user_query": "What is your return policy?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 26.43
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.556565+00:00",
+    "user_query": "Can I exchange this for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.689,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 24.82
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.575534+00:00",
+    "user_query": "I want to talk to a human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.617422+00:00",
+    "user_query": "Do you sell quantum teleportation devices?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 26.0
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.705691+00:00",
+    "user_query": "Where is my order right now?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.521,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 30.69
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.744617+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 30.19
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.795241+00:00",
+    "user_query": "How long will delivery take to arrive?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 30.83
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.835135+00:00",
+    "user_query": "How much do I need to pay for shipping?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.46,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 26.4
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.878022+00:00",
+    "user_query": "What is the return policy window?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.784,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 25.14
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.920323+00:00",
+    "user_query": "When will my refund show up in my bank?",
+    "bot_response": "Once our warehouse receives and inspects your returned package, refunds are issued to your original payment method within 5 to 7 business days.",
+    "confidence": 0.713,
+    "matched_faq": "FAQ005",
+    "category": "Refunds",
+    "human_handoff": false,
+    "response_time_ms": 27.61
+  },
+  {
+    "timestamp": "2026-08-19T07:51:15.966201+00:00",
+    "user_query": "Can I exchange this shirt for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.614,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 26.39
+  },
+  {
+    "timestamp": "2026-08-19T07:51:16.008333+00:00",
+    "user_query": "I want to cancel my order immediately",
+    "bot_response": "Orders can be cancelled or updated within 1 hour of placement. After 1 hour, processing begins and orders cannot be cancelled prior to delivery.",
+    "confidence": 0.617,
+    "matched_faq": "FAQ007",
+    "category": "Cancellation",
+    "human_handoff": false,
+    "response_time_ms": 24.11
+  },
+  {
+    "timestamp": "2026-08-19T07:51:16.049224+00:00",
+    "user_query": "Do you accept credit cards and PayPal?",
+    "bot_response": "ShopEase accepts Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Cash on Delivery (COD) in eligible regions.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ008",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 26.6
+  },
+  {
+    "timestamp": "2026-08-19T07:51:16.093107+00:00",
+    "user_query": "Can I pay with cash on delivery?",
+    "bot_response": "Yes, Cash on Delivery is available for eligible domestic shipping addresses. Availability is confirmed at checkout.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ009",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 24.04
+  },
+  {
+    "timestamp": "2026-08-19T07:51:16.136055+00:00",
+    "user_query": "My product arrived damaged and broken",
+    "bot_response": "We sincerely apologize! Please take clear photos of the damaged/wrong item and contact support within 48 hours for an immediate free replacement.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ010",
+    "category": "Problems",
+    "human_handoff": false,
+    "response_time_ms": 26.04
+  },
+  {
+    "timestamp": "2026-08-19T07:51:16.176988+00:00",
+    "user_query": "Is this item available in stock?",
+    "bot_response": "Product availability is shown live on each product detail page. If an item is sold out, click 'Notify Me' to receive an email alert upon restocking.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ011",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 23.98
+  },
+  {
+    "timestamp": "2026-08-19T07:51:16.220945+00:00",
+    "user_query": "Where is the sizing chart and measurements?",
+    "bot_response": "Detailed sizing charts, dimensions, material composition, and care instructions are located in the 'Specifications' tab on each product page.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ012",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 26.09
+  },
+  {
+    "timestamp": "2026-08-19T07:51:16.265023+00:00",
+    "user_query": "Do you ship packages internationally?",
+    "bot_response": "Yes, ShopEase ships to over 50 countries worldwide. International shipping fees and estimated delivery times are calculated at checkout.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ013",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 26.49
+  },
+  {
+    "timestamp": "2026-08-19T07:51:16.307906+00:00",
+    "user_query": "How can I email customer service?",
+    "bot_response": "Reach out to our support team via email at support@shopease-demo.com or call +1 (800) 555-EASE during business hours (Mon-Sat, 9AM-6PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "FAQ014",
+    "category": "Support",
+    "human_handoff": false,
+    "response_time_ms": 24.55
+  },
+  {
+    "timestamp": "2026-08-19T07:51:16.394491+00:00",
+    "user_query": "I need to talk to a real human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.05
+  },
+  {
+    "timestamp": "2026-08-19T07:51:16.464799+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 38.71
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.078824+00:00",
+    "user_query": "How can I track my order or package?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 29.31
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.142448+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 37.78
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.248693+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 26.32
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.270541+00:00",
+    "user_query": "I want to speak to a real human agent right now",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.03
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.357164+00:00",
+    "user_query": "quantum string theory astrophysics",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 37.54
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.410037+00:00",
+    "user_query": "How long does delivery take?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 28.96
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.454918+00:00",
+    "user_query": "What is return policy?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 24.58
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.496806+00:00",
+    "user_query": "gibberish 12345 xyz",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 23.79
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.514788+00:00",
+    "user_query": "human representative",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.558639+00:00",
+    "user_query": "shipping fee",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 26.39
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.636223+00:00",
+    "user_query": "How much is shipping?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 26.57
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.825403+00:00",
+    "user_query": "Where is my order right now?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.521,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 44.33
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.857317+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 24.06
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.898237+00:00",
+    "user_query": "How long will delivery take to arrive?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 24.99
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.947077+00:00",
+    "user_query": "How much do I need to pay for shipping?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.46,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 25.4
+  },
+  {
+    "timestamp": "2026-08-19T07:51:27.989004+00:00",
+    "user_query": "What is the return policy window?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.784,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 24.62
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.030893+00:00",
+    "user_query": "When will my refund show up in my bank?",
+    "bot_response": "Once our warehouse receives and inspects your returned package, refunds are issued to your original payment method within 5 to 7 business days.",
+    "confidence": 0.713,
+    "matched_faq": "FAQ005",
+    "category": "Refunds",
+    "human_handoff": false,
+    "response_time_ms": 25.35
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.070906+00:00",
+    "user_query": "Can I exchange this shirt for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.614,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 23.65
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.115752+00:00",
+    "user_query": "I want to cancel my order immediately",
+    "bot_response": "Orders can be cancelled or updated within 1 hour of placement. After 1 hour, processing begins and orders cannot be cancelled prior to delivery.",
+    "confidence": 0.617,
+    "matched_faq": "FAQ007",
+    "category": "Cancellation",
+    "human_handoff": false,
+    "response_time_ms": 26.71
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.157641+00:00",
+    "user_query": "Do you accept credit cards and PayPal?",
+    "bot_response": "ShopEase accepts Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Cash on Delivery (COD) in eligible regions.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ008",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 24.32
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.201521+00:00",
+    "user_query": "Can I pay with cash on delivery?",
+    "bot_response": "Yes, Cash on Delivery is available for eligible domestic shipping addresses. Availability is confirmed at checkout.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ009",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 24.86
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.243409+00:00",
+    "user_query": "My product arrived damaged and broken",
+    "bot_response": "We sincerely apologize! Please take clear photos of the damaged/wrong item and contact support within 48 hours for an immediate free replacement.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ010",
+    "category": "Problems",
+    "human_handoff": false,
+    "response_time_ms": 23.13
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.285895+00:00",
+    "user_query": "Is this item available in stock?",
+    "bot_response": "Product availability is shown live on each product detail page. If an item is sold out, click 'Notify Me' to receive an email alert upon restocking.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ011",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 24.58
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.332106+00:00",
+    "user_query": "Where is the sizing chart and measurements?",
+    "bot_response": "Detailed sizing charts, dimensions, material composition, and care instructions are located in the 'Specifications' tab on each product page.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ012",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 25.46
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.374410+00:00",
+    "user_query": "Do you ship packages internationally?",
+    "bot_response": "Yes, ShopEase ships to over 50 countries worldwide. International shipping fees and estimated delivery times are calculated at checkout.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ013",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 24.4
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.417281+00:00",
+    "user_query": "How can I email customer service?",
+    "bot_response": "Reach out to our support team via email at support@shopease-demo.com or call +1 (800) 555-EASE during business hours (Mon-Sat, 9AM-6PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "FAQ014",
+    "category": "Support",
+    "human_handoff": false,
+    "response_time_ms": 25.73
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.442133+00:00",
+    "user_query": "I need to talk to a real human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:51:28.484111+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 25.16
+  },
+  {
+    "timestamp": "2026-08-19T07:55:37.476388+00:00",
+    "user_query": "How can I track my order or package?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 28.06
+  },
+  {
+    "timestamp": "2026-08-19T07:55:37.524289+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 24.18
+  },
+  {
+    "timestamp": "2026-08-19T07:55:37.589087+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 30.13
+  },
+  {
+    "timestamp": "2026-08-19T07:55:37.626987+00:00",
+    "user_query": "I want to speak to a real human agent right now",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:55:37.699814+00:00",
+    "user_query": "quantum string theory astrophysics",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 35.11
+  },
+  {
+    "timestamp": "2026-08-19T07:55:37.757666+00:00",
+    "user_query": "How long does delivery take?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 0.95,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 21.7
+  },
+  {
+    "timestamp": "2026-08-19T07:55:37.808501+00:00",
+    "user_query": "What is return policy?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 34.19
+  },
+  {
+    "timestamp": "2026-08-19T07:55:37.886291+00:00",
+    "user_query": "gibberish 12345 xyz",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 38.99
+  },
+  {
+    "timestamp": "2026-08-19T07:55:37.941144+00:00",
+    "user_query": "human representative",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.06
+  },
+  {
+    "timestamp": "2026-08-19T07:55:37.999988+00:00",
+    "user_query": "shipping fee",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 31.32
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.175518+00:00",
+    "user_query": "How much is shipping?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 21.84
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.342328+00:00",
+    "user_query": "Where is my order right now?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.521,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 26.82
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.373279+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 23.48
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.414172+00:00",
+    "user_query": "How long will delivery take to arrive?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 22.76
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.452074+00:00",
+    "user_query": "How much do I need to pay for shipping?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.46,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 21.37
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.493923+00:00",
+    "user_query": "What is the return policy window?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.784,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 22.93
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.531822+00:00",
+    "user_query": "When will my refund show up in my bank?",
+    "bot_response": "Once our warehouse receives and inspects your returned package, refunds are issued to your original payment method within 5 to 7 business days.",
+    "confidence": 0.713,
+    "matched_faq": "FAQ005",
+    "category": "Refunds",
+    "human_handoff": false,
+    "response_time_ms": 23.4
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.569758+00:00",
+    "user_query": "Can I exchange this shirt for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.614,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 20.98
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.614634+00:00",
+    "user_query": "I want to cancel my order immediately",
+    "bot_response": "Orders can be cancelled or updated within 1 hour of placement. After 1 hour, processing begins and orders cannot be cancelled prior to delivery.",
+    "confidence": 0.617,
+    "matched_faq": "FAQ007",
+    "category": "Cancellation",
+    "human_handoff": false,
+    "response_time_ms": 23.07
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.653497+00:00",
+    "user_query": "Do you accept credit cards and PayPal?",
+    "bot_response": "ShopEase accepts Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Cash on Delivery (COD) in eligible regions.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ008",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 22.04
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.701394+00:00",
+    "user_query": "Can I pay with cash on delivery?",
+    "bot_response": "Yes, Cash on Delivery is available for eligible domestic shipping addresses. Availability is confirmed at checkout.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ009",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 28.09
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.744279+00:00",
+    "user_query": "My product arrived damaged and broken",
+    "bot_response": "We sincerely apologize! Please take clear photos of the damaged/wrong item and contact support within 48 hours for an immediate free replacement.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ010",
+    "category": "Problems",
+    "human_handoff": false,
+    "response_time_ms": 24.73
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.796175+00:00",
+    "user_query": "Is this item available in stock?",
+    "bot_response": "Product availability is shown live on each product detail page. If an item is sold out, click 'Notify Me' to receive an email alert upon restocking.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ011",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 24.16
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.841575+00:00",
+    "user_query": "Where is the sizing chart and measurements?",
+    "bot_response": "Detailed sizing charts, dimensions, material composition, and care instructions are located in the 'Specifications' tab on each product page.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ012",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 27.51
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.884234+00:00",
+    "user_query": "Do you ship packages internationally?",
+    "bot_response": "Yes, ShopEase ships to over 50 countries worldwide. International shipping fees and estimated delivery times are calculated at checkout.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ013",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 23.31
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.929146+00:00",
+    "user_query": "How can I email customer service?",
+    "bot_response": "Reach out to our support team via email at support@shopease-demo.com or call +1 (800) 555-EASE during business hours (Mon-Sat, 9AM-6PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "FAQ014",
+    "category": "Support",
+    "human_handoff": false,
+    "response_time_ms": 24.62
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.947094+00:00",
+    "user_query": "I need to talk to a real human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.03
+  },
+  {
+    "timestamp": "2026-08-19T07:55:38.992942+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 24.66
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.442544+00:00",
+    "user_query": "Where is my order right now?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 0.521,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 23.97
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.475460+00:00",
+    "user_query": "Can I track my package location?",
+    "bot_response": "You can track your order using the tracking link sent to your email after dispatch. You can also view live status in your ShopEase Account under 'My Orders'.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ001",
+    "category": "Orders",
+    "human_handoff": false,
+    "response_time_ms": 23.71
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.522301+00:00",
+    "user_query": "How long will delivery take to arrive?",
+    "bot_response": "Standard delivery usually takes 3 to 5 business days. Express shipping arrives in 1 to 2 business days depending on your location.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ002",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 25.1
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.572167+00:00",
+    "user_query": "How much do I need to pay for shipping?",
+    "bot_response": "Standard shipping is FREE for orders over $50. Orders under $50 incur a flat standard shipping fee of $5.00.",
+    "confidence": 0.46,
+    "matched_faq": "FAQ003",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 29.31
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.614090+00:00",
+    "user_query": "What is the return policy window?",
+    "bot_response": "ShopEase offers a 30-day hassle-free return policy. Unused items in original packaging with tags attached can be returned for a full refund.",
+    "confidence": 0.784,
+    "matched_faq": "FAQ004",
+    "category": "Returns",
+    "human_handoff": false,
+    "response_time_ms": 25.54
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.659932+00:00",
+    "user_query": "When will my refund show up in my bank?",
+    "bot_response": "Once our warehouse receives and inspects your returned package, refunds are issued to your original payment method within 5 to 7 business days.",
+    "confidence": 0.713,
+    "matched_faq": "FAQ005",
+    "category": "Refunds",
+    "human_handoff": false,
+    "response_time_ms": 24.0
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.704814+00:00",
+    "user_query": "Can I exchange this shirt for a larger size?",
+    "bot_response": "Yes! Exchanges are free within 30 days of delivery. You can start an exchange request through your account or by contacting support.",
+    "confidence": 0.614,
+    "matched_faq": "FAQ006",
+    "category": "Exchanges",
+    "human_handoff": false,
+    "response_time_ms": 25.52
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.752716+00:00",
+    "user_query": "I want to cancel my order immediately",
+    "bot_response": "Orders can be cancelled or updated within 1 hour of placement. After 1 hour, processing begins and orders cannot be cancelled prior to delivery.",
+    "confidence": 0.617,
+    "matched_faq": "FAQ007",
+    "category": "Cancellation",
+    "human_handoff": false,
+    "response_time_ms": 23.98
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.792579+00:00",
+    "user_query": "Do you accept credit cards and PayPal?",
+    "bot_response": "ShopEase accepts Visa, MasterCard, American Express, PayPal, Apple Pay, Google Pay, and Cash on Delivery (COD) in eligible regions.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ008",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 23.17
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.832471+00:00",
+    "user_query": "Can I pay with cash on delivery?",
+    "bot_response": "Yes, Cash on Delivery is available for eligible domestic shipping addresses. Availability is confirmed at checkout.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ009",
+    "category": "Payments",
+    "human_handoff": false,
+    "response_time_ms": 23.65
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.874359+00:00",
+    "user_query": "My product arrived damaged and broken",
+    "bot_response": "We sincerely apologize! Please take clear photos of the damaged/wrong item and contact support within 48 hours for an immediate free replacement.",
+    "confidence": 0.75,
+    "matched_faq": "FAQ010",
+    "category": "Problems",
+    "human_handoff": false,
+    "response_time_ms": 22.65
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.911798+00:00",
+    "user_query": "Is this item available in stock?",
+    "bot_response": "Product availability is shown live on each product detail page. If an item is sold out, click 'Notify Me' to receive an email alert upon restocking.",
+    "confidence": 1.0,
+    "matched_faq": "FAQ011",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 22.58
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.953529+00:00",
+    "user_query": "Where is the sizing chart and measurements?",
+    "bot_response": "Detailed sizing charts, dimensions, material composition, and care instructions are located in the 'Specifications' tab on each product page.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ012",
+    "category": "Products",
+    "human_handoff": false,
+    "response_time_ms": 22.63
+  },
+  {
+    "timestamp": "2026-08-19T07:55:52.994502+00:00",
+    "user_query": "Do you ship packages internationally?",
+    "bot_response": "Yes, ShopEase ships to over 50 countries worldwide. International shipping fees and estimated delivery times are calculated at checkout.",
+    "confidence": 0.667,
+    "matched_faq": "FAQ013",
+    "category": "Shipping",
+    "human_handoff": false,
+    "response_time_ms": 24.03
+  },
+  {
+    "timestamp": "2026-08-19T07:55:53.037977+00:00",
+    "user_query": "How can I email customer service?",
+    "bot_response": "Reach out to our support team via email at support@shopease-demo.com or call +1 (800) 555-EASE during business hours (Mon-Sat, 9AM-6PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "FAQ014",
+    "category": "Support",
+    "human_handoff": false,
+    "response_time_ms": 23.63
+  },
+  {
+    "timestamp": "2026-08-19T07:55:53.060918+00:00",
+    "user_query": "I need to talk to a real human agent",
+    "bot_response": "Connecting you to ShopEase Priority Support...\n\nAn agent will be with you shortly. You can also contact us directly at **support@shopease-demo.com** or call **+1 (800) 555-EASE** (Monday to Saturday, 9:00 AM to 6:00 PM EST).",
+    "confidence": 1.0,
+    "matched_faq": "HUMAN_HANDOFF",
+    "category": "Human Escalation",
+    "human_handoff": true,
+    "response_time_ms": 0.04
+  },
+  {
+    "timestamp": "2026-08-19T07:55:53.104771+00:00",
+    "user_query": "Do you sell commercial diesel aircraft engines?",
+    "bot_response": "I'm sorry, I don't have enough information to answer that accurately. I don't want to give you incorrect information. Please contact ShopEase support at **support@shopease-demo.com** or call **+1 (800) 555-EASE**, and our team will be delighted to assist you!",
+    "confidence": 0.0,
+    "matched_faq": null,
+    "category": "Out of Scope",
+    "human_handoff": true,
+    "response_time_ms": 24.04
+  }
+]
