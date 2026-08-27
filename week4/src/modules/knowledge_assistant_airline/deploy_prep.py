@@ -27,7 +27,7 @@ from pathlib import Path
 
 MODULE_DIR = Path(__file__).resolve().parent
 WEEK4_DIR = MODULE_DIR.parents[2]
-PACKAGE_DIR = WEEK4_DIR / "knowledge_assistant_deploy_package"
+PACKAGE_DIR = WEEK4_DIR / "airline_deploy_package"
 MODULE_NAME = "knowledge_assistant_airline"
 
 APP_ENTRYPOINT = '''"""Standalone entrypoint for the Indus Air RAG Knowledge Assistant.

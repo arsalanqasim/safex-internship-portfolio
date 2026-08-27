@@ -1,0 +1,16 @@
+TEST_SUITE = [
+    {"query": "How long does standard delivery usually take?", "expected_doc": "QuickBite Delivery Policy"},
+    {"query": "What happens if my order is late?", "expected_doc": "QuickBite Delivery Policy"},
+    {"query": "Can I cancel my order for free right after placing it?", "expected_doc": "QuickBite Refund and Cancellation Policy"},
+    {"query": "How do I get a refund if an item is missing from my order?", "expected_doc": "QuickBite Refund and Cancellation Policy"},
+    {"query": "What payment methods do you accept?", "expected_doc": "QuickBite Payment Methods FAQ"},
+    {"query": "Is there a limit on cash on delivery orders?", "expected_doc": "QuickBite Payment Methods FAQ"},
+    {"query": "How do loyalty points work?", "expected_doc": "QuickBite Payment Methods FAQ"},
+    {"query": "What do I need to become a delivery rider?", "expected_doc": "QuickBite Rider Partner FAQ"},
+    {"query": "How much do riders get paid per delivery?", "expected_doc": "QuickBite Rider Partner FAQ"},
+    {"query": "How can my restaurant join QuickBite?", "expected_doc": "QuickBite Restaurant Partner FAQ"},
+    {"query": "What commission does QuickBite charge restaurants?", "expected_doc": "QuickBite Restaurant Partner FAQ"},
+    {"query": "When are restaurant payouts made?", "expected_doc": "QuickBite Restaurant Partner FAQ"},
+    {"query": "What is the weather like in Islamabad today?", "expected_doc": None},
+    {"query": "Can you recommend a good stock to invest in?", "expected_doc": None},
+]
