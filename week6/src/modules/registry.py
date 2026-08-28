@@ -96,9 +96,9 @@ MODULE_REGISTRY: Dict[str, Dict[str, Dict[str, Any]]] = {
             "task": "Monetize AI Lead Gen Tool",
             "service_offering": "Policyholder Intent Qualification Model for Insurance Agencies",
             "target_markets": "USA, UK, Canada",
-            "status": "In progress",
+            "status": "Submission Ready",
             "deployed_url": "",
-            "description": "Insurance underwriting qualifier package, agency pricing model, and broker pitch.",
+            "description": "Insurance underwriting qualifier package with tiered pricing (Broker Starter/Agency Pro/Underwriting Enterprise), an interactive ROI calculator, a personalized cold outreach generator, and an outreach pipeline tracker.",
         },
         "commercial_malik_sudais": {
             "name": "Retail Multi-Store BI Commercial Suite",
