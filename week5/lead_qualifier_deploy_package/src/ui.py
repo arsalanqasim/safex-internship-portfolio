@@ -4,7 +4,7 @@ from __future__ import annotations
 import pandas as pd
 import streamlit as st
 
-from .engine import (
+from src.engine import (
     CONTACT_CHANNELS,
     OCCUPATION_RISK_LEVELS,
     POLICY_TYPES,
