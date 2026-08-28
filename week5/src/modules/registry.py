@@ -89,7 +89,7 @@ MODULE_REGISTRY: Dict[str, Dict[str, Dict[str, Any]]] = {
             "task": "AI-Powered Lead Generation & Qualification Tool",
             "domain": "Insurance & Wealth Management",
             "status": "Submission Ready",
-            "deployed_url": "",
+            "deployed_url": "https://insurance-lead-qualifier-wgihzpbzbfeaeozplkp8ym.streamlit.app/",
             "description": "Transparent, five-factor weighted lead scoring model (policy value, budget fit, urgency, risk profile, engagement channel) with single-lead and batch scoring, qualitative risk flags, and full test coverage.",
         },
         "bi_dashboard_malik_sudais": {
