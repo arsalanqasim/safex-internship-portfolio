@@ -97,7 +97,7 @@ MODULE_REGISTRY: Dict[str, Dict[str, Dict[str, Any]]] = {
             "service_offering": "Policyholder Intent Qualification Model for Insurance Agencies",
             "target_markets": "USA, UK, Canada",
             "status": "Submission Ready",
-            "deployed_url": "",
+            "deployed_url": "https://insurance-commercial-app-goi6ynkyqqbmyqchzshybe.streamlit.app/",
             "description": "Insurance underwriting qualifier package with tiered pricing (Broker Starter/Agency Pro/Underwriting Enterprise), an interactive ROI calculator, a personalized cold outreach generator, and an outreach pipeline tracker.",
         },
         "commercial_malik_sudais": {
