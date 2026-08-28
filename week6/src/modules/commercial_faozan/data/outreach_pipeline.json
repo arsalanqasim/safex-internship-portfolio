@@ -1,0 +1,178 @@
+[
+  {
+    "company_name": "Gymshark",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "segment": "Apparel DTC",
+    "contact_role": "Head of E-Commerce Analytics",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "High order volume, public sale calendar - promo/refund cycles are a strong fit for anomaly reporting."
+  },
+  {
+    "company_name": "Allbirds",
+    "country": "United States",
+    "region": "USA",
+    "segment": "Footwear DTC",
+    "contact_role": "Director of Retail Analytics",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Public filings show margin pressure; AOV-vs-revenue divergence is the core pitch."
+  },
+  {
+    "company_name": "Frank And Oak",
+    "country": "Canada",
+    "region": "Canada",
+    "segment": "Apparel DTC",
+    "contact_role": "E-Commerce Operations Lead",
+    "channel": "LinkedIn company page",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Mid-size Canadian DTC, likely no in-house analyst."
+  },
+  {
+    "company_name": "Represent Clo",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "segment": "Apparel DTC",
+    "contact_role": "Head of Digital",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Drop-based release model makes traffic spikes routine and outages easy to miss."
+  },
+  {
+    "company_name": "Wolf & Badger",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "segment": "Marketplace",
+    "contact_role": "Marketplace Operations Manager",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Multi-brand marketplace; channel-mix reporting is directly relevant."
+  },
+  {
+    "company_name": "Endy",
+    "country": "Canada",
+    "region": "Canada",
+    "segment": "Home Goods DTC",
+    "contact_role": "Growth Marketing Lead",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Paid-heavy acquisition; blended CAC tracking is the hook."
+  },
+  {
+    "company_name": "Beauty Pie",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "segment": "Beauty Subscription",
+    "contact_role": "Head of Membership Analytics",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Subscription model - retention and cohort reporting fit the Growth tier."
+  },
+  {
+    "company_name": "Package Free Shop",
+    "country": "United States",
+    "region": "USA",
+    "segment": "Sustainable Goods",
+    "contact_role": "Operations Director",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Small team, no dedicated analyst - Starter tier fit."
+  },
+  {
+    "company_name": "Hiut Denim",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "segment": "Apparel DTC",
+    "contact_role": "Founder / Operations",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Founder-led, exactly the 'reads revenue and stops' profile the product targets."
+  },
+  {
+    "company_name": "Peace Collective",
+    "country": "Canada",
+    "region": "Canada",
+    "segment": "Apparel DTC",
+    "contact_role": "E-Commerce Manager",
+    "channel": "LinkedIn company page",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Frequent campaign launches; weekly cadence suits the Growth tier."
+  },
+  {
+    "company_name": "Organic Basics",
+    "country": "Denmark",
+    "region": "Europe",
+    "segment": "Apparel DTC",
+    "contact_role": "Head of Data",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Publishes impact reporting - already reporting-literate, shorter sales cycle."
+  },
+  {
+    "company_name": "Brooklinen",
+    "country": "United States",
+    "region": "USA",
+    "segment": "Home Goods DTC",
+    "contact_role": "Director of Analytics",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Large enough for Enterprise tier and warehouse sync."
+  },
+  {
+    "company_name": "Knix",
+    "country": "Canada",
+    "region": "Canada",
+    "segment": "Apparel DTC",
+    "contact_role": "VP E-Commerce",
+    "channel": "LinkedIn company page",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "High growth; forecast scenarios relevant for stock planning."
+  },
+  {
+    "company_name": "Finisterre",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "segment": "Outdoor Apparel",
+    "contact_role": "Digital Trading Manager",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Strong seasonality - forecasting with weekday and seasonal terms is the fit."
+  },
+  {
+    "company_name": "Bombas",
+    "country": "United States",
+    "region": "USA",
+    "segment": "Apparel DTC",
+    "contact_role": "Senior Manager, Business Intelligence",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Has a BI function already - target the anomaly alerting rather than reporting."
+  },
+  {
+    "company_name": "Nuud Care",
+    "country": "Netherlands",
+    "region": "Europe",
+    "segment": "Personal Care DTC",
+    "contact_role": "E-Commerce Lead",
+    "channel": "Corporate contact form",
+    "status": "Researched - not contacted",
+    "date_contacted": "",
+    "notes": "Small European DTC; Starter tier entry point."
+  }
+]
