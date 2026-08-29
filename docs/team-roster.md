@@ -105,12 +105,12 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 |---|---|---|---|---|---|---|
 | Arsalan Qasim | Group Leader | AI Customer Support Chatbot (Client-Ready) | `week5/src/modules/chatbot_arsalan/` | Submitted | 2026-08-18 | Production client-ready chatbot with dynamic JSON admin editor, fallback TF-IDF, live benchmarks, and standalone deployment package. |
 | MUHAMMAD WASIM | Member | AI-Powered Lead Generation & Qualification Tool | `week5/src/modules/lead_gen_wasim/` | In progress | 2026-08-18 | Scaffolding created with customizable domain selector and scoring pipeline. |
-| Muhammad Faozan Mujtaba | Member | AI Business Intelligence Dashboard | `week5/src/modules/bi_dashboard_faozan/` | In progress | 2026-08-18 | Scaffolding created with business metric forecasting and auto-narrative generator. |
+| Muhammad Faozan Mujtaba | Member | AI Business Intelligence Dashboard | `week5/src/modules/bi_dashboard_faozan/` | Submitted | 2026-08-28 | Chinar Cart AI BI & Forecasting Suite (Huber regression, anomaly detection, deterministic dataset, 29 unit tests). PR #20 merged. |
 | Shahidullah | Member | AI Customer Support Chatbot (Client-Ready) | `week5/src/modules/chatbot_shahidullah/` | In progress | 2026-08-18 | Scaffolding created with customizable FAQ knowledge base. |
 | Ali Ammar Haider | Member | AI Customer Support Chatbot (Client-Ready) | `week5/src/modules/chatbot_ali_ammar/` | Submitted | 2026-08-20 | ShopEase AI Customer Support Chatbot with TF-IDF matching, admin CRUD panel, benchmark tester, and standalone deployment package. PR #16 merged. |
 | Abdul Haseeb | Member | AI Business Intelligence Dashboard | `week5/src/modules/bi_dashboard_abdul_haseeb/` | In progress | 2026-08-18 | Scaffolding created with sample data trends and exportable reporting. |
 | Hammad Abbas | Member | AI Customer Support Chatbot (Client-Ready) | `week5/src/modules/chatbot_hammad/` | In progress | 2026-08-18 | Scaffolding created with multi-channel support widget. |
-| Ali Zaib | Member | AI-Powered Lead Generation & Qualification Tool | `week5/src/modules/lead_gen_ali_zaib/` | In progress | 2026-08-18 | Scaffolding created with rule/ML scoring engine. |
+| Ali Zaib | Member | AI-Powered Lead Generation & Qualification Tool | `week5/src/modules/lead_gen_ali_zaib/` | Submitted | 2026-08-28 | Insurance & Finance Lead Qualifier (5-factor weighted rubric, batch scoring, 11 tests, standalone deploy package, live demo: https://insurance-lead-qualifier-wgihzpbzbfeaeozplkp8ym.streamlit.app/). PR #19 merged. |
 | Malik Sudais | Member | AI Business Intelligence Dashboard | `week5/src/modules/bi_dashboard_malik_sudais/` | In progress | 2026-08-18 | Scaffolding created with revenue/ops forecasting pipeline. |
 
 ## Week 5 Deliverable Tracker
@@ -119,12 +119,12 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 |---|---|---|---|---|---|---|---|---|
 | Arsalan Qasim | Received | Received | Received | Received | Received | Received | Tracked in Sheet | None. |
 | MUHAMMAD WASIM | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
-| Muhammad Faozan Mujtaba | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Muhammad Faozan Mujtaba | Received | Received | Tracked in Sheet | Received | Received | Received | Tracked in Sheet | None. PR #20 merged. |
 | Shahidullah | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
 | Ali Ammar Haider | Received | Received | Tracked in Sheet | Received | Received | Received | Tracked in Sheet | None. PR #16 merged. |
 | Abdul Haseeb | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
 | Hammad Abbas | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
-| Ali Zaib | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Ali Zaib | Received | Received | Tracked in Sheet | Received | Received (Live) | Received | Tracked in Sheet | None. PR #19 merged. |
 | Malik Sudais | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
 
 ## Week 6 Member Assignments
@@ -133,12 +133,12 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 |---|---|---|---|---|---|---|
 | Arsalan Qasim | Group Leader | Monetize AI Chatbot (Commercial Pitch, Outreach & Group Dashboard) | `week6/src/modules/commercial_arsalan/` | Submitted | 2026-08-18 | Full commercialization hub: service proposal, 3 pricing tiers, 15+ real international prospects, cold email generator, interactive pipeline tracker with Excel export, and group consolidation. |
 | MUHAMMAD WASIM | Member | Monetize AI Lead Gen Tool (Commercial Pitch & Outreach) | `week6/src/modules/commercial_wasim/` | In progress | 2026-08-18 | Scaffolding created with pitch deck and outreach tracker templates. |
-| Muhammad Faozan Mujtaba | Member | Monetize AI BI Dashboard (Commercial Pitch & Outreach) | `week6/src/modules/commercial_faozan/` | In progress | 2026-08-18 | Scaffolding created with service tiers and cold outreach engine. |
+| Muhammad Faozan Mujtaba | Member | Monetize AI BI Dashboard (Commercial Pitch & Outreach) | `week6/src/modules/commercial_faozan/` | Submitted | 2026-08-28 | BI Reporting Service retainer packages, cost-basis pricing, incident ROI model, 16 researched prospects, 27 unit tests. PR #20 merged. |
 | Shahidullah | Member | Monetize AI Chatbot (Commercial Pitch & Outreach) | `week6/src/modules/commercial_shahidullah/` | In progress | 2026-08-18 | Scaffolding created with client pitch and email sequences. |
 | Ali Ammar Haider | Member | Monetize AI Lead Gen Tool (Commercial Pitch & Outreach) | `week6/src/modules/commercial_ali_ammar/` | In progress | 2026-08-18 | Scaffolding created with agency package and lead tracker. |
 | Abdul Haseeb | Member | Monetize AI BI Dashboard (Commercial Pitch & Outreach) | `week6/src/modules/commercial_abdul_haseeb/` | In progress | 2026-08-18 | Scaffolding created with BI service packages and cold templates. |
 | Hammad Abbas | Member | Monetize AI Chatbot (Commercial Pitch & Outreach) | `week6/src/modules/commercial_hammad/` | In progress | 2026-08-18 | Scaffolding created with clinic/ecom packages and outreach templates. |
-| Ali Zaib | Member | Monetize AI Lead Gen Tool (Commercial Pitch & Outreach) | `week6/src/modules/commercial_ali_zaib/` | In progress | 2026-08-18 | Scaffolding created with pricing calculator and lead pipeline. |
+| Ali Zaib | Member | Monetize AI Lead Gen Tool (Commercial Pitch & Outreach) | `week6/src/modules/commercial_ali_zaib/` | Submitted | 2026-08-28 | Insurance Lead Scoring Commercial Hub (tiered pricing, ROI calculator, cold outreach sequence generator, module-local pipeline, 8 unit tests, live demo: https://insurance-commercial-app-goi6ynkyqqbmyqchzshybe.streamlit.app/). PR #21 merged. |
 | Malik Sudais | Member | Monetize AI BI Dashboard (Commercial Pitch & Outreach) | `week6/src/modules/commercial_malik_sudais/` | In progress | 2026-08-18 | Scaffolding created with retail analytics pitch and outreach log. |
 
 ## Week 6 Deliverable Tracker
@@ -147,12 +147,12 @@ This file tracks Group 54 members, assignments, module ownership, and progress. 
 |---|---|---|---|---|---|---|---|---|---|
 | Arsalan Qasim | Verified | Live Hosted | Received | 15+ International Leads | Verified Excel & Log | Received | Published / Ready | Tracked in Sheet | None. |
 | MUHAMMAD WASIM | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
-| Muhammad Faozan Mujtaba | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Muhammad Faozan Mujtaba | Verified | Ready / Deploying | Received | 16 Researched Leads | Verified JSON Log | Received | Published / Ready | Tracked in Sheet | None. PR #20 merged. |
 | Shahidullah | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
 | Ali Ammar Haider | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
 | Abdul Haseeb | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
 | Hammad Abbas | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
-| Ali Zaib | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
+| Ali Zaib | Verified | Live Hosted | Received | 15+ Targeted Leads | Verified Pipeline Log | Received | Published / Ready | Tracked in Sheet | None. PR #21 merged. |
 | Malik Sudais | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Module scaffolded. |
 
 ## Non-Response Tracking
@@ -164,7 +164,6 @@ Use this section when a member has not replied or submitted a usable update.
 | MUHAMMAD WASIM | 2026-07-19 | TBD | In progress | Week 5 & 6 tasks assigned and scaffolded. |
 | Abdul Haseeb | 2026-07-19 | TBD | In progress | Week 5 & 6 tasks assigned and scaffolded. |
 | Hammad Abbas | 2026-07-19 | TBD | In progress | Week 5 & 6 tasks assigned and scaffolded. |
-| Ali Zaib | 2026-07-19 | TBD | In progress | Week 5 & 6 tasks assigned and scaffolded. |
 
 ## Update Protocol
 

@@ -339,12 +339,12 @@ Group Leader Arsalan Qasim built a complete production-grade **AI Customer Suppo
 |---|---|---|---|---|
 | Arsalan Qasim | `chatbot_arsalan` | Production Client-Ready Chatbot with Admin Panel, Fallback Engine, Benchmark Suite, Tests, and Deploy Package. | `week5/src/modules/chatbot_arsalan/`, `deploy_prep.py`, `tests/test_chatbot.py` | **Submitted** |
 | MUHAMMAD WASIM | `lead_gen_wasim` | AI Lead Qualification Tool (Scaffolding ready with domain selector). | `week5/src/modules/lead_gen_wasim/` | In progress |
-| Muhammad Faozan Mujtaba | `bi_dashboard_faozan` | AI BI Dashboard & Forecasting (Scaffolding ready). | `week5/src/modules/bi_dashboard_faozan/` | In progress |
+| Muhammad Faozan Mujtaba | `bi_dashboard_faozan` | Chinar Cart AI Business Intelligence & Forecasting Suite (Huber regression, episode anomaly detection, deterministic CSV dataset, 29 unit tests, standalone deploy package). | `week5/src/modules/bi_dashboard_faozan/`, `week5/bi_dashboard_deploy_package/`, PR #20 | **Submitted** |
 | Shahidullah | `chatbot_shahidullah` | AI Customer Support Chatbot (Scaffolding ready). | `week5/src/modules/chatbot_shahidullah/` | In progress |
 | Ali Ammar Haider | `chatbot_ali_ammar` | ShopEase Client-Ready Customer Support Chatbot with TF-IDF engine, conversation logging, dynamic Admin CRUD panel, 12 benchmark tests, and standalone deployment package. | `week5/src/modules/chatbot_ali_ammar/`, `week5/chatbot_deploy_package_ali_ammar/`, PR #16 | **Submitted** |
 | Abdul Haseeb | `bi_dashboard_abdul_haseeb` | AI BI Dashboard (Scaffolding ready). | `week5/src/modules/bi_dashboard_abdul_haseeb/` | In progress |
 | Hammad Abbas | `chatbot_hammad` | AI Customer Support Chatbot (Scaffolding ready). | `week5/src/modules/chatbot_hammad/` | In progress |
-| Ali Zaib | `lead_gen_ali_zaib` | AI Lead Qualification Tool (Scaffolding ready). | `week5/src/modules/lead_gen_ali_zaib/` | In progress |
+| Ali Zaib | `lead_gen_ali_zaib` | Insurance & Finance Lead Qualifier (5-factor weighted rubric, batch scoring, 11 tests, standalone deploy package, live demo: https://insurance-lead-qualifier-wgihzpbzbfeaeozplkp8ym.streamlit.app/). | `week5/src/modules/lead_gen_ali_zaib/`, `week5/lead_qualifier_deploy_package/`, PR #19 | **Submitted** |
 | Malik Sudais | `bi_dashboard_malik_sudais` | AI BI Dashboard (Scaffolding ready). | `week5/src/modules/bi_dashboard_malik_sudais/` | In progress |
 
 ---
@@ -376,12 +376,12 @@ Group Leader Arsalan Qasim built an **Interactive Commercialization Command Cent
 |---|---|---|---|---|
 | Arsalan Qasim | `commercial_arsalan` | Full Commercial Command Center, Tiered Pricing, 15+ Real International Leads in Excel Tracker, Cold Email Sequences, Social Media Posts, and Group Consolidation. | `week6/src/modules/commercial_arsalan/`, `week6/data/outreach_tracker.xlsx`, `tests/test_commercial.py` | **Submitted** |
 | MUHAMMAD WASIM | `commercial_wasim` | Lead Gen Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_wasim/` | In progress |
-| Muhammad Faozan Mujtaba | `commercial_faozan` | BI Dashboard Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_faozan/` | In progress |
+| Muhammad Faozan Mujtaba | `commercial_faozan` | BI Monthly Reporting Retainer, cost-basis pricing, incident ROI model, 16 researched prospects, 27 unit tests. | `week6/src/modules/commercial_faozan/`, PR #20 | **Submitted** |
 | Shahidullah | `commercial_shahidullah` | Chatbot Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_shahidullah/` | In progress |
 | Ali Ammar Haider | `commercial_ali_ammar` | Lead Gen Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_ali_ammar/` | In progress |
 | Abdul Haseeb | `commercial_abdul_haseeb` | BI Dashboard Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_abdul_haseeb/` | In progress |
 | Hammad Abbas | `commercial_hammad` | Chatbot Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_hammad/` | In progress |
-| Ali Zaib | `commercial_ali_zaib` | Lead Gen Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_ali_zaib/` | In progress |
+| Ali Zaib | `commercial_ali_zaib` | Insurance Lead Scoring Commercial Hub with tiered pricing, ROI calculator, cold outreach sequence generator, module-local pipeline, 8 unit tests, live demo (https://insurance-commercial-app-goi6ynkyqqbmyqchzshybe.streamlit.app/). | `week6/src/modules/commercial_ali_zaib/`, `week6/insurance_commercial_deploy_package/`, PR #21 | **Submitted** |
 | Malik Sudais | `commercial_malik_sudais` | BI Dashboard Commercial Deck & Outreach (Scaffolding ready). | `week6/src/modules/commercial_malik_sudais/` | In progress |
 
 

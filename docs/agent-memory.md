@@ -70,6 +70,8 @@ Do not store:
 - 2026-08-18: Verified and integrated Malik Sudais's submissions across Weeks 1–4: Week 1 SafeX AI prototype (Self-initiative: "Add New Features"), Week 2 standalone Invoice Automation repo, Week 3 Proposal Invoice Automation repo, and Week 4 live hosted Careem Model Comparison Streamlit deployment (https://cxyaqlr4q4jdwtm7dadw8v.streamlit.app/). Updated team roster and registries accordingly.
 - 2026-08-27: Reviewed and merged PR #17 (Muhammad Faozan Mujtaba - `knowledge_assistant_airline`) and PR #18 (Ali Zaib - `knowledge_assistant_foodpanda`), maintaining distinct standalone packages (`week4/airline_deploy_package/` and `week4/foodpanda_deploy_package/`). All 44 Week 4 tests passing. Added `matplotlib` to `week4/requirements.txt`.
 - 2026-08-27: Reviewed and merged PR #16 (Ali Ammar Haider - `chatbot_ali_ammar`), integrating ShopEase customer support chatbot with Admin CRUD panel, 12 benchmark tests, and standalone deployment package (`week5/chatbot_deploy_package_ali_ammar/`). Cleaned up obsolete `lead_gen_ali_ammar` scaffold. All 20 Week 5 tests passing.
+- 2026-08-29: Reviewed and merged PR #19 (Ali Zaib - `lead_gen_ali_zaib`), PR #20 (Muhammad Faozan Mujtaba - `bi_dashboard_faozan` and `commercial_faozan`), and PR #21 (Ali Zaib - `commercial_ali_zaib`). Integrated standalone deployment packages (`week5/lead_qualifier_deploy_package/`, `week5/bi_dashboard_deploy_package/`, `week6/insurance_commercial_deploy_package/`). All 240 tests across weeks 1-6 passing.
+- 2026-08-29: Member commercial pipelines are isolated in their own module data subfolders (`week6/src/modules/<module>/data/`) to prevent Excel overwrite collisions with the leader's group-wide tracker.
 
 ## Open Questions
 
