@@ -1,0 +1,29 @@
+lead_id,policy_type,coverage_amount,decision_timeline,prior_claims_count,applicant_age,occupation_risk,stated_monthly_budget,contact_channel
+LEAD-0001,Individual Basic,150000.0,Exploratory,0,24,High Risk (Hazardous/Manual),54.48,Broker Partner
+LEAD-0002,Fleet Commercial,50000.0,Within 1 Month,0,35,Low Risk (Office/Admin),428.31,Website Form
+LEAD-0003,Individual Basic,400000.0,Exploratory,0,37,Low Risk (Office/Admin),186.18,Cold Outreach
+LEAD-0004,Comprehensive Corporate,15000.0,Within 1 Month,0,67,High Risk (Hazardous/Manual),584.84,Website Form
+LEAD-0005,Individual Basic,25000.0,Immediate (< 14 days),0,66,Low Risk (Office/Admin),364.11,Referral
+LEAD-0006,Fleet Commercial,25000.0,Immediate (< 14 days),1,53,Medium Risk (Field/Trade),770.08,Cold Outreach
+LEAD-0007,Individual Basic,15000.0,Within 1 Month,0,50,Low Risk (Office/Admin),558.46,Referral
+LEAD-0008,Individual Basic,50000.0,Immediate (< 14 days),1,62,Low Risk (Office/Admin),881.94,Website Form
+LEAD-0009,Individual Basic,75000.0,Exploratory,0,47,Low Risk (Office/Admin),392.12,Referral
+LEAD-0010,Fleet Commercial,25000.0,Exploratory,0,42,High Risk (Hazardous/Manual),612.88,Referral
+LEAD-0011,Fleet Commercial,250000.0,Exploratory,0,34,Low Risk (Office/Admin),838.72,Website Form
+LEAD-0012,Comprehensive Corporate,150000.0,Within 1 Month,0,28,Low Risk (Office/Admin),399.31,Referral
+LEAD-0013,Comprehensive Corporate,150000.0,Within 1 Month,0,43,Medium Risk (Field/Trade),71.42,Website Form
+LEAD-0014,Comprehensive Corporate,25000.0,Exploratory,1,36,Low Risk (Office/Admin),495.18,Broker Partner
+LEAD-0015,Comprehensive Corporate,75000.0,Exploratory,0,63,Medium Risk (Field/Trade),822.8,Referral
+LEAD-0016,Fleet Commercial,15000.0,Exploratory,1,45,Low Risk (Office/Admin),406.07,Broker Partner
+LEAD-0017,Comprehensive Corporate,75000.0,Exploratory,0,26,Low Risk (Office/Admin),218.74,Website Form
+LEAD-0018,Comprehensive Corporate,50000.0,Exploratory,0,55,Low Risk (Office/Admin),280.8,Broker Partner
+LEAD-0019,Individual Basic,400000.0,Within 1 Month,0,63,Medium Risk (Field/Trade),543.55,Website Form
+LEAD-0020,Fleet Commercial,50000.0,Exploratory,0,63,Low Risk (Office/Admin),491.59,Broker Partner
+LEAD-0021,Comprehensive Corporate,150000.0,Exploratory,1,28,High Risk (Hazardous/Manual),332.78,Website Form
+LEAD-0022,Comprehensive Corporate,15000.0,Immediate (< 14 days),2,50,Medium Risk (Field/Trade),145.54,Cold Outreach
+LEAD-0023,Individual Basic,75000.0,Exploratory,0,27,Low Risk (Office/Admin),583.89,Cold Outreach
+LEAD-0024,Comprehensive Corporate,15000.0,Within 1 Month,1,66,Medium Risk (Field/Trade),670.49,Referral
+LEAD-0025,Fleet Commercial,150000.0,Exploratory,0,59,Low Risk (Office/Admin),75.75,Referral
+LEAD-0026,Comprehensive Corporate,25000.0,Immediate (< 14 days),0,64,Low Risk (Office/Admin),551.83,Referral
+LEAD-0027,Individual Basic,15000.0,Within 1 Month,2,61,Medium Risk (Field/Trade),609.32,Cold Outreach
+LEAD-0028,Comprehensive Corporate,75000.0,Immediate (< 14 days),1,46,High Risk (Hazardous/Manual),775.91,Referral

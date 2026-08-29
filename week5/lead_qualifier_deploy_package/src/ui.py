@@ -4,7 +4,7 @@ from __future__ import annotations
 import pandas as pd
 import streamlit as st
 
-from .engine import (
+from src.engine import (
     CONTACT_CHANNELS,
     OCCUPATION_RISK_LEVELS,
     POLICY_TYPES,
@@ -109,7 +109,7 @@ def _render_batch_tab() -> None:
     )
 
     uploaded = st.file_uploader("Upload a leads CSV (optional)", type=["csv"])
-    use_sample = st.button("Use Sample Dataset (40 leads)", type="primary")
+    use_sample = st.button("Use Sample Dataset (28 leads)", type="primary")
 
     df = None
     if uploaded is not None:
@@ -147,20 +147,7 @@ def _render_batch_tab() -> None:
     st.bar_chart(tier_counts)
 
     st.markdown("#### Ranked Leads (hottest first)")
-    st.caption("🟢 Hot Lead · 🟡 Qualified · 🟠 Nurture · 🔴 Low Priority")
-
-    def _tier_row_color(row):
-        colors = {
-"Hot Lead — Fast-Track Underwriting": "background-color: #15803d; color: white",
-"Qualified — Standard Underwriting": "background-color: #a16207; color: white",
-"Nurture — Needs More Information": "background-color: #c2410c; color: white",
-"Low Priority — Manual Review Likely": "background-color: #b91c1c; color: white",
-        }
-        color = colors.get(row["tier"], "")
-        return [color] * len(row)
-
-    styled = scored.style.apply(_tier_row_color, axis=1)
-    st.dataframe(styled, use_container_width=True, hide_index=True)
+    st.dataframe(scored, use_container_width=True, hide_index=True)
 
     st.download_button(
         "Download scored leads as CSV",
