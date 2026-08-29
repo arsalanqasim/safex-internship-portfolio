@@ -33,9 +33,9 @@ MODULE_REGISTRY: Dict[str, Dict[str, Dict[str, Any]]] = {
             "institution": "NUST H-12",
             "task": "AI Business Intelligence Dashboard",
             "domain": "E-Commerce & Digital Products",
-            "status": "In progress",
+            "status": "Submission Ready",
             "deployed_url": "",
-            "description": "Interactive revenue and operational analytics with regression forecasting and auto-generated weekly narrative summaries.",
+            "description": "Executive analytics over 180 days of e-commerce data: like-for-like KPIs, a revenue forecast backtested at 6.7% MAPE on unseen data, episode-grouped anomaly detection, and a weekly narrative composed only from figures the engine computed.",
         },
         "chatbot_shahidullah": {
             "name": "Healthcare & Clinic AI Chatbot",

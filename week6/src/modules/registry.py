@@ -36,9 +36,9 @@ MODULE_REGISTRY: Dict[str, Dict[str, Dict[str, Any]]] = {
             "task": "Monetize AI BI Dashboard",
             "service_offering": "Executive BI Analytics & AI Narrative Reporting for E-Commerce",
             "target_markets": "USA, Canada, Europe",
-            "status": "In progress",
+            "status": "Submission Ready",
             "deployed_url": "",
-            "description": "Productized BI reporting subscription, analytics pricing packages, and client pitch deck.",
+            "description": "Productized BI reporting retainer with cost-based tier economics and margin-risk analysis, a client ROI model grounded in a measured incident from the Week 5 dataset, a 16-prospect pipeline across USA/Canada/Europe, and a generated one-page proposal.",
         },
         "commercial_shahidullah": {
             "name": "Clinic AI Chatbot Monetization Hub",
