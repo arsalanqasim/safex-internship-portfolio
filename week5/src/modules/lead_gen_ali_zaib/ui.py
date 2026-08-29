@@ -151,10 +151,10 @@ def _render_batch_tab() -> None:
 
     def _tier_row_color(row):
         colors = {
-            "Hot Lead — Fast-Track Underwriting": "background-color: #dcfce7",
-            "Qualified — Standard Underwriting": "background-color: #fef9c3",
-            "Nurture — Needs More Information": "background-color: #ffedd5",
-            "Low Priority — Manual Review Likely": "background-color: #fee2e2",
+"Hot Lead — Fast-Track Underwriting": "background-color: #15803d; color: white",
+"Qualified — Standard Underwriting": "background-color: #a16207; color: white",
+"Nurture — Needs More Information": "background-color: #c2410c; color: white",
+"Low Priority — Manual Review Likely": "background-color: #b91c1c; color: white",
         }
         color = colors.get(row["tier"], "")
         return [color] * len(row)
