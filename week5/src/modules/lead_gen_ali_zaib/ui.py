@@ -109,7 +109,7 @@ def _render_batch_tab() -> None:
     )
 
     uploaded = st.file_uploader("Upload a leads CSV (optional)", type=["csv"])
-    use_sample = st.button("Use Sample Dataset (28 leads)", type="primary")
+    use_sample = st.button("Use Sample Dataset (40 leads)", type="primary")
 
     df = None
     if uploaded is not None:
@@ -147,7 +147,20 @@ def _render_batch_tab() -> None:
     st.bar_chart(tier_counts)
 
     st.markdown("#### Ranked Leads (hottest first)")
-    st.dataframe(scored, use_container_width=True, hide_index=True)
+    st.caption("🟢 Hot Lead · 🟡 Qualified · 🟠 Nurture · 🔴 Low Priority")
+
+    def _tier_row_color(row):
+        colors = {
+            "Hot Lead — Fast-Track Underwriting": "background-color: #dcfce7",
+            "Qualified — Standard Underwriting": "background-color: #fef9c3",
+            "Nurture — Needs More Information": "background-color: #ffedd5",
+            "Low Priority — Manual Review Likely": "background-color: #fee2e2",
+        }
+        color = colors.get(row["tier"], "")
+        return [color] * len(row)
+
+    styled = scored.style.apply(_tier_row_color, axis=1)
+    st.dataframe(styled, use_container_width=True, hide_index=True)
 
     st.download_button(
         "Download scored leads as CSV",

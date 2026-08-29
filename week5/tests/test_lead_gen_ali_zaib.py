@@ -73,7 +73,7 @@ def test_zero_budget_raises():
 
 def test_load_sample_leads_has_expected_columns():
     df = load_sample_leads()
-    assert len(df) == 28
+    assert len(df) == 40
     for col in ["policy_type", "coverage_amount", "decision_timeline", "prior_claims_count"]:
         assert col in df.columns
 

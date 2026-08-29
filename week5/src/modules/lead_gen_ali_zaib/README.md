@@ -38,7 +38,7 @@ score breaks down into its five contributing factors in the UI.
 |---|---|
 | `engine.py` | Scoring logic: single-lead scoring, batch scoring, validation, tier mapping. No Streamlit code. |
 | `ui.py` | Three tabs: single-lead form, batch CSV scoring (with the sample dataset or an upload), and a "How Scoring Works" explainer. |
-| `data/sample_leads.csv` | 28 synthetic sample leads with varied policy types, coverage, timelines, risk profiles, and channels. |
+| `data/sample_leads.csv` | 40 synthetic sample leads with varied policy types, coverage, timelines, risk profiles, and channels. |
 | `../../../tests/test_lead_gen_ali_zaib.py` | 11 unit tests covering scoring correctness, tier boundaries, validation errors, and batch scoring. |
 | `../../deploy_prep_ali_zaib.py` | Packaging script that exports this module into a standalone, deployable app (mirrors Arsalan's `deploy_prep.py` pattern for his own module). |
 | `../../lead_qualifier_deploy_package/` | Output of the above script — a self-contained Streamlit app ready to push to its own repo and deploy. |
@@ -82,6 +82,6 @@ steps) or Render.
 - The rubric weights reflect reasonable sales/underwriting judgment for this
   exercise, not weights fitted to real historical conversion data — a
   production version would validate/tune these against actual close rates.
-- The sample dataset (28 leads) is synthetic, generated to have realistic
+- The sample dataset (40 leads) is synthetic, generated to have realistic
   variation across policy types, coverage amounts, and risk factors — not
   real applicant data.

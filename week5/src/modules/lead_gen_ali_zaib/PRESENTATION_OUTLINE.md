@@ -45,7 +45,7 @@
 2. Submit a poor-fit lead (low budget vs. high coverage, prior claims,
    exploratory timeline) — show the specific flags it raises (budget
    mismatch, prior claims for manual review).
-3. Switch to the Batch Scoring tab, run the 28-lead sample dataset, show
+3. Switch to the Batch Scoring tab, run the 40-lead sample dataset, show
    the tier distribution chart and ranked table.
 4. Download the scored CSV.
 5. Briefly show the "How Scoring Works" tab explaining the rubric to a

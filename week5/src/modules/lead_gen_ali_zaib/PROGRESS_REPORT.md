@@ -87,9 +87,10 @@ Qualitative flags (e.g. "budget below estimated premium",
 - **Unit tests:** 11 pytest functions covering scoring correctness (hot vs.
   low-quality leads), tier boundaries, all five validation error paths, and
   batch-scoring behavior (sort order, missing-column handling). All 11 pass.
-- **Sample dataset validation:** ran the full 28-lead synthetic sample
-  batch through the scorer — produced a realistic tier distribution (10
-  Hot, 14 Qualified, 4 Nurture in one representative run) with no crashes
+- **Sample dataset validation:** ran the full 40-lead synthetic sample
+  batch through the scorer — produced a realistic tier distribution (16
+  Hot, remainder split across Qualified/Nurture/Low Priority in one
+  representative run) with no crashes
   or nonsensical scores.
 - **End-to-end UI testing:** verified via Streamlit's `AppTest` — submitted
   the single-lead form and ran batch scoring against the live rendered UI,
